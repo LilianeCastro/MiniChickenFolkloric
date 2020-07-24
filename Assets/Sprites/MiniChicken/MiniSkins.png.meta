@@ -4,46 +4,46 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: -2638308131456399430
-    second: ChickBoiJump01
+    second: BoiChickJump01
   - first:
       213: 2139806992666593444
-    second: ChickBoiJump02
+    second: BoiChickJump02
   - first:
       213: -4023099549375756479
-    second: ChickBoiFall01
+    second: BoiChickFall01
   - first:
       213: 861624295058043005
-    second: ChickBoiFall02
+    second: BoiChickFall02
   - first:
       213: 5956871834714327885
-    second: ChickBoiIdle
+    second: BoiChickIdle
   - first:
       213: 3261638750181080760
-    second: ChickBoiDeath
+    second: BoiChickDeath
   - first:
       213: -6887963753674252381
-    second: ChickBoiAttack01
+    second: BoiChickAttack01
   - first:
       213: -3955129644389432748
-    second: ChickBoiAttack02
+    second: BoiChickAttack02
   - first:
       213: 5075466649061238653
-    second: ChickBoiRun01
+    second: BoiChickRun01
   - first:
       213: 7756681018607037886
-    second: ChickBoiRun02
+    second: BoiChickRun02
   - first:
       213: -932940562237319783
-    second: ChickBoiRun03
+    second: BoiChickRun03
   - first:
       213: -5798749827146953546
-    second: BoChickWeapon01
+    second: BoiChickRun04
   - first:
       213: -5347984817137031164
-    second: MiniSkins_12
+    second: BoiChickVfx01
   - first:
       213: -2870012296739819270
-    second: MiniSkins_13
+    second: BoiChickVfx02
   - first:
       213: 4280268397813757184
     second: CuruChickJump01
@@ -82,16 +82,16 @@ TextureImporter:
     second: CuruChickRun04
   - first:
       213: -8151811594946194195
-    second: CuruChickVSF01
+    second: CuruChickVfx01
   - first:
       213: 6761008342699198368
-    second: CuruChickVSF02
+    second: CuruChickVfx02
   - first:
       213: -7663269208401433686
-    second: CuruChickVSF03
+    second: CuruChickVfx03
   - first:
       213: 8671987069992671028
-    second: CuruChickVSF04
+    second: CuruChickVfx04
   - first:
       213: -1221912889000173791
     second: IaChickJump01
@@ -130,16 +130,16 @@ TextureImporter:
     second: IaChickRun04
   - first:
       213: -8778615212611060582
-    second: MiniSkins_42
+    second: IaChickVfx001
   - first:
       213: 7505323023391220358
-    second: MiniSkins_43
+    second: IaChickVfx002
   - first:
       213: 3750904589377217249
-    second: IaChickVSF03
+    second: IaChickVfx003
   - first:
       213: -3961088682885411584
-    second: IaChickVSF04
+    second: IaChickVfx004
   - first:
       213: 8846183736919410277
     second: SaChickJump01
@@ -178,16 +178,16 @@ TextureImporter:
     second: SaChickRun04
   - first:
       213: -472424566289922521
-    second: SaChickVSF01
+    second: SaChickVfx01
   - first:
       213: -8050394748427156545
-    second: SaChickVSF02
+    second: SaChickVfx02
   - first:
       213: 6874228474260171694
-    second: SaChickVSF03
+    second: SaChickVfx03
   - first:
       213: 942915175354811076
-    second: SaChickVSF04
+    second: SaChickVfx04
   - first:
       213: 9134459512088270104
     second: BoChickJump01
@@ -226,13 +226,13 @@ TextureImporter:
     second: BoChickRun04
   - first:
       213: 1313912411822808137
-    second: BoChickVSF01
+    second: BoChickVfx01
   - first:
       213: 401819653997498816
-    second: BoChickVSF02
+    second: BoChickVfx02
   - first:
       213: -3023250793712231160
-    second: BoChickVSF03
+    second: BoChickVfx03
   - first:
       213: 3499084888431599816
     second: VitoChickJump01
@@ -271,10 +271,10 @@ TextureImporter:
     second: VitoChickRun04
   - first:
       213: 6480837309073064954
-    second: IaChickVSF01
+    second: VitoChickVfx01
   - first:
       213: -6010023616962335713
-    second: IaChickVSF02
+    second: VitoChickVfx02
   - first:
       213: -3751942365487501441
     second: IaChickWeapon01
@@ -283,34 +283,52 @@ TextureImporter:
     second: IaChickWeapon02
   - first:
       213: 4144581721740572825
-    second: IaChickVSF05
+    second: IaChickVfx005
   - first:
       213: -3922928418858363884
-    second: IaChickVSF06
+    second: IaChickVfx006
   - first:
       213: 2361149235372880390
     second: SaChickWeapon
   - first:
       213: 6265767181356945750
-    second: MiniSkins_96
+    second: BoiChickWeapon01
   - first:
       213: 8809749512849753088
-    second: BoChickWeapon02
+    second: BoiChickWeapon02
   - first:
       213: 8009528911364368202
     second: CuruChickWeapon
   - first:
       213: 8674702672671733627
-    second: CuruChickVSF05
+    second: CuruChickVfx05
   - first:
       213: 6118482308392752616
-    second: CuruChickVSF06
+    second: CuruChickVfx06
   - first:
       213: -8415104437298712678
     second: BoChickWeapon
   - first:
       213: 2792225411760290461
-    second: IaChickWeapon
+    second: VitoChickWeapon
+  - first:
+      213: 2453209808393181398
+    second: BoiChickVfx03
+  - first:
+      213: -6024857884647461113
+    second: BoiChickVfx04
+  - first:
+      213: -5620494129074498211
+    second: BoChickVfx04
+  - first:
+      213: 5731629801648997061
+    second: VitoChickVfx03
+  - first:
+      213: -5120116172766509701
+    second: VitoChickVfx04
+  - first:
+      213: -8455172615087355533
+    second: BoiChickWeapon01
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -420,7 +438,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ChickBoiJump01
+      name: BoiChickJump01
       rect:
         serializedVersion: 2
         x: 0
@@ -441,7 +459,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChickBoiJump02
+      name: BoiChickJump02
       rect:
         serializedVersion: 2
         x: 16
@@ -462,7 +480,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChickBoiFall01
+      name: BoiChickFall01
       rect:
         serializedVersion: 2
         x: 32
@@ -483,7 +501,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChickBoiFall02
+      name: BoiChickFall02
       rect:
         serializedVersion: 2
         x: 48
@@ -504,7 +522,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChickBoiIdle
+      name: BoiChickIdle
       rect:
         serializedVersion: 2
         x: 64
@@ -525,7 +543,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChickBoiDeath
+      name: BoiChickDeath
       rect:
         serializedVersion: 2
         x: 80
@@ -546,7 +564,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChickBoiAttack01
+      name: BoiChickAttack01
       rect:
         serializedVersion: 2
         x: 96
@@ -567,7 +585,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChickBoiAttack02
+      name: BoiChickAttack02
       rect:
         serializedVersion: 2
         x: 112
@@ -588,7 +606,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChickBoiRun01
+      name: BoiChickRun01
       rect:
         serializedVersion: 2
         x: 128
@@ -609,7 +627,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChickBoiRun02
+      name: BoiChickRun02
       rect:
         serializedVersion: 2
         x: 144
@@ -630,7 +648,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChickBoiRun03
+      name: BoiChickRun03
       rect:
         serializedVersion: 2
         x: 160
@@ -651,7 +669,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BoChickWeapon01
+      name: BoiChickRun04
       rect:
         serializedVersion: 2
         x: 176
@@ -672,7 +690,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniSkins_12
+      name: BoiChickVfx01
       rect:
         serializedVersion: 2
         x: 192
@@ -693,7 +711,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniSkins_13
+      name: BoiChickVfx02
       rect:
         serializedVersion: 2
         x: 208
@@ -966,7 +984,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CuruChickVSF01
+      name: CuruChickVfx01
       rect:
         serializedVersion: 2
         x: 192
@@ -987,7 +1005,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CuruChickVSF02
+      name: CuruChickVfx02
       rect:
         serializedVersion: 2
         x: 208
@@ -1008,7 +1026,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CuruChickVSF03
+      name: CuruChickVfx03
       rect:
         serializedVersion: 2
         x: 224
@@ -1029,7 +1047,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CuruChickVSF04
+      name: CuruChickVfx04
       rect:
         serializedVersion: 2
         x: 240
@@ -1302,7 +1320,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniSkins_42
+      name: IaChickVfx001
       rect:
         serializedVersion: 2
         x: 192
@@ -1323,7 +1341,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniSkins_43
+      name: IaChickVfx002
       rect:
         serializedVersion: 2
         x: 208
@@ -1344,7 +1362,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IaChickVSF03
+      name: IaChickVfx003
       rect:
         serializedVersion: 2
         x: 224
@@ -1365,7 +1383,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IaChickVSF04
+      name: IaChickVfx004
       rect:
         serializedVersion: 2
         x: 240
@@ -1638,7 +1656,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SaChickVSF01
+      name: SaChickVfx01
       rect:
         serializedVersion: 2
         x: 192
@@ -1659,7 +1677,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SaChickVSF02
+      name: SaChickVfx02
       rect:
         serializedVersion: 2
         x: 208
@@ -1680,7 +1698,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SaChickVSF03
+      name: SaChickVfx03
       rect:
         serializedVersion: 2
         x: 224
@@ -1701,7 +1719,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SaChickVSF04
+      name: SaChickVfx04
       rect:
         serializedVersion: 2
         x: 240
@@ -1974,7 +1992,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BoChickVSF01
+      name: BoChickVfx01
       rect:
         serializedVersion: 2
         x: 192
@@ -1995,7 +2013,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BoChickVSF02
+      name: BoChickVfx02
       rect:
         serializedVersion: 2
         x: 208
@@ -2016,7 +2034,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BoChickVSF03
+      name: BoChickVfx03
       rect:
         serializedVersion: 2
         x: 224
@@ -2289,7 +2307,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IaChickVSF01
+      name: VitoChickVfx01
       rect:
         serializedVersion: 2
         x: 192
@@ -2310,7 +2328,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IaChickVSF02
+      name: VitoChickVfx02
       rect:
         serializedVersion: 2
         x: 208
@@ -2373,7 +2391,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IaChickVSF05
+      name: IaChickVfx005
       rect:
         serializedVersion: 2
         x: 224
@@ -2394,7 +2412,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IaChickVSF06
+      name: IaChickVfx006
       rect:
         serializedVersion: 2
         x: 240
@@ -2436,28 +2454,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniSkins_96
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 224
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 651d412dd0a74f650800000000000000
-      internalID: 6265767181356945750
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BoChickWeapon02
+      name: BoiChickWeapon02
       rect:
         serializedVersion: 2
         x: 208
@@ -2499,7 +2496,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CuruChickVSF05
+      name: CuruChickVfx05
       rect:
         serializedVersion: 2
         x: 208
@@ -2520,7 +2517,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CuruChickVSF06
+      name: CuruChickVfx06
       rect:
         serializedVersion: 2
         x: 224
@@ -2562,7 +2559,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IaChickWeapon
+      name: VitoChickWeapon
       rect:
         serializedVersion: 2
         x: 192
@@ -2578,6 +2575,132 @@ TextureImporter:
       bones: []
       spriteID: d9a7ac8d73affb620800000000000000
       internalID: 2792225411760290461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoiChickVfx03
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d897c4b25d8b0220800000000000000
+      internalID: 2453209808393181398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoiChickVfx04
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70f606bcca7636ca0800000000000000
+      internalID: -6024857884647461113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoChickVfx04
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5598564e5efff1b0800000000000000
+      internalID: -5620494129074498211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VitoChickVfx03
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c2c457efe6da8f40800000000000000
+      internalID: 5731629801648997061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VitoChickVfx04
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b750589e771b1f8b0800000000000000
+      internalID: -5120116172766509701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoiChickWeapon01
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 224
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3798b13dd4139aa80800000000000000
+      internalID: -8455172615087355533
       vertices: []
       indices: 
       edges: []
