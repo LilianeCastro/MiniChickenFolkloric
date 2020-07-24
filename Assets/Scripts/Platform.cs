@@ -8,6 +8,6 @@ public class Platform : MonoBehaviour
 
     void Start()
     {
-        GameController.Instance.InstantiateObjects(posSpawnCollectable, GameController.Instance.platformPrefab);
+        GameController.Instance.InstantiateObjects(posSpawnCollectable, GameController.Instance.collectablePrefab, 2);
     }
 }

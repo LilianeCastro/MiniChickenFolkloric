@@ -22,18 +22,22 @@ public class GameController : MonoSingleton<GameController>
     public GameObject groundPrefab;
     public float sizeGround;
 
-    [Header("Platform Config")]
+    [Header("Prefabs")]
     public GameObject platformPrefab;
+    public GameObject collectablePrefab;
+
 
      public void StartGame()
     {
         Ground.ready = true;
     }
 
-    public void InstantiateObjects(Transform posSpawn, GameObject prefab)
+    public void InstantiateObjects(Transform posSpawn, GameObject prefab, int order)
     {
         GameObject platTemp = Instantiate(prefab);
         platTemp.transform.parent = posSpawn.transform;
-        platTemp.transform.localPosition = new Vector2(0, 0);
+        platTemp.TryGetComponent(out Renderer rend);
+        rend.sortingOrder = order;
+        platTemp.transform.localPosition = new Vector2(0, platTemp.transform.position.y);
     }
 }

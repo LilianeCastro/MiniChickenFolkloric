@@ -35,9 +35,9 @@ public class Ground : MonoBehaviour
             {
                 isInstantiatePlatform = true;
 
-                GameController.Instance.InstantiateObjects(posPlatformA, GameController.Instance.platformPrefab);
+                GameController.Instance.InstantiateObjects(posPlatformA, GameController.Instance.platformPrefab, 1);
 
-                GameController.Instance.InstantiateObjects(posPlatformB, GameController.Instance.platformPrefab);
+                GameController.Instance.InstantiateObjects(posPlatformB, GameController.Instance.platformPrefab, 0);
             }
         }
 

@@ -308,6 +308,8 @@ MonoBehaviour:
   sizeGround: 10
   platformPrefab: {fileID: 3977688457492234305, guid: e52bf774250967245aeca6ba277a6ac4,
     type: 3}
+  collectablePrefab: {fileID: 1625746925666199955, guid: a954d5743c77c22499619ea92455133d,
+    type: 3}
 --- !u!4 &573973220
 Transform:
   m_ObjectHideFlags: 0
@@ -467,6 +469,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5902721762265361830, guid: 41d0254d084b97348993a2929c846638,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.51
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41d0254d084b97348993a2929c846638, type: 3}
