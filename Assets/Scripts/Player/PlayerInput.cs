@@ -20,5 +20,6 @@ public class PlayerInput : MonoBehaviour
     void OnBomb()
     {
         print("Bomba");
+        Player.Instance.Bomb();
     }
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ObjectPooling : MonoSingleton<ObjectPooling>
 {
-    public GameObject pooledObject;
+    public GameObject[] pooledObject;
 
     public int pooledAmount = 5;
     public bool willGrow = true;
@@ -17,7 +17,7 @@ public class ObjectPooling : MonoSingleton<ObjectPooling>
 
         for(int i = 0; i < pooledAmount; i++)
         {
-            GameObject obj = Instantiate(pooledObject) as GameObject;
+            GameObject obj = Instantiate(pooledObject[Player.Instance.getLayerSkin()]) as GameObject;
             obj.SetActive(false);
             pooledObjects.Add(obj);
         }
@@ -35,7 +35,7 @@ public class ObjectPooling : MonoSingleton<ObjectPooling>
         }
         if(willGrow)
         {
-            GameObject obj = Instantiate(pooledObject) as GameObject;
+            GameObject obj = Instantiate(pooledObject[Player.Instance.getLayerSkin()]) as GameObject;
             pooledObjects.Add(obj);
             return obj;
         }

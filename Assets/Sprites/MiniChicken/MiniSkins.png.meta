@@ -292,7 +292,7 @@ TextureImporter:
     second: SaChickWeapon
   - first:
       213: 6265767181356945750
-    second: BoiChickWeapon01
+    second: CuruChickVfx04
   - first:
       213: 8809749512849753088
     second: BoiChickWeapon02
@@ -328,7 +328,16 @@ TextureImporter:
     second: VitoChickVfx04
   - first:
       213: -8455172615087355533
-    second: BoiChickWeapon01
+    second: CuruChickVfx04
+  - first:
+      213: 8671987069992671028
+    second: VitoChickWeapon02
+  - first:
+      213: -8455172615087355533
+    second: MiniSkins_96
+  - first:
+      213: -8144940125940853015
+    second: CuruChickVfx07
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -1042,27 +1051,6 @@ TextureImporter:
       bones: []
       spriteID: aab2b07b14996a590800000000000000
       internalID: -7663269208401433686
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CuruChickVfx04
-      rect:
-        serializedVersion: 2
-        x: 240
-        y: 208
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 43791b34b46195870800000000000000
-      internalID: 8671987069992671028
       vertices: []
       indices: 
       edges: []
@@ -2685,11 +2673,32 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BoiChickWeapon01
+      name: MiniSkins_96
       rect:
         serializedVersion: 2
-        x: 192
-        y: 224
+        x: 240
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3798b13dd4139aa80800000000000000
+      internalID: -8455172615087355533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VitoChickWeapon02
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 64
         width: 16
         height: 16
       alignment: 0
@@ -2699,8 +2708,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3798b13dd4139aa80800000000000000
-      internalID: -8455172615087355533
+      spriteID: 43791b34b46195870800000000000000
+      internalID: 8671987069992671028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CuruChickVfx07
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e65874fb1c57fe80800000000000000
+      internalID: -8144940125940853015
       vertices: []
       indices: 
       edges: []

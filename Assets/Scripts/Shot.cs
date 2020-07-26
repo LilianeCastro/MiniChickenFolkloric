@@ -4,9 +4,15 @@ using UnityEngine;
 
 public class Shot : MonoBehaviour
 {
+    private Rigidbody2D shotRb;
+    public float speedShot;
+
     private void OnEnable() {
-        Invoke("Destroy", 2f);
+        shotRb = GetComponent<Rigidbody2D>();
+        shotRb.velocity = new Vector2(speedShot, 0);
+        Invoke("Destroy", 3f);
     }
+
 
     private void Destroy()
     {
@@ -15,5 +21,13 @@ public class Shot : MonoBehaviour
 
     private void OnDisable() {
         CancelInvoke();
+    }
+
+    private void OnTriggerEnter2D(Collider2D other) {
+        if(other.gameObject.tag=="Enemy")
+        {
+            print("shot colidiu com enemy");
+            Destroy();
+        }
     }
 }

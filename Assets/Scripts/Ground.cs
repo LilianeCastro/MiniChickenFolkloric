@@ -27,7 +27,9 @@ public class Ground : MonoBehaviour
             if(transform.position.x <= 0 && !isInstantiate)
             {
                 isInstantiate = true;
-                GameObject temp = Instantiate(GameController.Instance.groundPrefab);
+                int idChosen = Random.Range(0, GameController.Instance.groundPrefab.Length);
+
+                GameObject temp = Instantiate(GameController.Instance.groundPrefab[idChosen]);
                 temp.transform.position = new Vector2(transform.position.x + GameController.Instance.sizeGround, transform.position.y);
             }
 
@@ -35,9 +37,9 @@ public class Ground : MonoBehaviour
             {
                 isInstantiatePlatform = true;
 
-                GameController.Instance.InstantiateObjects(posPlatformA, GameController.Instance.platformPrefab, 1);
+                GameController.Instance.InstantiateObjects(posPlatformA, GameController.Instance.platformPrefab, GameController.Instance.platformPrefab.Length, 1);
 
-                GameController.Instance.InstantiateObjects(posPlatformB, GameController.Instance.platformPrefab, 0);
+                GameController.Instance.InstantiateObjects(posPlatformB, GameController.Instance.platformPrefab, GameController.Instance.platformPrefab.Length, 0);
             }
         }
 
