@@ -1540,7 +1540,7 @@ ParticleSystem:
     uvChannelMask: -1
     rowMode: 1
     sprites:
-    - sprite: {fileID: -5620494129074498211, guid: f7103bcb438732146bc1c7a655c9bd7c,
+    - sprite: {fileID: 401819653997498816, guid: f7103bcb438732146bc1c7a655c9bd7c,
         type: 3}
     flipU: 0
     flipV: 0
@@ -4827,6 +4827,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e843b5687f08fb04e8f57d757f9963fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 0
+  lifeTime: 5
 --- !u!50 &6681103868492292705
 Rigidbody2D:
   serializedVersion: 4

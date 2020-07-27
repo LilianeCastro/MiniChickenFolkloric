@@ -12,6 +12,7 @@ public class Player : MonoSingleton<Player>
     public LayerMask layerColision;
     public Transform groundCheck;
     public Transform posSpawn;
+    public GameObject vfxPlayer;
 
     [Header("Player Config")]
     public float forceJump;
@@ -22,7 +23,14 @@ public class Player : MonoSingleton<Player>
     private void Start() {
         playerRb = GetComponent<Rigidbody2D>();
         playerAnim = GetComponent<Animator>();
+
+        playerAnim.SetLayerWeight(0, 0);
         layerSkin();
+        print(getLayerSkin());
+        if(getLayerSkin()==3)
+        {
+            vfxPlayer.SetActive(true);
+        }
 
         initialPosX = transform.position.x;
     }
@@ -37,7 +45,7 @@ public class Player : MonoSingleton<Player>
 
     private void layerSkin()
     {
-        chosenSkinLayer = 2;//Random.Range(0,playerAnim.layerCount);
+        chosenSkinLayer = 4;//Random.Range(0,playerAnim.layerCount);
         playerAnim.SetLayerWeight(chosenSkinLayer, 1);
         print(chosenSkinLayer);
     }

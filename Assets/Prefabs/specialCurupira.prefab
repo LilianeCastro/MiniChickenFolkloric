@@ -120,7 +120,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   charName: 2
   force: 3
-  lifeTime: 0.7
+  lifeTime: 0.5
 --- !u!95 &4774777063697240284
 Animator:
   serializedVersion: 3

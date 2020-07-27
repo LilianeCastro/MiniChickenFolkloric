@@ -338,6 +338,9 @@ TextureImporter:
   - first:
       213: -8144940125940853015
     second: CuruChickVfx07
+  - first:
+      213: -5909535709301880087
+    second: SaChickVfx05
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -2022,27 +2025,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BoChickVfx03
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 112
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 80d5dd5cb614b06d0800000000000000
-      internalID: -3023250793712231160
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: VitoChickJump01
       rect:
         serializedVersion: 2
@@ -2610,69 +2592,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BoChickVfx04
-      rect:
-        serializedVersion: 2
-        x: 240
-        y: 112
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d5598564e5efff1b0800000000000000
-      internalID: -5620494129074498211
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: VitoChickVfx03
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 80
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5c2c457efe6da8f40800000000000000
-      internalID: 5731629801648997061
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: VitoChickVfx04
-      rect:
-        serializedVersion: 2
-        x: 240
-        y: 80
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b750589e771b1f8b0800000000000000
-      internalID: -5120116172766509701
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: MiniSkins_96
       rect:
         serializedVersion: 2
@@ -2681,7 +2600,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2723,7 +2642,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2731,6 +2650,27 @@ TextureImporter:
       bones: []
       spriteID: 9e65874fb1c57fe80800000000000000
       internalID: -8144940125940853015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SaChickVfx05
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 64
+        width: 32
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ea439b159c1dfda0800000000000000
+      internalID: -5909535709301880087
       vertices: []
       indices: 
       edges: []
