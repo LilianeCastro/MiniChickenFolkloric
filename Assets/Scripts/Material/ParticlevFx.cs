@@ -29,4 +29,5 @@ public class ParticlevFx : MonoBehaviour
             Destroy(other.gameObject);
         }
     }
+
 }

@@ -13,8 +13,12 @@ public class Bomb : MonoBehaviour
     void Start()
     {
         bombRb = GetComponent<Rigidbody2D>();
+
         switch(charName)
         {
+            case characterSpecialAttack.Boto:
+                bombRb.velocity = new Vector2(force, force*2);
+                break;
             case characterSpecialAttack.Iara:
                 bombRb.velocity = new Vector2(force, force);
                 break;
@@ -22,6 +26,7 @@ public class Bomb : MonoBehaviour
                 bombRb.velocity = new Vector2(force, 0);
                 break;
             case characterSpecialAttack.Vitoria:
+                bombRb.velocity = new Vector2(force, force*2);
                 break;
             default:
                 bombRb.AddForce(Vector2.one * force, ForceMode2D.Impulse);

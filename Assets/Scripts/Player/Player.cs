@@ -26,7 +26,7 @@ public class Player : MonoSingleton<Player>
 
         playerAnim.SetLayerWeight(0, 0);
         layerSkin();
-        print(getLayerSkin());
+
         if(getLayerSkin()==3)
         {
             vfxPlayer.SetActive(true);
@@ -45,7 +45,7 @@ public class Player : MonoSingleton<Player>
 
     private void layerSkin()
     {
-        chosenSkinLayer = 4;//Random.Range(0,playerAnim.layerCount);
+        chosenSkinLayer = 0;//Random.Range(0,playerAnim.layerCount);
         playerAnim.SetLayerWeight(chosenSkinLayer, 1);
         print(chosenSkinLayer);
     }

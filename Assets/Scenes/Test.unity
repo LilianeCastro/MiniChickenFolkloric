@@ -300,12 +300,14 @@ MonoBehaviour:
   - {fileID: 3494724196325802196, guid: ef8eaad17065ac04cae70f52aeacdd86, type: 3}
   - {fileID: 8772528352542815335, guid: 0b7718d095188864cb2659b9cf434826, type: 3}
   - {fileID: 6653917665506432315, guid: c0ff7d872d355754bb20baa07df07811, type: 3}
+  - {fileID: 276990304446746899, guid: 349b4e256aa565d4393dba762bf3ced8, type: 3}
   vFxExplosionPrefab:
   - {fileID: 5938867473382407791, guid: 86581a9ce834324448019b59eb14eb6e, type: 3}
   - {fileID: 3568381509785303519, guid: ba5b87efcbfb9c049b417079a90370c7, type: 3}
   - {fileID: 5942084852653999331, guid: 3af8b03cb094b3746849d15a960c9bbc, type: 3}
   - {fileID: 662939281595395025, guid: 82f8b6f2f8918b5428e966bad4f3bfa8, type: 3}
   - {fileID: 5417436643711573301, guid: bd83e3f355f618547b7a0cd8358bc88c, type: 3}
+  - {fileID: 4108568124282393106, guid: e54ad70a61c780b458fbb589a3ae1746, type: 3}
 --- !u!4 &573973220
 Transform:
   m_ObjectHideFlags: 0
@@ -355,6 +357,7 @@ MonoBehaviour:
   - {fileID: 5807075812563679458, guid: b71821d1796b81c4f93bf3cbd1fc2631, type: 3}
   - {fileID: 7817731506512085563, guid: 41fadfee874c1864bae4bf71df02cbe1, type: 3}
   - {fileID: 2831128579387731036, guid: 40a27d8b0112dac43b67f29490718efb, type: 3}
+  - {fileID: 5764177396832918222, guid: 51fb28e607dd77e429a647a9449bd3b9, type: 3}
   pooledAmount: 6
   willGrow: 1
   pooledObjects: []
@@ -387,7 +390,7 @@ PrefabInstance:
     - target: {fileID: 154649255473768839, guid: 3d1f0906a636f594486b25972a4a7c85,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.6916254
+      value: -2.05
       objectReference: {fileID: 0}
     - target: {fileID: 154649255473768839, guid: 3d1f0906a636f594486b25972a4a7c85,
         type: 3}
