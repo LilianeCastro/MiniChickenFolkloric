@@ -5,17 +5,17 @@ using UnityEngine;
 public class MenuManager : MonoSingleton<MenuManager>
 {
     [Header("Panel Scenes")]
-    public GameObject MenuGamePanel;
-    public GameObject InGamePanel;
-    public GameObject GameOverPanel;
+    public GameObject       MenuGamePanel;
+    public GameObject       InGamePanel;
+    public GameObject       GameOverPanel;
 
     [Header("Menu")]
-    public GameObject GalleryPanel;
-    public GameObject HelpPanel;
-    public GameObject SettingsPanel;
+    public GameObject       GalleryPanel;
+    public GameObject       HelpPanel;
+    public GameObject       SettingsPanel;
 
     [Header("Settings")]
-    public Animator fadeAnim;
+    public Animator         fadeAnim;
 
     public void fadeIn() {
         fadeAnim.SetTrigger("fadeIn");

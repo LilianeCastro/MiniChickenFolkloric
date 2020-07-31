@@ -4,23 +4,24 @@ using UnityEngine;
 
 public class Player : MonoSingleton<Player>
 {
-    private Rigidbody2D playerRb;
-    private Animator playerAnim;
-    private float initialPosX;
+    private Rigidbody2D         playerRb;
+    private Animator            playerAnim;
+    private float               initialPosX;
 
     [Header("GameObject Config")]
-    public LayerMask layerColision;
-    public Transform groundCheck;
-    public Transform posSpawn;
-    public GameObject vfxPlayer;
+    public LayerMask            layerColision;
+    public Transform            groundCheck;
+    public Transform            posSpawn;
+    public GameObject           vfxPlayer;
 
     [Header("Player Config")]
-    public float forceJump;
-    private bool isGround;
-    private bool isPlatform;
-    private int chosenSkinLayer;
+    public float                forceJump;
+    private bool                isGround;
+    private bool                isPlatform;
+    private int                 chosenSkinLayer;
 
     private void Start() {
+
         playerRb = GetComponent<Rigidbody2D>();
         playerAnim = GetComponent<Animator>();
 
@@ -47,7 +48,6 @@ public class Player : MonoSingleton<Player>
     {
         chosenSkinLayer = 0;//Random.Range(0,playerAnim.layerCount);
         playerAnim.SetLayerWeight(chosenSkinLayer, 1);
-        print(chosenSkinLayer);
     }
 
     public int getLayerSkin()
@@ -91,6 +91,13 @@ public class Player : MonoSingleton<Player>
     private void OnTriggerEnter2D(Collider2D other) {
         if(other.gameObject.tag=="Collectable")
         {
+            GameController.Instance.updateProgressAttack(10);
+            print("Colidiu com coletavel");
+        }
+
+        if(other.gameObject.tag=="Collectable")
+        {
+            GameController.Instance.updateProgressSpecialAttack(20);
             print("Colidiu com coletavel");
         }
     }

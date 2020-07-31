@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class Shot : MonoBehaviour
 {
-    private Rigidbody2D shotRb;
-    public float speedShot;
+    private Rigidbody2D             shotRb;
+    public float                    speedShot;
 
     private void OnEnable() {
         shotRb = GetComponent<Rigidbody2D>();
         shotRb.velocity = new Vector2(speedShot, 0);
         Invoke("Destroy", 3f);
     }
-
 
     private void Destroy()
     {

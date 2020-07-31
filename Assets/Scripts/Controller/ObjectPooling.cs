@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class ObjectPooling : MonoSingleton<ObjectPooling>
 {
-    public GameObject[] pooledObject;
+    public GameObject[]     pooledObject;
 
-    public int pooledAmount = 5;
-    public bool willGrow = true;
+    public int              pooledAmount = 5;
+    public bool             willGrow = true;
 
     public List<GameObject> pooledObjects;
 

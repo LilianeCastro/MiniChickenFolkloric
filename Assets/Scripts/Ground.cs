@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class Ground : MonoBehaviour
 {
-    private Rigidbody2D groundRb;
-    private bool isInstantiate;
-    private bool isInstantiatePlatform;
+    private Rigidbody2D             groundRb;
+    private bool                    isInstantiate;
+    private bool                    isInstantiatePlatform;
 
-    public Transform posPlatformA;
-    public Transform posPlatformB;
+    public Transform                posPlatformA;
+    public Transform                posPlatformB;
 
-
-    public static bool ready;
+    public static bool              ready;
 
     void Start()
     {
@@ -49,6 +48,5 @@ public class Ground : MonoBehaviour
         }
 
     }
-
 
 }

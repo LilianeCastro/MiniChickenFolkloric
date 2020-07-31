@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Platform : MonoBehaviour
 {
-    public Transform posSpawnCollectable;
+    public Transform            posSpawnCollectable;
 
     void Start()
     {

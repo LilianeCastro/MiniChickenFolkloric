@@ -4,14 +4,11 @@ using UnityEngine;
 
 public class ParticlevFx : MonoBehaviour
 {
-    private ParticleSystem ps;
-    private Rigidbody2D fxRb;
-    public float speed;
-    public float lifeTime;
+    private Rigidbody2D         fxRb;
+    public float                speed;
+    public float                lifeTime;
 
     private void Start() {
-
-        ps = GetComponent<ParticleSystem>();
 
         if(Player.Instance.getLayerSkin()==2 || Player.Instance.getLayerSkin()==4)
         {

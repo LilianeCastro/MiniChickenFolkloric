@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class Bomb : MonoBehaviour
 {
-    private Rigidbody2D bombRb;
+    private Rigidbody2D             bombRb;
 
-    public characterSpecialAttack charName;
-    public float force;
-    public float lifeTime;
+    public characterSpecialAttack   charName;
+
+    public float                    force;
+    public float                    lifeTime;
 
     void Start()
     {
@@ -45,7 +46,5 @@ public class Bomb : MonoBehaviour
         Instantiate(GameController.Instance.vFxExplosionPrefab[Player.Instance.getLayerSkin()], transform.position, transform.rotation);
         Destroy(this.gameObject);
     }
-
-
 
 }

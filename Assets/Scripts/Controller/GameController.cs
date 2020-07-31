@@ -12,41 +12,64 @@ public class GameController : MonoSingleton<GameController>
     public Sprite[] shotSprite;
 
     [Header("HUD")]
-    public Image            imgAttack;
-    public Image            imgSpecialAttack;
-    public Slider           progressAttack;
-    public Slider           progressSpecialAttack;
-    public Text             txtScore;
+    public Image		    imgAttack;
+    public Image		    imgSpecialAttack;
+    public Slider		    progressAttack;
+    public Slider		    progressSpecialAttack;
+    public Text			    txtScore;
 
     [Header("Game Config")]
-    public float            speed;
+    public float		    speed;
 
     [Header("Ground Config")]
-    public GameObject[]     groundPrefab;
-    public float            sizeGround;
+    public GameObject[]		groundPrefab;
+    public float		    sizeGround;
 
     [Header("Prefabs")]
-    public GameObject[]     platformPrefab;
-    public GameObject[]     collectablePrefab;
+    public GameObject[]		platformPrefab;
+    public GameObject[]		collectablePrefab;
 
     [Header("Prefab that depends on the skin")]
-    public GameObject[]     specialAttackPrefab;
-    public GameObject[]     vFxExplosionPrefab;
+    public GameObject[]		specialAttackPrefab;
+    public GameObject[]		vFxExplosionPrefab;
+
+    private void Start() {
+        progressAttack.value = progressAttack.maxValue;
+        progressSpecialAttack.value = progressSpecialAttack.maxValue;
+    }
 
     public void startGame()
     {
-        Ground.ready = true;
+	    Ground.ready = true;
+    }
+
+    private void FixedUpdate() {
+        if(Ground.ready)
+        {
+            progressAttack.value += Time.deltaTime;
+            progressSpecialAttack.value += Time.deltaTime;
+        }
+    }
+
+    public void updateProgressAttack(int value)
+    {
+        progressAttack.value += value;
+    }
+
+    public void updateProgressSpecialAttack(int value)
+    {
+        progressSpecialAttack.value += value;
     }
 
     public void instantiateObjects(Transform posSpawn, GameObject[] prefab, int size, int order)
     {
-        int idChosen = Random.Range(0, size);
+	int idChosen = Random.Range(0, size);
 
-        GameObject platTemp = Instantiate(prefab[idChosen]);
-        platTemp.transform.parent = posSpawn.transform;
-        platTemp.TryGetComponent(out Renderer rend);
-        rend.sortingOrder = order;
-        platTemp.transform.localPosition = new Vector2(0, platTemp.transform.position.y);
+	GameObject platTemp = Instantiate(prefab[idChosen]);
+	platTemp.transform.parent = posSpawn.transform;
+	platTemp.TryGetComponent(out Renderer rend);
+	rend.sortingOrder = order;
+	platTemp.transform.localPosition = new Vector2(0, platTemp.transform.position.y);
     }
 
 }

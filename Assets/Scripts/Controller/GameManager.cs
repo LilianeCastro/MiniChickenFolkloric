@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    private int highScore;
-    private float sfxVol;
-    private float soundVol;
-    private float masterVol;
+    private int             highScore;
+    private float           sfxVol;
+    private float           soundVol;
+    private float           masterVol;
 
     public int getHighScore()
     {
