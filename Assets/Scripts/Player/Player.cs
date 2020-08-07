@@ -46,7 +46,7 @@ public class Player : MonoSingleton<Player>
 
     private void layerSkin()
     {
-        chosenSkinLayer = 0;//Random.Range(0,playerAnim.layerCount);
+        chosenSkinLayer = Random.Range(0,playerAnim.layerCount);
         playerAnim.SetLayerWeight(chosenSkinLayer, 1);
     }
 
@@ -81,6 +81,7 @@ public class Player : MonoSingleton<Player>
     }
 
     private void OnCollisionEnter2D(Collision2D other) {
+
         if(other.gameObject.tag=="Enemy")
         {
             playerAnim.SetTrigger("death");
@@ -89,16 +90,22 @@ public class Player : MonoSingleton<Player>
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
-        if(other.gameObject.tag=="Collectable")
-        {
-            GameController.Instance.updateProgressAttack(10);
-            print("Colidiu com coletavel");
-        }
 
         if(other.gameObject.tag=="Collectable")
         {
-            GameController.Instance.updateProgressSpecialAttack(20);
-            print("Colidiu com coletavel");
+            Collectable collec = other.GetComponent<Collectable>();
+            if(collec.idCollectable == "egg")
+            {
+                GameController.Instance.updateProgressAttack(10);
+                print("Colidiu com egg");
+            }
+            else
+            {
+                GameController.Instance.updateProgressSpecialAttack(20);
+                print("Colidiu com pintinho");
+            }
+            GameController.Instance.updateScore(1);
+            Destroy(other.gameObject);
         }
     }
 

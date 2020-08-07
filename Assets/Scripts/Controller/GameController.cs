@@ -20,6 +20,7 @@ public class GameController : MonoSingleton<GameController>
 
     [Header("Game Config")]
     public float		    speed;
+    private int             score;
 
     [Header("Ground Config")]
     public GameObject[]		groundPrefab;
@@ -49,6 +50,12 @@ public class GameController : MonoSingleton<GameController>
             progressAttack.value += Time.deltaTime;
             progressSpecialAttack.value += Time.deltaTime;
         }
+    }
+
+    public void updateScore(int value)
+    {
+        score += value;
+        txtScore.text = score.ToString();
     }
 
     public void updateProgressAttack(int value)
