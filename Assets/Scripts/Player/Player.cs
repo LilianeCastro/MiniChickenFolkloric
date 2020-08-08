@@ -16,8 +16,10 @@ public class Player : MonoSingleton<Player>
 
     [Header("Player Config")]
     public float                forceJump;
+    public float                delayShot;
     private bool                isGround;
     private bool                isPlatform;
+    private bool                canShot;
     private int                 chosenSkinLayer;
 
     private void Start() {
@@ -65,19 +67,32 @@ public class Player : MonoSingleton<Player>
 
     public void Fire()
     {
-        playerAnim.SetTrigger("attack");
-        GameObject obj = ObjectPooling.Instance.GetPooledObject();
+        if(!canShot && GameController.Instance.getProgressAttackValue()>=30)
+        {
+            GameController.Instance.updateProgressAttack(-30);
 
-        obj.transform.position = posSpawn.position;
-        obj.transform.rotation = posSpawn.rotation;
-        obj.SetActive(true);
+            playerAnim.SetTrigger("attack");
+            GameObject obj = ObjectPooling.Instance.GetPooledObject();
+
+            obj.transform.position = posSpawn.position;
+            obj.transform.rotation = posSpawn.rotation;
+            obj.SetActive(true);
+            canShot = true;
+
+            StartCoroutine("DelayShot");
+        }
+
     }
 
     public void Bomb()
     {
-        playerAnim.SetTrigger("bomb");
-        Instantiate(GameController.Instance.specialAttackPrefab[chosenSkinLayer], posSpawn.position, posSpawn.rotation);
+        if(GameController.Instance.getProgressSpecialAttackValue()>=100)
+        {
+            GameController.Instance.updateProgressSpecialAttack(-100);
 
+            playerAnim.SetTrigger("bomb");
+            Instantiate(GameController.Instance.specialAttackPrefab[chosenSkinLayer], posSpawn.position, posSpawn.rotation);
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D other) {
@@ -97,16 +112,22 @@ public class Player : MonoSingleton<Player>
             if(collec.idCollectable == "egg")
             {
                 GameController.Instance.updateProgressAttack(10);
-                print("Colidiu com egg");
             }
             else
             {
                 GameController.Instance.updateProgressSpecialAttack(20);
-                print("Colidiu com pintinho");
             }
+
             GameController.Instance.updateScore(1);
             Destroy(other.gameObject);
         }
+    }
+
+    IEnumerator DelayShot()
+    {
+        yield return new WaitForSeconds(delayShot);
+
+        canShot = false;
     }
 
 }

@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1305021172595459449}
   - component: {fileID: 2097894051372615512}
-  - component: {fileID: 719304542343920008}
   - component: {fileID: 664772201287344294}
+  - component: {fileID: 2966799929686149632}
   m_Layer: 0
   m_Name: Chick
   m_TagString: Collectable
@@ -71,8 +71,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_SortingOrder: 5
+  m_Sprite: {fileID: -5424789171881306634, guid: 6c6408c385884ab42835d6e57bf4d101,
+    type: 3}
   m_Color: {r: 1, g: 0.88914996, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -83,22 +84,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!70 &719304542343920008
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8694495850467128214}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.0007380545, y: 0}
-  m_Size: {x: 0.102431625, y: 0.16}
-  m_Direction: 0
 --- !u!114 &664772201287344294
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -112,3 +97,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   idCollectable: chick
+--- !u!70 &2966799929686149632
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8694495850467128214}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.00096163154, y: 0.25}
+  m_Size: {x: 0.34421647, y: 0.5}
+  m_Direction: 0

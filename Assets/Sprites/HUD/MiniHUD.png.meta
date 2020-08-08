@@ -20,6 +20,48 @@ TextureImporter:
   - first:
       213: 5286231701014442163
     second: HUD_progressFill
+  - first:
+      213: 791994250155669671
+    second: MiniHUD_BoiAttack
+  - first:
+      213: -3948993328350896870
+    second: MiniHUD_BotoAttack
+  - first:
+      213: 7735752339988766804
+    second: MiniHUD_CurupiraAttack
+  - first:
+      213: 3380574392072835717
+    second: MiniHUD_IaraAttack
+  - first:
+      213: 6579050112377019127
+    second: MiniHUD_SaciAttack
+  - first:
+      213: -4219858864635262402
+    second: MiniHUD_VitoriaAttack
+  - first:
+      213: 856554710269526998
+    second: MiniHUD_BoiSpecialAttack
+  - first:
+      213: -5100962918057894293
+    second: MiniHUD_BotoSpecialAttack
+  - first:
+      213: 1558548242429623393
+    second: MiniHUD_CurupiraSpecialAttack
+  - first:
+      213: -7789616047465570969
+    second: MiniHUD_IaraSpecialAttack
+  - first:
+      213: 8002912018113733096
+    second: MiniHUD_SaciSpecialAttack
+  - first:
+      213: 1611745330283753857
+    second: MiniHUD_VitoriaSpecialAttack
+  - first:
+      213: 1643879323395225545
+    second: MiniHUD_IaraSpecialAttack2
+  - first:
+      213: 4954390541153483818
+    second: MiniHUD_IaraSpecialAttack3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -133,7 +175,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 48
+        y: 112
         width: 16
         height: 16
       alignment: 0
@@ -154,7 +196,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 16
-        y: 48
+        y: 112
         width: 112
         height: 16
       alignment: 0
@@ -175,7 +217,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 32
+        y: 96
         width: 16
         height: 16
       alignment: 0
@@ -196,7 +238,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 16
-        y: 32
+        y: 96
         width: 112
         height: 16
       alignment: 0
@@ -217,7 +259,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 16
+        y: 80
         width: 16
         height: 16
       alignment: 0
@@ -238,7 +280,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 16
-        y: 16
+        y: 80
         width: 112
         height: 16
       alignment: 0
@@ -250,6 +292,300 @@ TextureImporter:
       bones: []
       spriteID: 3b0ff5379b77c5940800000000000000
       internalID: 5286231701014442163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHUD_BoiAttack
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a83ea8039abdfa00800000000000000
+      internalID: 791994250155669671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHUD_BotoAttack
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1dd1439d7b5239c0800000000000000
+      internalID: -3948993328350896870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHUD_CurupiraAttack
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4506d6774c9ea5b60800000000000000
+      internalID: 7735752339988766804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHUD_IaraAttack
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5829840af763aee20800000000000000
+      internalID: 3380574392072835717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHUD_SaciAttack
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fad9bb483b7d4b50800000000000000
+      internalID: 6579050112377019127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHUD_VitoriaAttack
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3ac12b68bc0075c0800000000000000
+      internalID: -4219858864635262402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHUD_BoiSpecialAttack
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d38d4488f713eb00800000000000000
+      internalID: 856554710269526998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHUD_BotoSpecialAttack
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6e18b8804db539b0800000000000000
+      internalID: -5100962918057894293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHUD_CurupiraSpecialAttack
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16cb3537e5311a510800000000000000
+      internalID: 1558548242429623393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHUD_IaraSpecialAttack
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76dd12ad979b5e390800000000000000
+      internalID: -7789616047465570969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHUD_SaciSpecialAttack
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e1af58441e001f60800000000000000
+      internalID: 8002912018113733096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHUD_VitoriaSpecialAttack
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18135f7a6d11e5610800000000000000
+      internalID: 1611745330283753857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHUD_IaraSpecialAttack2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c7f494f88b30d610800000000000000
+      internalID: 1643879323395225545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHUD_IaraSpecialAttack3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2c320c92f781c440800000000000000
+      internalID: 4954390541153483818
       vertices: []
       indices: 
       edges: []
