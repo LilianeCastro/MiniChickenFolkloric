@@ -20,7 +20,8 @@ public class Ground : MonoBehaviour
 
     void Update()
     {
-        groundRb.velocity = new Vector2(GameController.Instance.speed, 0);
+        groundRb.velocity = new Vector2(GameController.Instance.getSpeed(), 0);
+
         if(transform.position.x <= GameController.Instance.sizeGround)
         {
             if(transform.position.x <= 0 && !isInstantiate)
@@ -42,7 +43,7 @@ public class Ground : MonoBehaviour
             }
         }
 
-        if(transform.position.x < GameController.Instance.sizeGround * -1)
+        if(transform.position.x < -Mathf.Abs(GameController.Instance.sizeGround))
         {
             Destroy(this.gameObject);
         }

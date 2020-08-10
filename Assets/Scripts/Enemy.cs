@@ -8,7 +8,6 @@ public class Enemy : MonoBehaviour
 
         if(other.tag=="Shot")
         {
-            print("Colidiu");
             Destroy(this.gameObject);
         }
 

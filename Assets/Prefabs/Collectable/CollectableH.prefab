@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4643861456671670748}
   - component: {fileID: 3563925593020199495}
   m_Layer: 0
-  m_Name: CollectableD
+  m_Name: CollectableH
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -108,7 +108,7 @@ PrefabInstance:
     - target: {fileID: 154649255473768839, guid: 3d1f0906a636f594486b25972a4a7c85,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.3
+      value: -0.35
       objectReference: {fileID: 0}
     - target: {fileID: 154649255473768839, guid: 3d1f0906a636f594486b25972a4a7c85,
         type: 3}

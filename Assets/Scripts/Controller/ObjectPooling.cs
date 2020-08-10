@@ -9,7 +9,7 @@ public class ObjectPooling : MonoSingleton<ObjectPooling>
     public int              pooledAmount = 5;
     public bool             willGrow = true;
 
-    public List<GameObject> pooledObjects;
+    private List<GameObject> pooledObjects;
 
     void Start()
     {
