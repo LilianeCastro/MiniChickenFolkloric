@@ -732,7 +732,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 16, y: -54}
+  m_AnchoredPosition: {x: 16, y: -58}
   m_SizeDelta: {x: 64, y: 64}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &155419857
@@ -1042,9 +1042,9 @@ RectTransform:
   m_Father: {fileID: 114802051}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 624, y: -8}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -16, y: -16}
   m_SizeDelta: {x: 64, y: 64}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &279662757
@@ -1545,11 +1545,13 @@ MonoBehaviour:
   progressAttack: {fileID: 1336530634}
   progressSpecialAttack: {fileID: 1897647366}
   txtScore: {fileID: 128136483}
+  progressAttackAnim: {fileID: 1336530635}
+  progressSpecialAttackAnim: {fileID: 1897647367}
   speedGame: -2
   increaseSpeedGame: -0.15
   speedShot: 4
   increaseSpeedShot: 0.1
-  scoreToChangeSpeedGame: 1
+  scoreToChangeSpeedGame: 10
   groundPrefab:
   - {fileID: 80957948302640997, guid: 41d0254d084b97348993a2929c846638, type: 3}
   - {fileID: 3957567042569793272, guid: 3901b8312a023f94fae6319a9653c940, type: 3}
@@ -3266,6 +3268,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1336530633}
   - component: {fileID: 1336530634}
+  - component: {fileID: 1336530635}
   m_Layer: 5
   m_Name: ProgressAttack
   m_TagString: Untagged
@@ -3341,10 +3344,29 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 90
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 75
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!95 &1336530635
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1336530632}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d646dbb24f19680449f145a791224020, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1454392877
 GameObject:
   m_ObjectHideFlags: 0
@@ -4176,7 +4198,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 16, y: 0}
+  m_AnchoredPosition: {x: 16, y: -6}
   m_SizeDelta: {x: 64, y: 64}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1766864894
@@ -4267,8 +4289,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1897647365}
   - component: {fileID: 1897647366}
+  - component: {fileID: 1897647367}
   m_Layer: 5
-  m_Name: ProgressAttack
+  m_Name: ProgressSpecialAttack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4293,7 +4316,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 64, y: -90}
+  m_AnchoredPosition: {x: 64, y: -80}
   m_SizeDelta: {x: 200, y: 64}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1897647366
@@ -4342,10 +4365,29 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 100
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 75
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!95 &1897647367
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1897647364}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d646dbb24f19680449f145a791224020, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1903253158
 GameObject:
   m_ObjectHideFlags: 0

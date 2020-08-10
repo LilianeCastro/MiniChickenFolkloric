@@ -38,7 +38,8 @@ public class Ground : MonoBehaviour
                 isInstantiatePlatform = true;
 
                 GameController.Instance.instantiateObjects(posPlatformA, GameController.Instance.platformPrefab, GameController.Instance.platformPrefab.Length, 1);
-
+                float rangePosXPlatB = Random.Range(0.5f, 3.5f);
+                posPlatformB.localPosition = new Vector3(rangePosXPlatB, posPlatformB.localPosition.y, posPlatformB.localPosition.z);
                 GameController.Instance.instantiateObjects(posPlatformB, GameController.Instance.platformPrefab, GameController.Instance.platformPrefab.Length, 0);
             }
         }

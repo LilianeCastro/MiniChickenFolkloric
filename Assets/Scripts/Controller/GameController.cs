@@ -15,6 +15,8 @@ public class GameController : MonoSingleton<GameController>
     public Slider		    progressAttack;
     public Slider		    progressSpecialAttack;
     public Text			    txtScore;
+    public Animator         progressAttackAnim;
+    public Animator         progressSpecialAttackAnim;
 
     [Header("Game Config")]
     public float		    speedGame;
@@ -76,6 +78,10 @@ public class GameController : MonoSingleton<GameController>
 
     public void updateProgressAttack(int value)
     {
+        if(progressAttack.value != progressAttack.maxValue)
+        {
+            progressAttackAnim.SetTrigger("isPlus");
+        }
         progressAttack.value += value;
     }
 
@@ -86,6 +92,10 @@ public class GameController : MonoSingleton<GameController>
 
     public void updateProgressSpecialAttack(int value)
     {
+        if(progressSpecialAttack.value != progressSpecialAttack.maxValue)
+        {
+            progressSpecialAttackAnim.SetTrigger("isPlus");
+        }
         progressSpecialAttack.value += value;
     }
 
