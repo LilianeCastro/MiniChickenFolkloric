@@ -176,7 +176,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 112
-        width: 16
+        width: 15
         height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -195,9 +195,9 @@ TextureImporter:
       name: HUD_attackProgress
       rect:
         serializedVersion: 2
-        x: 16
+        x: 15
         y: 112
-        width: 112
+        width: 113
         height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -218,7 +218,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 96
-        width: 16
+        width: 15
         height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -237,9 +237,9 @@ TextureImporter:
       name: HUD_specialAttackProgress
       rect:
         serializedVersion: 2
-        x: 16
+        x: 15
         y: 96
-        width: 112
+        width: 113
         height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -544,48 +544,6 @@ TextureImporter:
       bones: []
       spriteID: 18135f7a6d11e5610800000000000000
       internalID: 1611745330283753857
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MiniHUD_IaraSpecialAttack2
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9c7f494f88b30d610800000000000000
-      internalID: 1643879323395225545
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MiniHUD_IaraSpecialAttack3
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a2c320c92f781c440800000000000000
-      internalID: 4954390541153483818
       vertices: []
       indices: 
       edges: []
