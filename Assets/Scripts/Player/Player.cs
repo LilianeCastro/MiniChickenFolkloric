@@ -8,6 +8,9 @@ public class Player : MonoSingleton<Player>
     private Animator            playerAnim;
     private float               initialPosX;
 
+    private Collectable         collec;
+    private GameObject          objPolled;
+
     [Header("GameObject Config")]
     public LayerMask            layerColision;
     public Transform            groundCheck;
@@ -28,6 +31,7 @@ public class Player : MonoSingleton<Player>
         playerAnim = GetComponent<Animator>();
 
         playerAnim.SetLayerWeight(0, 0);
+
         layerSkin();
 
         if(getLayerSkin()==3)
@@ -72,11 +76,11 @@ public class Player : MonoSingleton<Player>
             GameController.Instance.updateProgressAttack(-30);
 
             playerAnim.SetTrigger("attack");
-            GameObject obj = ObjectPooling.Instance.GetPooledObject();
+            objPolled = ObjectPooling.Instance.GetPooledObject();
 
-            obj.transform.position = posSpawn.position;
-            obj.transform.rotation = posSpawn.rotation;
-            obj.SetActive(true);
+            objPolled.transform.position = posSpawn.position;
+            objPolled.transform.rotation = posSpawn.rotation;
+            objPolled.SetActive(true);
             canShot = true;
 
             StartCoroutine("DelayShot");
@@ -100,7 +104,10 @@ public class Player : MonoSingleton<Player>
         if(other.gameObject.tag=="Enemy")
         {
             playerAnim.SetTrigger("death");
+
             print("Colidiu com inimigo collision");
+
+            MenuManager.Instance.SceneToLoad("InGame");
         }
     }
 
@@ -108,7 +115,7 @@ public class Player : MonoSingleton<Player>
 
         if(other.gameObject.tag=="Collectable")
         {
-            Collectable collec = other.GetComponent<Collectable>();
+            collec = other.GetComponent<Collectable>();
             if(collec.idCollectable == "egg")
             {
                 GameController.Instance.updateProgressAttack(10);
@@ -118,6 +125,7 @@ public class Player : MonoSingleton<Player>
                 GameController.Instance.updateProgressSpecialAttack(20);
             }
 
+            GameController.Instance.playFx(0);
             GameController.Instance.updateScore(1);
             Destroy(other.gameObject);
         }

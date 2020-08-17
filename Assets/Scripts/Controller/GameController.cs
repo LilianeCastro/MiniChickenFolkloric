@@ -52,6 +52,13 @@ public class GameController : MonoSingleton<GameController>
 
         progressAttack.value = progressAttack.maxValue;
         progressSpecialAttack.value = progressSpecialAttack.maxValue;
+
+        Invoke("StartSound", 0.01f);
+    }
+
+    private void StartSound()
+    {
+        SoundManager.Instance.changeSong("InGame");
     }
 
     public void startGame()
@@ -60,8 +67,19 @@ public class GameController : MonoSingleton<GameController>
     }
 
     private void FixedUpdate() {
-        progressAttack.value += Time.deltaTime;
-        progressSpecialAttack.value += Time.deltaTime;
+        if(progressAttack.value < progressAttack.maxValue)
+        {
+            progressAttack.value += Time.deltaTime;
+        }
+        if(progressSpecialAttack.value < progressSpecialAttack.maxValue)
+        {
+            progressSpecialAttack.value += Time.deltaTime;
+        }
+    }
+
+    public int getIdSkinPlayer()
+    {
+        return Player.Instance.getLayerSkin();
     }
 
     public void updateScore(int value)
@@ -134,6 +152,11 @@ public class GameController : MonoSingleton<GameController>
     {
         currentSpeed = speedGame + (increaseSpeedGame * (Mathf.Floor(getScore() / scoreToChangeSpeedGame)));
         currentSpeedShot = speedShot + (increaseSpeedShot * (Mathf.Floor(getScore() / scoreToChangeSpeedGame)));
+    }
+
+    public void playFx(int idFx)
+    {
+        SoundManager.Instance.playFx(idFx);
     }
 
 }

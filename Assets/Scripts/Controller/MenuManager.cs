@@ -1,12 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoSingleton<MenuManager>
 {
     [Header("Panel Scenes")]
     public GameObject       MenuGamePanel;
-    public GameObject       InGamePanel;
     public GameObject       GameOverPanel;
 
     [Header("Menu")]
@@ -16,6 +16,11 @@ public class MenuManager : MonoSingleton<MenuManager>
 
     [Header("Settings")]
     public Animator         fadeAnim;
+
+    public void SceneToLoad(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
+    }
 
     public void fadeIn() {
         fadeAnim.SetTrigger("fadeIn");
@@ -29,11 +34,6 @@ public class MenuManager : MonoSingleton<MenuManager>
     public void menuGame(bool state)
     {
         MenuGamePanel.SetActive(state);
-    }
-
-    public void inGame(bool state)
-    {
-        InGamePanel.SetActive(state);
     }
 
     public void gameOver(bool state)
