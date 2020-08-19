@@ -62,6 +62,27 @@ TextureImporter:
   - first:
       213: 4954390541153483818
     second: MiniHUD_IaraSpecialAttack3
+  - first:
+      213: 1643879323395225545
+    second: MiniHUD_Hadle
+  - first:
+      213: 4954390541153483818
+    second: MiniHUD_Check
+  - first:
+      213: -2807679471306093807
+    second: MiniHUD_Audio
+  - first:
+      213: 261412701272420163
+    second: MiniHUD_Handle2
+  - first:
+      213: -3538411250208414230
+    second: MiniHUD_Settings
+  - first:
+      213: -6052993586036864089
+    second: MiniHUD_Btn
+  - first:
+      213: -3129010779668596261
+    second: MiniHUD_MiniBtn
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -544,6 +565,153 @@ TextureImporter:
       bones: []
       spriteID: 18135f7a6d11e5610800000000000000
       internalID: 1611745330283753857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHUD_Hadle
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c7f494f88b30d610800000000000000
+      internalID: 1643879323395225545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHUD_Check
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2c320c92f781c440800000000000000
+      internalID: 4954390541153483818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHUD_Audio
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11bc4a5856e1909d0800000000000000
+      internalID: -2807679471306093807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHUD_Handle2
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34f2e1f7779b0a300800000000000000
+      internalID: 261412701272420163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHUD_Settings
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 3
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae5e41a17b905eec0800000000000000
+      internalID: -3538411250208414230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHUD_Btn
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 67
+        width: 32
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ab0e8457627ffba0800000000000000
+      internalID: -6052993586036864089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHUD_MiniBtn
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 53
+        width: 16
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd93c7b26458394d0800000000000000
+      internalID: -3129010779668596261
       vertices: []
       indices: 
       edges: []

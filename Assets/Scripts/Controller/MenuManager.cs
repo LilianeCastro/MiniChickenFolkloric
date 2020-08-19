@@ -22,10 +22,6 @@ public class MenuManager : MonoSingleton<MenuManager>
         SceneManager.LoadScene(sceneName);
     }
 
-    public void fadeIn() {
-        fadeAnim.SetTrigger("fadeIn");
-    }
-
     public void fadeOut()
     {
         fadeAnim.SetTrigger("fadeOut");

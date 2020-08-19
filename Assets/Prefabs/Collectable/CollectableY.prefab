@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1178747295947571851}
   - component: {fileID: 7015504832144814352}
   m_Layer: 0
-  m_Name: CollectableE
+  m_Name: CollectableY
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -238,6 +238,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8476719962879646520, guid: 48fe1d1c2424736439c37bb96f2d7080,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48fe1d1c2424736439c37bb96f2d7080, type: 3}

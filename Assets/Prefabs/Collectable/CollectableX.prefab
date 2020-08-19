@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2279072348066152945}
   - component: {fileID: 7973394628756468330}
   m_Layer: 0
-  m_Name: CollectableB
+  m_Name: CollectableX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29,9 +29,9 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 9186244074218668273}
   - {fileID: 370327254478382903}
   - {fileID: 4361274250639173613}
+  - {fileID: 9186244074218668273}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -143,7 +143,7 @@ PrefabInstance:
     - target: {fileID: 3172435833073258302, guid: b532fb071c1ee7b4abc775f423c20290,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3172435833073258302, guid: b532fb071c1ee7b4abc775f423c20290,
         type: 3}
@@ -180,6 +180,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6928264491023047863}
     m_Modifications:
+    - target: {fileID: 33624418835787187, guid: b532fb071c1ee7b4abc775f423c20290,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 3172435833073258302, guid: b532fb071c1ee7b4abc775f423c20290,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -218,7 +223,7 @@ PrefabInstance:
     - target: {fileID: 3172435833073258302, guid: b532fb071c1ee7b4abc775f423c20290,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3172435833073258302, guid: b532fb071c1ee7b4abc775f423c20290,
         type: 3}
@@ -298,7 +303,7 @@ PrefabInstance:
     - target: {fileID: 7920118039914946736, guid: 48fe1d1c2424736439c37bb96f2d7080,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7920118039914946736, guid: 48fe1d1c2424736439c37bb96f2d7080,
         type: 3}
@@ -314,6 +319,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8476719962879646520, guid: 48fe1d1c2424736439c37bb96f2d7080,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48fe1d1c2424736439c37bb96f2d7080, type: 3}
