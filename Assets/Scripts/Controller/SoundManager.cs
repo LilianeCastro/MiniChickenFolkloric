@@ -7,6 +7,7 @@ public class SoundManager : MonoSingleton<SoundManager>
     public AudioSource audioSource;
 
     public AudioClip menuSound;
+    public AudioClip gallerySound;
 
     public AudioClip[] inGameSound;
     public AudioClip[] fx;
@@ -21,6 +22,9 @@ public class SoundManager : MonoSingleton<SoundManager>
         else if(sceneName.Equals("InGame"))
         {
             audioSource.clip = inGameSound[GameController.Instance.getIdSkinPlayer()];
+        }else if(sceneName.Equals("Gallery"))
+        {
+            audioSource.clip = gallerySound;
         }
 
         audioSource.Play();
