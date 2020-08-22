@@ -16,12 +16,14 @@ public class GalleryManager : MonoBehaviour
     public Image               imgBodyFull;
     public Text                txtNameChar;
     public Text                txtDescriptionOnBoard;
+    public Text                txtFontOnBoard;
 
     [Header("Description")]
     public string[]            charName;
+    [TextArea]
     public string[]            txtDescription;
-
-    
+    [TextArea]
+    public string[]            txtFont;
 
     public void updateSkin(int pos)
     {
@@ -40,5 +42,6 @@ public class GalleryManager : MonoBehaviour
 
         txtNameChar.text = charName[pos];
         txtDescriptionOnBoard.text = txtDescription[pos];
+        txtFontOnBoard.text = txtFont[pos];
     }
 }

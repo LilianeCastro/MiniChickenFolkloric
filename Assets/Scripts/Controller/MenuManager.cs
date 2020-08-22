@@ -15,15 +15,9 @@ public class MenuManager : MonoSingleton<MenuManager>
     public GameObject       HelpPanel;
     public GameObject       SettingsPanel;
 
-    [Header("Settings")]
-    public GameObject       Fade;
-    public Animator         fadeAnim;
-
     public void SceneToLoad(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
-        
-        Fade.SetActive(true);
 
         if (sceneName.Equals("InGame"))
         {
@@ -32,22 +26,22 @@ public class MenuManager : MonoSingleton<MenuManager>
         else
         {
             MenuCanvas.SetActive(true);
-            if(sceneName.Equals("Menu"))
-            {
-                menuGame(true);
-                gameOver(false);
-            }
-            else
-            {
-                menuGame(false);
-                gameOver(true);
-            }
+            StartCoroutine("ShowCanvas", sceneName);
         }
     }
 
-    public void fadeOut()
+    IEnumerator ShowCanvas(string sceneName)
     {
-        fadeAnim.SetTrigger("fadeOut");
+        yield return new WaitForSeconds(0.05f);
+
+        if(sceneName.Equals("Menu"))
+        {
+            menuGame(true);
+        }
+        else
+        {
+            gameOver(true);
+        }
     }
 
     public void menuGame(bool state)

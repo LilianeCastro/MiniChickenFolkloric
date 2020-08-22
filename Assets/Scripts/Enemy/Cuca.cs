@@ -16,6 +16,12 @@ public class Cuca : MonoBehaviour
     void ExitScreen()
     {
         cucaRb.velocity = Vector2.right * 0.9f;
+        Invoke("Destroy", 5f);
+    }
+
+    void Destroy()
+    {
+        this.gameObject.SetActive(false);
     }
 
    

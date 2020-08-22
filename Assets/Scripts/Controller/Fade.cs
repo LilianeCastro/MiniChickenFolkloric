@@ -6,7 +6,7 @@ public class Fade : MonoBehaviour
 {
     void Start()
     {
-        Invoke("DisableFade", 0.9f);
+        Invoke("DisableFade", 0.7f);
     }
 
     void DisableFade()
