@@ -334,7 +334,7 @@ TextureImporter:
     second: VitoChickWeapon02
   - first:
       213: -8455172615087355533
-    second: MiniSkins_96
+    second: CuruChickVfx04
   - first:
       213: -8144940125940853015
     second: CuruChickVfx07
@@ -356,6 +356,18 @@ TextureImporter:
   - first:
       213: -5120116172766509701
     second: Mini_Heart4
+  - first:
+      213: 8749904978349800069
+    second: MiniSkins_MiniChickenRun01
+  - first:
+      213: -2436913749696064379
+    second: MiniSkins_MiniChickenRun02
+  - first:
+      213: -6603607577950268600
+    second: MiniSkins_MiniChickenRun03
+  - first:
+      213: 5704712224545942263
+    second: MiniSkins_MiniChickenRun04
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -2586,7 +2598,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniSkins_96
+      name: CuruChickVfx04
       rect:
         serializedVersion: 2
         x: 240
@@ -2699,7 +2711,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2720,7 +2732,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2741,7 +2753,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2762,7 +2774,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2770,6 +2782,90 @@ TextureImporter:
       bones: []
       spriteID: b750589e771b1f8b0800000000000000
       internalID: -5120116172766509701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSkins_MiniChickenRun01
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 16
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58a36f40838ed6970800000000000000
+      internalID: 8749904978349800069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSkins_MiniChickenRun02
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 32
+        width: 16
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 584d9112bd75e2ed0800000000000000
+      internalID: -2436913749696064379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSkins_MiniChickenRun03
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 16
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 843523035e54b54a0800000000000000
+      internalID: -6603607577950268600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSkins_MiniChickenRun04
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 32
+        width: 16
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7faa3e91b853b2f40800000000000000
+      internalID: 5704712224545942263
       vertices: []
       indices: 
       edges: []

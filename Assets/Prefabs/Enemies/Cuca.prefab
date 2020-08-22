@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5965110212127128020}
   - component: {fileID: 5965110212127128027}
-  - component: {fileID: 5965110212127128022}
   - component: {fileID: 5965110212127128023}
   - component: {fileID: 5326047983927798963}
+  - component: {fileID: 4660759251420816430}
   m_Layer: 0
   m_Name: Cuca
   m_TagString: Untagged
@@ -85,18 +85,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5965110212127128022
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5965110212127128026}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa245642b8164974fad5c984dc807815, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &5965110212127128023
 Rigidbody2D:
   serializedVersion: 4
@@ -137,3 +125,15 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &4660759251420816430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5965110212127128026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8782ac6c39c70644ea2251f410e672f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

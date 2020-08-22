@@ -159,4 +159,10 @@ public class GameController : MonoSingleton<GameController>
         SoundManager.Instance.playFx(idFx);
     }
 
+    public void GameOver()
+    {
+        MenuManager.Instance.SceneToLoad("GameOver");
+        SoundManager.Instance.changeSong("GameOver");
+    }
+
 }

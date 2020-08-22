@@ -101,22 +101,22 @@ public class Player : MonoSingleton<Player>
 
     private void OnCollisionEnter2D(Collision2D other) {
 
-        if(other.gameObject.tag=="Enemy")
+        if(other.gameObject.CompareTag("Enemy"))
         {
             playerAnim.SetTrigger("death");
 
             print("Colidiu com inimigo collision");
 
-            MenuManager.Instance.SceneToLoad("InGame");
+            GameController.Instance.GameOver();
         }
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
 
-        if(other.gameObject.tag=="Collectable")
+        if(other.gameObject.CompareTag("Collectable"))
         {
             collec = other.GetComponent<Collectable>();
-            if(collec.idCollectable == "egg")
+            if(collec.idCollectable.Equals("egg"))
             {
                 GameController.Instance.updateProgressAttack(10);
             }
