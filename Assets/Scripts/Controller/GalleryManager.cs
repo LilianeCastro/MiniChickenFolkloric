@@ -10,10 +10,8 @@ public class GalleryManager : MonoBehaviour
     [Header("Tab")]
     public Image[]             imgProfile;
     public Image[]             imgProfileCheck;
-    public Image[]             imgProfileBody;
 
     [Header("Board")]
-    public Image               imgBodyFull;
     public Text                txtNameChar;
     public Text                txtDescriptionOnBoard;
     public Text                txtFontOnBoard;
@@ -38,7 +36,6 @@ public class GalleryManager : MonoBehaviour
     private void changeSkinToActiveInGallery(int pos)
     {
         btnChosenProfile[pos].image.sprite = imgProfileCheck[pos].sprite;
-        imgBodyFull.sprite = imgProfileBody[pos].sprite;
 
         txtNameChar.text = charName[pos];
         txtDescriptionOnBoard.text = txtDescription[pos];

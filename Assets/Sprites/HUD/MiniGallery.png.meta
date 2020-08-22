@@ -101,6 +101,12 @@ TextureImporter:
   - first:
       213: 4647632503255325221
     second: MiniHUDGallery_LobisomemProfileCheck
+  - first:
+      213: -1332432482012633418
+    second: MiniGallery_IconImage
+  - first:
+      213: -1535771960734025527
+    second: MiniGallery_IconText
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -910,6 +916,48 @@ TextureImporter:
       bones: []
       spriteID: 52ad7133325bf7040800000000000000
       internalID: 4647632503255325221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniGallery_IconImage
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b6e17697bf328de0800000000000000
+      internalID: -1332432482012633418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniGallery_IconText
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c87170e987dfaae0800000000000000
+      internalID: -1535771960734025527
       vertices: []
       indices: 
       edges: []
