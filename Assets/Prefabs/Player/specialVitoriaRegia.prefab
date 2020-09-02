@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 5496335705355584160}
   - component: {fileID: 1057834092138696397}
   - component: {fileID: 588805832888057192}
+  - component: {fileID: 6104706484796614576}
   m_Layer: 0
   m_Name: specialVitoriaRegia
-  m_TagString: Untagged
+  m_TagString: Shot
   m_Icon: {fileID: 4162164826716764455, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -120,3 +121,19 @@ MonoBehaviour:
   charName: 5
   force: 5
   lifeTime: 0.75
+--- !u!58 &6104706484796614576
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 276990304446746899}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.1

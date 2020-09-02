@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 17887566804666938}
   - component: {fileID: 4816399764318078551}
   - component: {fileID: 4923207730496648690}
+  - component: {fileID: 9035607116693578183}
   m_Layer: 0
   m_Name: specialBoto
-  m_TagString: Untagged
+  m_TagString: Shot
   m_Icon: {fileID: 4162164826716764455, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -120,3 +121,19 @@ MonoBehaviour:
   charName: 0
   force: 6
   lifeTime: 0.35
+--- !u!58 &9035607116693578183
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5737996762171005321}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.16

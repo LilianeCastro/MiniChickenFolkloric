@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 3900311942695872468}
   - component: {fileID: 8415107538460371897}
   - component: {fileID: 8236383265588877340}
+  - component: {fileID: 1236145588076108991}
   m_Layer: 0
   m_Name: specialIara
-  m_TagString: Untagged
+  m_TagString: Shot
   m_Icon: {fileID: 4162164826716764455, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -120,3 +121,19 @@ MonoBehaviour:
   charName: 3
   force: 1
   lifeTime: 0.05
+--- !u!70 &1236145588076108991
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8772528352542815335}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0017209351, y: 0}
+  m_Size: {x: 0.2831599, y: 0.5}
+  m_Direction: 0

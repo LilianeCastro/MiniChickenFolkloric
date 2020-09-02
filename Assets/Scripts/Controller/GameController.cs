@@ -161,6 +161,8 @@ public class GameController : MonoSingleton<GameController>
 
     public void GameOver()
     {
+        GameManager.Instance.UpdateCurrentScore(score);
+
         MenuManager.Instance.SceneToLoad("GameOver");
         SoundManager.Instance.changeSong("GameOver");
     }

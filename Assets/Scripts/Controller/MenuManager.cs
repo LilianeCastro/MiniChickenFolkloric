@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoSingleton<MenuManager>
@@ -14,6 +15,10 @@ public class MenuManager : MonoSingleton<MenuManager>
     public GameObject       GalleryPanel;
     public GameObject       HelpPanel;
     public GameObject       SettingsPanel;
+
+    [Header("GameOver Canvas")]
+    public Text             TxtScore;
+    public Text             TxtHighScore;
 
     public void SceneToLoad(string sceneName)
     {
@@ -44,6 +49,24 @@ public class MenuManager : MonoSingleton<MenuManager>
         }
     }
 
+    private void UpdateCanvasGameOver()
+    {
+        if(GameManager.Instance.GetCurrentScore() > GameManager.Instance.GetHighScore())
+        {
+            GameManager.Instance.UpdateHighScore(GameManager.Instance.GetCurrentScore());
+
+            TxtScore.text = $"NOVO RECORDE! \n{ GameManager.Instance.GetHighScore() }";
+
+            TxtHighScore.text = "";
+        }
+        else
+        {
+            TxtScore.text = $"PONTUAÇÃO \n{ GameManager.Instance.GetCurrentScore() }";
+
+            TxtHighScore.text = $"MELHOR PONTUAÇÃO: { GameManager.Instance.GetHighScore()}";
+        }
+    }
+
     public void menuGame(bool state)
     {
         MenuGamePanel.SetActive(state);
@@ -51,6 +74,7 @@ public class MenuManager : MonoSingleton<MenuManager>
 
     public void gameOver(bool state)
     {
+        UpdateCanvasGameOver();
         GameOverPanel.SetActive(state);
     }
 

@@ -2,14 +2,29 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class GameManager : MonoSingleton<GameManager>
 {
     private int             highScore;
     private float           sfxVol;
     private float           soundVol;
     private float           masterVol;
+    private int             currentScore;
 
-    public int getHighScore()
+    private void Start() {
+        currentScore = 0;
+    }
+
+    public int GetCurrentScore()
+    {
+        return currentScore;
+    }
+
+    public void UpdateCurrentScore(int value)
+    {
+        currentScore = value;
+    }
+
+    public int GetHighScore()
     {
         if(PlayerPrefs.HasKey("highScore"))
         {
@@ -18,31 +33,51 @@ public class GameManager : MonoBehaviour
         return 0;
     }
 
-    public float getSfxVol()
+    public void UpdateHighScore(int value)
+    {
+        PlayerPrefs.SetInt("highScore", value);
+    }
+
+    public float GetSfxVol()
     {
         if(PlayerPrefs.HasKey("sfxVol"))
         {
-            return PlayerPrefs.GetInt("sfxVol");
+            return PlayerPrefs.GetFloat("sfxVol");
         }
         return 0.5f;
     }
 
-    public float getSoundVol()
+    public void UpdateSfxVol(float value)
+    {
+        PlayerPrefs.SetFloat("sfxVol", value);
+    }
+
+    public float GetSoundVol()
     {
         if(PlayerPrefs.HasKey("soundVol"))
         {
-            return PlayerPrefs.GetInt("soundVol");
+            return PlayerPrefs.GetFloat("soundVol");
         }
         return 0.5f;
     }
 
-    public float getMasterVol()
+    public void UpdateSoundVol(float value)
+    {
+        PlayerPrefs.SetFloat("soundVol", value);
+    }
+
+    public float GetMasterVol()
     {
         if(PlayerPrefs.HasKey("masterVol"))
         {
-            return PlayerPrefs.GetInt("masterVol");
+            return PlayerPrefs.GetFloat("masterVol");
         }
         return 0.5f;
+    }
+
+    public void UpdateMasterVol(float value)
+    {
+        PlayerPrefs.SetFloat("masterVol", value);
     }
 
 }
