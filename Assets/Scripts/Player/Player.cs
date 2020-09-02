@@ -25,7 +25,8 @@ public class Player : MonoSingleton<Player>
     private bool                canShot;
     private int                 chosenSkinLayer;
 
-    private void Start() {
+    private void Start() 
+    {
 
         playerRb = GetComponent<Rigidbody2D>();
         playerAnim = GetComponent<Animator>();
@@ -39,11 +40,10 @@ public class Player : MonoSingleton<Player>
             vfxPlayer.SetActive(true);
         }
 
-        initialPosX = transform.position.x;
     }
 
-    private void Update() {
-        transform.position = new Vector2(initialPosX, transform.position.y);
+    private void Update()
+    {
 
         isGround = Physics2D.OverlapCircle(groundCheck.position, 0.02f, layerColision);
 
