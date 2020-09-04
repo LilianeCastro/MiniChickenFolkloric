@@ -9,6 +9,7 @@ public class MenuManager : MonoSingleton<MenuManager>
     [Header("Panel Scenes")]
     public GameObject       MenuGamePanel;
     public GameObject       GameOverPanel;
+    public Fade            _Fade;
 
     [Header("Menu")]
     public GameObject       MenuCanvas;
@@ -20,8 +21,14 @@ public class MenuManager : MonoSingleton<MenuManager>
     public Text             TxtScore;
     public Text             TxtHighScore;
 
+    private void Start() 
+    {
+        
+    }
+
     public void SceneToLoad(string sceneName)
     {
+        _Fade.EnableFade();
         SceneManager.LoadScene(sceneName);
 
         if (sceneName.Equals("InGame"))

@@ -154,6 +154,7 @@ Transform:
   - {fileID: 893732559}
   - {fileID: 749069188}
   - {fileID: 977266009}
+  - {fileID: 2085364516}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2441,6 +2442,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MenuGamePanel: {fileID: 953383374}
   GameOverPanel: {fileID: 799535277}
+  _Fade: {fileID: 1860226184}
   MenuCanvas: {fileID: 749069187}
   GalleryPanel: {fileID: 184902102}
   HelpPanel: {fileID: 951029366}
@@ -7122,7 +7124,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2085364513
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7195,7 +7197,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1860226180}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 2786918}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}

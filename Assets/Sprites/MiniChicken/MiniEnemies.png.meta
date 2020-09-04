@@ -65,6 +65,42 @@ TextureImporter:
   - first:
       213: 8456509650801928192
     second: BichoPapaoAttack3
+  - first:
+      213: 774593140766770977
+    second: BoiunaRanged01
+  - first:
+      213: -7519908992885737647
+    second: BoiunaRanged02
+  - first:
+      213: -3117853725771339703
+    second: BoiunaRanged03
+  - first:
+      213: 5900726712068690757
+    second: BoiunaRanged04
+  - first:
+      213: -7884813735951781363
+    second: BoiunaRanged05
+  - first:
+      213: -423196196826403538
+    second: BoiunaRanged06
+  - first:
+      213: -2755452650794838894
+    second: BoiunaRanged07
+  - first:
+      213: 6884538245456382424
+    second: BoiunaRanged08
+  - first:
+      213: 8615789975895493021
+    second: BoiunaRanged09
+  - first:
+      213: -7929813688236080456
+    second: BoiunaRanged10
+  - first:
+      213: -7949731099095438945
+    second: BoiunaRanged11
+  - first:
+      213: -3153838026982200040
+    second: BoiunaRanged12
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -324,8 +360,8 @@ TextureImporter:
       name: LobisomemAttack
       rect:
         serializedVersion: 2
-        x: 0
-        y: 64
+        x: 123
+        y: 96
         width: 22
         height: 32
       alignment: 7
@@ -345,8 +381,8 @@ TextureImporter:
       name: LobisomemAttack2
       rect:
         serializedVersion: 2
-        x: 22
-        y: 64
+        x: 145
+        y: 96
         width: 23
         height: 32
       alignment: 7
@@ -366,8 +402,8 @@ TextureImporter:
       name: LobisomemAttack3
       rect:
         serializedVersion: 2
-        x: 45
-        y: 64
+        x: 168
+        y: 96
         width: 26
         height: 32
       alignment: 7
@@ -387,7 +423,7 @@ TextureImporter:
       name: BoiunaIdle
       rect:
         serializedVersion: 2
-        x: 71
+        x: 0
         y: 64
         width: 16
         height: 22
@@ -408,7 +444,7 @@ TextureImporter:
       name: BoiunaIdle2
       rect:
         serializedVersion: 2
-        x: 88
+        x: 17
         y: 64
         width: 16
         height: 24
@@ -429,9 +465,9 @@ TextureImporter:
       name: BoiunaAttack
       rect:
         serializedVersion: 2
-        x: 104
+        x: 34
         y: 64
-        width: 24
+        width: 23
         height: 26
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -450,8 +486,8 @@ TextureImporter:
       name: BoiunaAttack2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 32
+        x: 57
+        y: 64
         width: 30
         height: 27
       alignment: 7
@@ -471,8 +507,8 @@ TextureImporter:
       name: BoiunaAttack3
       rect:
         serializedVersion: 2
-        x: 31
-        y: 32
+        x: 88
+        y: 64
         width: 34
         height: 30
       alignment: 7
@@ -492,8 +528,8 @@ TextureImporter:
       name: BoiunaAttack4
       rect:
         serializedVersion: 2
-        x: 66
-        y: 32
+        x: 123
+        y: 64
         width: 46
         height: 26
       alignment: 7
@@ -514,7 +550,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 32
         width: 19
         height: 28
       alignment: 7
@@ -535,7 +571,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 20
-        y: 0
+        y: 32
         width: 19
         height: 28
       alignment: 7
@@ -556,7 +592,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 40
-        y: 0
+        y: 32
         width: 21
         height: 30
       alignment: 7
@@ -577,7 +613,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 63
-        y: 0
+        y: 32
         width: 25
         height: 31
       alignment: 7
@@ -598,7 +634,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 89
-        y: 0
+        y: 32
         width: 28
         height: 32
       alignment: 7
@@ -610,6 +646,258 @@ TextureImporter:
       bones: []
       spriteID: 00826bf09be8b5570800000000000000
       internalID: 8456509650801928192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoiunaRanged01
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1278bd88b58efba00800000000000000
+      internalID: 774593140766770977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoiunaRanged02
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 157b7c7fc9ae3a790800000000000000
+      internalID: -7519908992885737647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoiunaRanged03
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94865c53e882bb4d0800000000000000
+      internalID: -3117853725771339703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoiunaRanged04
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54353856ea793e150800000000000000
+      internalID: 5900726712068690757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoiunaRanged05
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 16
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d023974cea3839290800000000000000
+      internalID: -7884813735951781363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoiunaRanged06
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 16
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2dadd91d41802af0800000000000000
+      internalID: -423196196826403538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoiunaRanged07
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 16
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29417f1c96aa2c9d0800000000000000
+      internalID: -2755452650794838894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoiunaRanged08
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 16
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d9c403fe0bca8f50800000000000000
+      internalID: 6884538245456382424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoiunaRanged09
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 16
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d994f9ca55f619770800000000000000
+      internalID: 8615789975895493021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoiunaRanged10
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 16
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b288a9e674a3f190800000000000000
+      internalID: -7929813688236080456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoiunaRanged11
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 16
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f996a825fa1eca190800000000000000
+      internalID: -7949731099095438945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoiunaRanged12
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 0
+        width: 16
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81d6b9236015b34d0800000000000000
+      internalID: -3153838026982200040
       vertices: []
       indices: 
       edges: []

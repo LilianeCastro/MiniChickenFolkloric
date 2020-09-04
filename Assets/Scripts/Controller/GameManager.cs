@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class GameManager : MonoSingleton<GameManager>
 {
-    private int             highScore;
     private float           sfxVol;
     private float           soundVol;
     private float           masterVol;
+    private int             highScore;
     private int             currentScore;
 
     private void Start() {
@@ -22,6 +22,16 @@ public class GameManager : MonoSingleton<GameManager>
     public void UpdateCurrentScore(int value)
     {
         currentScore = value;
+    }
+
+    public int GetIsFirstTime()
+    {
+        return PlayerPrefs.GetInt("isFirstTime");
+    }
+    
+    public void UpdateFirstTime(int value)
+    {
+        PlayerPrefs.SetInt("isFirstTime", value);
     }
 
     public int GetHighScore()

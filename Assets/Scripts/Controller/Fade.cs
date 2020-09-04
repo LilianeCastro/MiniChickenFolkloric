@@ -9,7 +9,13 @@ public class Fade : MonoBehaviour
         Invoke("DisableFade", 0.7f);
     }
 
-    void DisableFade()
+    public void EnableFade()
+    {
+        gameObject.SetActive(true);
+        Invoke("DisableFade", 0.7f);
+    }
+
+    public void DisableFade()
     {
         gameObject.SetActive(false);
     }

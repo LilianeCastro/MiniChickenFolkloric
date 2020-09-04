@@ -65,6 +65,7 @@ public class Player : MonoSingleton<Player>
     {
         if(isGround)
         {
+            playerRb.velocity = Vector2.zero;
             playerRb.AddForce(new Vector2(0, forceJump));
         }
     }
