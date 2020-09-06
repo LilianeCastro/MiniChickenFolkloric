@@ -24,6 +24,7 @@ public class GameController : MonoSingleton<GameController>
     public float            speedShot;
     public float            increaseSpeedShot;
     public int              scoreToChangeSpeedGame;
+
     private float           currentSpeed;
     private float           currentSpeedShot;
     private int             score;
@@ -42,6 +43,7 @@ public class GameController : MonoSingleton<GameController>
     public Image[]          imgHUDSpecialAttackPrefab;
     public GameObject[]		specialAttackPrefab;
     public GameObject[]		vFxExplosionPrefab;
+    public GameObject[]     attackEnemyRanged;
 
     private void Start() {
         currentSpeed = speedGame;

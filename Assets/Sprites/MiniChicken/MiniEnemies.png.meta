@@ -101,6 +101,45 @@ TextureImporter:
   - first:
       213: -3153838026982200040
     second: BoiunaRanged12
+  - first:
+      213: 1123962546170179536
+    second: LobisomemRanged01
+  - first:
+      213: -4444022097225811429
+    second: LobisomemRanged02
+  - first:
+      213: -9196583328568933534
+    second: LobisomemRanged03
+  - first:
+      213: -8955507725538671791
+    second: LobisomemRanged04
+  - first:
+      213: -2723988255376282612
+    second: LobisomemRanged05
+  - first:
+      213: 6103382429230505431
+    second: BichoPapaoShoot01
+  - first:
+      213: 3707634179117247727
+    second: BichoPapaoShoot02
+  - first:
+      213: -3010840799593236226
+    second: BoiunaRayShoot01
+  - first:
+      213: -3735227115276096692
+    second: BoiunaRayShoot02
+  - first:
+      213: -8089551458175306783
+    second: BoiunaRayShoot03
+  - first:
+      213: -498742190054982928
+    second: BoiunaRayShoot04
+  - first:
+      213: 8803219832826391131
+    second: LobisomemAttackRanged01
+  - first:
+      213: -8459300168467235340
+    second: LobisomemAttackRanged02
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -898,6 +937,279 @@ TextureImporter:
       bones: []
       spriteID: 81d6b9236015b34d0800000000000000
       internalID: -3153838026982200040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LobisomemRanged01
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 119
+        width: 2
+        height: 3
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0df21511bfd199f00800000000000000
+      internalID: 1123962546170179536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LobisomemRanged02
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 118
+        width: 5
+        height: 5
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1a7ed0b279a352c0800000000000000
+      internalID: -4444022097225811429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LobisomemRanged03
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 117
+        width: 10
+        height: 7
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2638e51303c2f5080800000000000000
+      internalID: -9196583328568933534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LobisomemRanged04
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 115
+        width: 14
+        height: 11
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15340040c25a7b380800000000000000
+      internalID: -8955507725538671791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LobisomemRanged05
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 97
+        width: 19
+        height: 15
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0ce5f13d13723ad0800000000000000
+      internalID: -2723988255376282612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BichoPapaoShoot01
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 52
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dd15a67bf193b450800000000000000
+      internalID: 6103382429230505431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BichoPapaoShoot02
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 52
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fec616b54a9247330800000000000000
+      internalID: 3707634179117247727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoiunaRayShoot01
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 6
+        width: 5
+        height: 2
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef8fdf0be385736d0800000000000000
+      internalID: -3010840799593236226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoiunaRayShoot02
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 6
+        width: 8
+        height: 2
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4baf8e8abec92cc0800000000000000
+      internalID: -3735227115276096692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoiunaRayShoot03
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 6
+        width: 12
+        height: 2
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e3b73f1fc32cbf80800000000000000
+      internalID: -8089551458175306783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoiunaRayShoot04
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 6
+        width: 16
+        height: 2
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fab54fde9c1419f0800000000000000
+      internalID: -498742190054982928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LobisomemAttackRanged01
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 64
+        width: 32
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5a6a47ebc15b2a70800000000000000
+      internalID: 8803219832826391131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LobisomemAttackRanged02
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 64
+        width: 32
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fdbb1ae0578a9a80800000000000000
+      internalID: -8459300168467235340
       vertices: []
       indices: 
       edges: []

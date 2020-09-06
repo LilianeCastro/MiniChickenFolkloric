@@ -157,8 +157,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa245642b8164974fad5c984dc807815, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  typeEnemy: 0
   posSpawnShoot: {fileID: 1791374569342129115}
+  nameEnemy: 2
+  speedShot: 4
 --- !u!61 &154649255473768838
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -100,18 +100,6 @@ public class Player : MonoSingleton<Player>
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D other) {
-
-        if(other.gameObject.CompareTag("Enemy"))
-        {
-            playerAnim.SetTrigger("death");
-
-            print("Colidiu com inimigo collision");
-
-            GameController.Instance.GameOver();
-        }
-    }
-
     private void OnTriggerEnter2D(Collider2D other) {
 
         if(other.gameObject.CompareTag("Collectable"))
@@ -129,6 +117,15 @@ public class Player : MonoSingleton<Player>
             GameController.Instance.playFx(0);
             GameController.Instance.updateScore(1);
             Destroy(other.gameObject);
+        }
+
+        if(other.gameObject.CompareTag("Enemy"))
+        {
+            playerAnim.SetTrigger("death");
+
+            print("Colidiu com inimigo trigger");
+
+            GameController.Instance.GameOver();
         }
     }
 

@@ -1215,6 +1215,10 @@ MonoBehaviour:
   - {fileID: 662939281595395025, guid: 82f8b6f2f8918b5428e966bad4f3bfa8, type: 3}
   - {fileID: 5417436643711573301, guid: bd83e3f355f618547b7a0cd8358bc88c, type: 3}
   - {fileID: 4108568124282393106, guid: e54ad70a61c780b458fbb589a3ae1746, type: 3}
+  attackEnemyRanged:
+  - {fileID: 5735573447892010878, guid: e76b2be62487d944b9d38d8c809adaf5, type: 3}
+  - {fileID: 5261528304716931402, guid: af9b92796d0b1e04581b52c741648312, type: 3}
+  - {fileID: 3832059487425875191, guid: 5c0e7ae199cebe945af71d22295f666a, type: 3}
 --- !u!4 &573973220
 Transform:
   m_ObjectHideFlags: 0
