@@ -24,6 +24,7 @@ public class GameController : MonoSingleton<GameController>
     public float            speedShot;
     public float            increaseSpeedShot;
     public int              scoreToChangeSpeedGame;
+    public int              speedEnemyShot;
 
     private float           currentSpeed;
     private float           currentSpeedShot;
@@ -50,6 +51,7 @@ public class GameController : MonoSingleton<GameController>
         currentSpeedShot = speedShot;
 
         imgAttack.sprite = imgHUDAttackPrefab[Player.Instance.getLayerSkin()].sprite;
+        print(imgAttack.sprite);
         imgSpecialAttack.sprite = imgHUDSpecialAttackPrefab[Player.Instance.getLayerSkin()].sprite;
 
         progressAttack.value = progressAttack.maxValue;
@@ -135,7 +137,7 @@ public class GameController : MonoSingleton<GameController>
         platTemp.transform.localPosition = new Vector2(0, platTemp.transform.position.y);
     }
 
-    public bool canSpawnAbovePercent(int percent)
+    public bool CanSpawnAbovePercent(int percent)
     {
         return Random.Range(0, 100) < percent;
     }

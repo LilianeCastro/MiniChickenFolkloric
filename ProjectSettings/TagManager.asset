@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Collectable
   - Ground
+  - WaterDamage
   layers:
   - Default
   - TransparentFX

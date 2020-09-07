@@ -44,7 +44,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.048519097, y: 0.061084986}
+  m_Offset: {x: -0.048519105, y: 0.010684893}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -55,7 +55,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.39232808, y: 0.9336839}
+  m_Size: {x: 0.39232808, y: 0.8328837}
   m_EdgeRadius: 0
 --- !u!1 &154649255473768841
 GameObject:
@@ -159,7 +159,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   posSpawnShoot: {fileID: 1791374569342129115}
   nameEnemy: 2
-  speedShot: 4
 --- !u!61 &154649255473768838
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -173,7 +172,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.05465412, y: 0.50282586}
+  m_Offset: {x: -0.04289411, y: 0.4389857}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -184,7 +183,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.3228645, y: 0.9378864}
+  m_Size: {x: 0.42702463, y: 0.86396646}
   m_EdgeRadius: 0
 --- !u!50 &154649255473768836
 Rigidbody2D:

@@ -10,7 +10,6 @@ public class Enemy : MonoBehaviour
 {
     public Transform                posSpawnShoot;
     public NameEnemy                nameEnemy;
-    public int                      speedShot;
 
     private BoxCollider2D           boxCollider;  
     private Animator                enemyAnim;
@@ -26,7 +25,7 @@ public class Enemy : MonoBehaviour
 
     private void OnBecameVisible() {
 
-        typeEnemyIndex = 2;//Random.Range(0,3);
+        typeEnemyIndex = Random.Range(0,3);
         typeEnemy = (TypeEnemy)typeEnemyIndex;
 
         switch(typeEnemy)
@@ -64,8 +63,10 @@ public class Enemy : MonoBehaviour
 
             StartCoroutine("TrasnformColliderToTrigger");
         }
-
-        StartCoroutine("CheckDistance", distanceFoAttack);
+        else
+        {
+            StartCoroutine("CheckDistance", distanceFoAttack);
+        }
     }
 
 
@@ -91,7 +92,8 @@ public class Enemy : MonoBehaviour
         yield return new WaitForSeconds(1f);
         attackEnemyTemp = Instantiate(GameController.Instance.attackEnemyRanged[(int)nameEnemy], posSpawnShoot.position, posSpawnShoot.rotation);
         attackEnemyTemp.TryGetComponent(out Rigidbody2D attackRb);
-        attackRb.velocity = Vector2.left * speedShot;
+        attackRb.velocity = Vector2.left * GameController.Instance.speedEnemyShot;
+        StartCoroutine("ResetAnim");
     }
 
      private float DistanceX()
@@ -106,7 +108,7 @@ public class Enemy : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other) {
 
-        if(other.tag=="Shot")
+        if(other.gameObject.CompareTag("Shot"))
         {
             Destroy(this.gameObject);
         }

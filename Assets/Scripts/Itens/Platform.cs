@@ -8,7 +8,10 @@ public class Platform : MonoBehaviour
 
     void Start()
     {
-        int idChosen = Random.Range(0, GameController.Instance.collectablePrefab.Length);
-        GameController.Instance.instantiateObjects(posSpawnCollectable, GameController.Instance.collectablePrefab, GameController.Instance.collectablePrefab.Length, 2);
+        if (GameController.Instance.CanSpawnAbovePercent(75))
+        {
+            int idChosen = Random.Range(0, GameController.Instance.collectablePrefab.Length);
+            GameController.Instance.instantiateObjects(posSpawnCollectable, GameController.Instance.collectablePrefab, GameController.Instance.collectablePrefab.Length, 2);
+        }
     }
 }

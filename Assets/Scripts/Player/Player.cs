@@ -25,8 +25,9 @@ public class Player : MonoSingleton<Player>
     private bool                canShot;
     private int                 chosenSkinLayer;
 
-    private void Start() 
+    public override void Init()
     {
+        base.Init();
 
         playerRb = GetComponent<Rigidbody2D>();
         playerAnim = GetComponent<Animator>();
@@ -34,7 +35,10 @@ public class Player : MonoSingleton<Player>
         playerAnim.SetLayerWeight(0, 0);
 
         layerSkin();
+    }
 
+    private void Start() 
+    {
         if(getLayerSkin()==3)
         {
             vfxPlayer.SetActive(true);
@@ -54,6 +58,7 @@ public class Player : MonoSingleton<Player>
     {
         chosenSkinLayer = Random.Range(0,playerAnim.layerCount);
         playerAnim.SetLayerWeight(chosenSkinLayer, 1);
+        print(chosenSkinLayer);
     }
 
     public int getLayerSkin()
@@ -100,32 +105,48 @@ public class Player : MonoSingleton<Player>
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D other) {
+    private void OnTriggerEnter2D(Collider2D other) 
+    {
 
-        if(other.gameObject.CompareTag("Collectable"))
+        switch(other.gameObject.tag)
         {
-            collec = other.GetComponent<Collectable>();
-            if(collec.idCollectable.Equals("egg"))
-            {
-                GameController.Instance.updateProgressAttack(10);
-            }
-            else
-            {
-                GameController.Instance.updateProgressSpecialAttack(20);
-            }
+            case "Collectable":
 
-            GameController.Instance.playFx(0);
-            GameController.Instance.updateScore(1);
-            Destroy(other.gameObject);
-        }
+                collec = other.GetComponent<Collectable>();
+                if(collec.idCollectable.Equals("egg"))
+                {
+                    GameController.Instance.updateProgressAttack(10);
+                }
+                else
+                {
+                    GameController.Instance.updateProgressSpecialAttack(20);
+                }
 
-        if(other.gameObject.CompareTag("Enemy"))
-        {
-            playerAnim.SetTrigger("death");
+                GameController.Instance.playFx(0);
+                GameController.Instance.updateScore(1);
+                Destroy(other.gameObject);
+                break;
 
-            print("Colidiu com inimigo trigger");
+            case "Enemy":
 
-            GameController.Instance.GameOver();
+                playerAnim.SetTrigger("death");
+                GameController.Instance.GameOver();
+                break;
+
+            case "WaterDamage":
+
+                if(!getLayerSkin().Equals(3))
+                {
+                    playerAnim.SetTrigger("death");
+                    GameController.Instance.GameOver();
+                }
+                else
+                {
+                    GameController.Instance.updateProgressAttack(5);
+                    GameController.Instance.updateProgressSpecialAttack(10);
+                }
+                break;
+
         }
     }
 
