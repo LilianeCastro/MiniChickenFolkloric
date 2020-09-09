@@ -1166,7 +1166,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &141642453
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2494,12 +2494,13 @@ MonoBehaviour:
   txtScore: {fileID: 128136483}
   progressAttackAnim: {fileID: 1336530635}
   progressSpecialAttackAnim: {fileID: 1897647367}
-  speedGame: -2.5
+  speedGame: -3
   increaseSpeedGame: -0.15
   speedShot: 4
   increaseSpeedShot: 0.1
-  scoreToChangeSpeedGame: 5
   speedEnemyShot: 5
+  increaseEnemySpeedShot: 0.2
+  scoreToChangeSpeedGame: 25
   groundPrefab:
   - {fileID: 80957948302640997, guid: 41d0254d084b97348993a2929c846638, type: 3}
   - {fileID: 3957567042569793272, guid: 3901b8312a023f94fae6319a9653c940, type: 3}
@@ -2525,6 +2526,8 @@ MonoBehaviour:
   - {fileID: 7149165385039188447, guid: 5f75c9c7bd6f77941b354db9c44443c4, type: 3}
   - {fileID: 4240471538872105678, guid: f4f9c1fec47c74e408cc8a07b978e3e1, type: 3}
   - {fileID: 5903591430450118590, guid: a270434b73a543a43b530a1d4c168f27, type: 3}
+  deathVfxPrefab: {fileID: 948864205125409847, guid: 3fb70afe89efbf142b67a3976fdf2f90,
+    type: 3}
   imgHUDAttackPrefab:
   - {fileID: 7002362067723077064, guid: bc454c196f24f2044ab631396b78c2b0, type: 3}
   - {fileID: 7006673982292953729, guid: a9b0653acaeb5804092e5807d00cb920, type: 3}
@@ -8584,16 +8587,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6533577203075149428, guid: 13ea5ea6b6e27d446b1ab90fe9f58917,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6533577203075149428, guid: 13ea5ea6b6e27d446b1ab90fe9f58917,
-        type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 6533577203075149431, guid: 13ea5ea6b6e27d446b1ab90fe9f58917,
         type: 3}
       propertyPath: m_LocalPosition.x

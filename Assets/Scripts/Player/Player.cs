@@ -39,16 +39,22 @@ public class Player : MonoSingleton<Player>
 
     private void Start() 
     {
+        initialPosX = transform.localPosition.x;
+
         if(getLayerSkin()==3)
         {
             vfxPlayer.SetActive(true);
         }
     }
 
+    void FixedUpdate() {
+        isGround = Physics2D.OverlapCircle(groundCheck.position, 0.02f, layerColision);
+    }
+
     private void Update()
     {
-        isGround = Physics2D.OverlapCircle(groundCheck.position, 0.02f, layerColision);
-
+        transform.localPosition = new Vector3(initialPosX, transform.localPosition.y, transform.localPosition.z);
+        
         playerAnim.SetBool("isGround", isGround);
     }
 
@@ -127,6 +133,7 @@ public class Player : MonoSingleton<Player>
                 break;
 
             case "Enemy":
+            
                 playerAnim.SetTrigger("death");
                 GameController.Instance.GameOver();
                 break;

@@ -158,6 +158,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   posSpawnShoot: {fileID: 1791374569342129115}
+  posDeath: {fileID: 154649254938654941}
   nameEnemy: 2
 --- !u!61 &154649255473768838
 BoxCollider2D:

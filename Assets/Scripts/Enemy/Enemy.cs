@@ -9,6 +9,7 @@ public enum NameEnemy {  BichoPapao, Boiuna, Lobisomem   }
 public class Enemy : MonoBehaviour
 {
     public Transform                posSpawnShoot;
+    public Transform                posDeath;
     public NameEnemy                nameEnemy;
 
     private BoxCollider2D           boxCollider;  
@@ -73,7 +74,7 @@ public class Enemy : MonoBehaviour
 
     IEnumerator ResetAnim()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForEndOfFrame();
         enemyAnim.SetBool("canAttack", false);
     }
 
@@ -90,10 +91,10 @@ public class Enemy : MonoBehaviour
 
     IEnumerator SpawnAttack()
     {
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForEndOfFrame();
         attackEnemyTemp = Instantiate(GameController.Instance.attackEnemyRanged[(int)nameEnemy], posSpawnShoot.position, posSpawnShoot.rotation);
         attackEnemyTemp.TryGetComponent(out Rigidbody2D attackRb);
-        attackRb.velocity = Vector2.left * GameController.Instance.speedEnemyShot;
+        attackRb.velocity = Vector2.left * GameController.Instance.getEnemySpeedShot();
         StartCoroutine("ResetAnim");
     }
 
@@ -112,7 +113,12 @@ public class Enemy : MonoBehaviour
         if(other.gameObject.CompareTag("Shot"))
         {
             GameController.Instance.playFx(4);
+
+            GameObject deathVfx = Instantiate(GameController.Instance.deathVfxPrefab, posSpawnShoot.position, posSpawnShoot.rotation);
+            deathVfx.GetComponent<Rigidbody2D>().velocity = new Vector2(GameController.Instance.getSpeed(), 0);
+
             Destroy(this.gameObject);
+            Destroy(deathVfx.gameObject, 0.5f);
         }
 
     }

@@ -140,6 +140,21 @@ TextureImporter:
   - first:
       213: -8459300168467235340
     second: LobisomemAttackRanged02
+  - first:
+      213: 8898298933895139325
+    second: MiniEnemies_Death_Vfx01
+  - first:
+      213: 6277298259671940377
+    second: MiniEnemies_Death_Vfx02
+  - first:
+      213: 5689872614371406559
+    second: MiniEnemies_Death_Vfx03
+  - first:
+      213: 5286803300025787074
+    second: MiniEnemies_Death_Vfx04
+  - first:
+      213: 4179807212976423682
+    second: MiniEnemies_Death_Vfx05
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -1210,6 +1225,111 @@ TextureImporter:
       bones: []
       spriteID: 4fdbb1ae0578a9a80800000000000000
       internalID: -8459300168467235340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniEnemies_Death_Vfx01
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 38
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dff8e043cbb1d7b70800000000000000
+      internalID: 8898298933895139325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniEnemies_Death_Vfx02
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 37
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91d7ce432817d1750800000000000000
+      internalID: 6277298259671940377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniEnemies_Death_Vfx03
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 35
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd2b4dc1ffc76fe40800000000000000
+      internalID: 5689872614371406559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniEnemies_Death_Vfx04
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 33
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c26667379f7e5940800000000000000
+      internalID: 5286803300025787074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniEnemies_Death_Vfx05
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 33
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 203431fb388a10a30800000000000000
+      internalID: 4179807212976423682
       vertices: []
       indices: 
       edges: []

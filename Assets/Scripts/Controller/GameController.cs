@@ -23,11 +23,13 @@ public class GameController : MonoSingleton<GameController>
     public float            increaseSpeedGame;
     public float            speedShot;
     public float            increaseSpeedShot;
+    public float            speedEnemyShot;
+    public float            increaseEnemySpeedShot;
     public int              scoreToChangeSpeedGame;
-    public int              speedEnemyShot;
-
+    
     private float           currentSpeed;
     private float           currentSpeedShot;
+    private float           curretEnemySpeedShot;
     private int             score;
 
     [Header("Ground Config")]
@@ -38,6 +40,7 @@ public class GameController : MonoSingleton<GameController>
     public GameObject[]		platformPrefab;
     public GameObject[]		collectablePrefab;
     public GameObject[]		collectablePlusPrefab;
+    public GameObject		deathVfxPrefab;
 
     [Header("Prefab that depends on the skin")]
     public Image[]          imgHUDAttackPrefab;
@@ -49,6 +52,7 @@ public class GameController : MonoSingleton<GameController>
     private void Start() {
         currentSpeed = speedGame;
         currentSpeedShot = speedShot;
+        curretEnemySpeedShot = speedEnemyShot;
 
         imgAttack.sprite = imgHUDAttackPrefab[Player.Instance.getLayerSkin()].sprite;
         imgSpecialAttack.sprite = imgHUDSpecialAttackPrefab[Player.Instance.getLayerSkin()].sprite;
@@ -151,10 +155,16 @@ public class GameController : MonoSingleton<GameController>
         return currentSpeedShot;
     }
 
+    public float getEnemySpeedShot()
+    {
+        return curretEnemySpeedShot;
+    }
+
     private void setSpeed()
     {
         currentSpeed = speedGame + (increaseSpeedGame * (Mathf.Floor(getScore() / scoreToChangeSpeedGame)));
         currentSpeedShot = speedShot + (increaseSpeedShot * (Mathf.Floor(getScore() / scoreToChangeSpeedGame)));
+        curretEnemySpeedShot = speedEnemyShot + (increaseEnemySpeedShot * (Mathf.Floor(getScore() / scoreToChangeSpeedGame)));
     }
 
     public void playFx(int idFx)
