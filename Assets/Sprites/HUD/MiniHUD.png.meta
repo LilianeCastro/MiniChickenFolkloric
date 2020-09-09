@@ -83,6 +83,9 @@ TextureImporter:
   - first:
       213: -3129010779668596261
     second: MiniHUD_MiniBtn
+  - first:
+      213: -6343511461532781831
+    second: MiniHUD_AudioNoSound
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -712,6 +715,27 @@ TextureImporter:
       bones: []
       spriteID: bd93c7b26458394d0800000000000000
       internalID: -3129010779668596261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHUD_AudioNoSound
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f238b26fe157f7a0800000000000000
+      internalID: -6343511461532781831
       vertices: []
       indices: 
       edges: []

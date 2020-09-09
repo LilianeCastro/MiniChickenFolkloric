@@ -11,6 +11,11 @@ public class SoundManager : MonoSingleton<SoundManager>
     public AudioClip[] inGameSound;
     public AudioClip[] fx;
 
+    private void Start()
+    {
+        audioSource.volume = GameManager.Instance.GetMasterVol();
+    }
+
     public void changeSong(string sceneName)
     {
         audioSource.Stop();
@@ -69,13 +74,14 @@ public class SoundManager : MonoSingleton<SoundManager>
         }
     }
 
-    public float getAudioSourceVol()
+    public float GetAudioSourceVol()
     {
-        return audioSource.volume;
+        return GameManager.Instance.GetMasterVol();
     }
 
-    public void setAudioSourceVol(float newVol)
+    public void SetAudioSourceVol(float newVol)
     {
         audioSource.volume = newVol;
+        GameManager.Instance.UpdateMasterVol(newVol);
     }
 }

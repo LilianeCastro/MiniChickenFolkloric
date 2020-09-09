@@ -21,10 +21,10 @@ public class MenuManager : MonoSingleton<MenuManager>
     public Text             TxtScore;
     public Text             TxtHighScore;
 
-    private void Start() 
-    {
-        
-    }
+    [Header("Settings")]
+    public Image[]          spriteVol;
+    public Image            settingsSpriteVol;
+    public Slider           soundVolume;
 
     public void SceneToLoad(string sceneName)
     {
@@ -74,6 +74,40 @@ public class MenuManager : MonoSingleton<MenuManager>
         }
     }
 
+    public void ActivateSettings()
+    {
+        CurrentImgSound();
+        soundVolume.value = GameManager.Instance.GetMasterVol();
+        StartCoroutine("SettingsConfig");
+    }
+
+    public void DisableSettings()
+    {
+        SoundManager.Instance.SetAudioSourceVol(SoundManager.Instance.GetAudioSourceVol());
+        StopCoroutine("SettingsConfig");
+    }
+
+    IEnumerator SettingsConfig()
+    {
+        yield return new WaitForSeconds(0.1f);
+
+        CurrentImgSound();
+        SoundManager.Instance.SetAudioSourceVol(soundVolume.value);
+        StartCoroutine("SettingsConfig");
+    }
+
+    void CurrentImgSound()
+    {
+        if(SoundManager.Instance.GetAudioSourceVol() > 0)
+        {
+            settingsSpriteVol.sprite = spriteVol[0].sprite;
+        }
+        else
+        {
+            settingsSpriteVol.sprite = spriteVol[1].sprite;
+        }
+    }
+
     public void menuGame(bool state)
     {
         MenuGamePanel.SetActive(state);
@@ -99,7 +133,5 @@ public class MenuManager : MonoSingleton<MenuManager>
     {
         SettingsPanel.SetActive(state);
     }
-
-
 
 }
