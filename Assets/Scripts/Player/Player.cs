@@ -43,12 +43,10 @@ public class Player : MonoSingleton<Player>
         {
             vfxPlayer.SetActive(true);
         }
-
     }
 
     private void Update()
     {
-
         isGround = Physics2D.OverlapCircle(groundCheck.position, 0.02f, layerColision);
 
         playerAnim.SetBool("isGround", isGround);
@@ -58,7 +56,6 @@ public class Player : MonoSingleton<Player>
     {
         chosenSkinLayer = Random.Range(0,playerAnim.layerCount);
         playerAnim.SetLayerWeight(chosenSkinLayer, 1);
-        print(chosenSkinLayer);
     }
 
     public int getLayerSkin()
@@ -79,6 +76,7 @@ public class Player : MonoSingleton<Player>
     {
         if(!canShot && GameController.Instance.getProgressAttackValue()>=30)
         {
+            GameController.Instance.playFx(1);
             GameController.Instance.updateProgressAttack(-30);
 
             playerAnim.SetTrigger("attack");
@@ -98,6 +96,7 @@ public class Player : MonoSingleton<Player>
     {
         if(GameController.Instance.getProgressSpecialAttackValue()>=100)
         {
+            GameController.Instance.playFx(2);
             GameController.Instance.updateProgressSpecialAttack(-100);
 
             playerAnim.SetTrigger("bomb");
@@ -128,7 +127,6 @@ public class Player : MonoSingleton<Player>
                 break;
 
             case "Enemy":
-
                 playerAnim.SetTrigger("death");
                 GameController.Instance.GameOver();
                 break;

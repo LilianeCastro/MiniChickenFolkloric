@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PlayerInput : MonoBehaviour
 {
-
     void OnJump()
     {
         Player.Instance.Jump();

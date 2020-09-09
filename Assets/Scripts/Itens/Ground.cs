@@ -43,7 +43,7 @@ public class Ground : MonoBehaviour
             {
                 isInstantiatePlatform = true;
                 //Instantiate Collectable on Ground
-                if (GameController.Instance.CanSpawnAbovePercent(85))
+                if (GameController.Instance.CanSpawnAbovePercent(70))
                 {
                     posRangeSpawn = Random.Range(GameController.Instance.sizeGround, 15);
                     posSpawnCollectable.position = new Vector3(posRangeSpawn, posSpawnCollectable.transform.position.y, transform.position.z);

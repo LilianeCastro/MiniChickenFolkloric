@@ -119,7 +119,7 @@ MonoBehaviour:
   posSpawn: {fileID: 5819997173604304425}
   vfxPlayer: {fileID: 8143425779747156781}
   forceJump: 350
-  delayShot: 1
+  delayShot: 0.5
 --- !u!212 &6533577203075149432
 SpriteRenderer:
   m_ObjectHideFlags: 0

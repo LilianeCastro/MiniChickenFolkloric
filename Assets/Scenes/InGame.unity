@@ -1572,8 +1572,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 203858177}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.076, y: -2.0761, z: 0}
-  m_LocalScale: {x: 9.300924, y: 0.21479261, z: 1}
+  m_LocalPosition: {x: -0.041, y: -2.137, z: 0}
+  m_LocalScale: {x: 9.890926, y: 0.3362637, z: 1}
   m_Children: []
   m_Father: {fileID: 30926262}
   m_RootOrder: 0
@@ -1711,8 +1711,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 256645351}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.07, y: 0.4674, z: 0}
-  m_LocalScale: {x: 9.439685, y: 5.289359, z: 1}
+  m_LocalPosition: {x: -0.026, y: 0.441, z: 0}
+  m_LocalScale: {x: 9.667903, y: 5.342025, z: 1}
   m_Children: []
   m_Father: {fileID: 30926262}
   m_RootOrder: 2
@@ -1807,8 +1807,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 263903163}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.01, y: 0.5694, z: 0}
-  m_LocalScale: {x: 9.319439, y: 5.1861014, z: 1}
+  m_LocalPosition: {x: -0.001, y: 0.537, z: 0}
+  m_LocalScale: {x: 9.614441, y: 5.2509766, z: 1}
   m_Children: []
   m_Father: {fileID: 30926262}
   m_RootOrder: 1
@@ -2503,7 +2503,6 @@ MonoBehaviour:
   groundPrefab:
   - {fileID: 80957948302640997, guid: 41d0254d084b97348993a2929c846638, type: 3}
   - {fileID: 3957567042569793272, guid: 3901b8312a023f94fae6319a9653c940, type: 3}
-  - {fileID: 8188316725268240036, guid: d0e25e1c7cca34e4d8f79e477c79fefa, type: 3}
   sizeGround: 10
   platformPrefab:
   - {fileID: 3977688457492234305, guid: e52bf774250967245aeca6ba277a6ac4, type: 3}
@@ -2516,15 +2515,16 @@ MonoBehaviour:
   - {fileID: 1831619317573204078, guid: eb80d95e8adad754293ef3a4555fbb76, type: 3}
   - {fileID: 229726742497226747, guid: 5c334e85ffabab048a25ee924c1d220b, type: 3}
   - {fileID: 4374992397137883775, guid: 56960dfc6b9645243bf2b22900eda58c, type: 3}
+  - {fileID: 6450110185073781264, guid: e348c68d2696c364d815c0f511ae8a0a, type: 3}
+  - {fileID: 6230801931258685802, guid: fd5269d81026e2149b2ed806f9aef191, type: 3}
+  - {fileID: 318917869867812803, guid: c7b2b32a1ec0e5849a9abb841922e38d, type: 3}
+  collectablePlusPrefab:
   - {fileID: 3780260999138382096, guid: 6f7fe450a2a6c5646a60a7abf5838cfb, type: 3}
   - {fileID: 5700637992722069222, guid: 3b17bab10bd244c4c8112b95edd3ead6, type: 3}
   - {fileID: 455371881468308029, guid: e513f40058762d44884f5231d3f0bb72, type: 3}
-  collectablePlusPrefab:
   - {fileID: 7149165385039188447, guid: 5f75c9c7bd6f77941b354db9c44443c4, type: 3}
   - {fileID: 4240471538872105678, guid: f4f9c1fec47c74e408cc8a07b978e3e1, type: 3}
   - {fileID: 5903591430450118590, guid: a270434b73a543a43b530a1d4c168f27, type: 3}
-  - {fileID: 6450110185073781264, guid: e348c68d2696c364d815c0f511ae8a0a, type: 3}
-  - {fileID: 6230801931258685802, guid: fd5269d81026e2149b2ed806f9aef191, type: 3}
   imgHUDAttackPrefab:
   - {fileID: 7002362067723077064, guid: bc454c196f24f2044ab631396b78c2b0, type: 3}
   - {fileID: 7006673982292953729, guid: a9b0653acaeb5804092e5807d00cb920, type: 3}
@@ -2661,8 +2661,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 597463267}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.01, y: 0.298, z: 0}
-  m_LocalScale: {x: 9.319439, y: 4.56114, z: 1}
+  m_LocalPosition: {x: -0.001, y: 0.26, z: 0}
+  m_LocalScale: {x: 9.568659, y: 4.637823, z: 1}
   m_Children: []
   m_Father: {fileID: 30926262}
   m_RootOrder: 3
@@ -7511,6 +7511,9 @@ MonoBehaviour:
   SettingsPanel: {fileID: 1893129902}
   TxtScore: {fileID: 1123683406}
   TxtHighScore: {fileID: 1173494616}
+  spriteVol: []
+  settingsSpriteVol: {fileID: 0}
+  soundVolume: {fileID: 0}
 --- !u!114 &1909635186
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8585,6 +8588,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Constraints
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6533577203075149428, guid: 13ea5ea6b6e27d446b1ab90fe9f58917,
+        type: 3}
+      propertyPath: m_Material
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6533577203075149431, guid: 13ea5ea6b6e27d446b1ab90fe9f58917,
         type: 3}

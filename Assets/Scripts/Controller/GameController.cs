@@ -51,7 +51,6 @@ public class GameController : MonoSingleton<GameController>
         currentSpeedShot = speedShot;
 
         imgAttack.sprite = imgHUDAttackPrefab[Player.Instance.getLayerSkin()].sprite;
-        print(imgAttack.sprite);
         imgSpecialAttack.sprite = imgHUDSpecialAttackPrefab[Player.Instance.getLayerSkin()].sprite;
 
         progressAttack.value = progressAttack.maxValue;
@@ -165,6 +164,7 @@ public class GameController : MonoSingleton<GameController>
 
     public void GameOver()
     {
+        GameController.Instance.playFx(3);
         GameManager.Instance.UpdateCurrentScore(score);
 
         MenuManager.Instance.SceneToLoad("GameOver");

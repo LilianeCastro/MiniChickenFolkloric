@@ -86,6 +86,27 @@ TextureImporter:
   - first:
       213: -6343511461532781831
     second: MiniHUD_AudioNoSound
+  - first:
+      213: -8781419903159528626
+    second: MiniHUD_Trash
+  - first:
+      213: 8175554228389400544
+    second: MiniHUD_RoundBrazil
+  - first:
+      213: -5491523500538032436
+    second: MiniHUD_RoundEUA
+  - first:
+      213: -7459292868556123708
+    second: MiniHUD_FlagBrazil
+  - first:
+      213: -6044186009524498065
+    second: MiniHUD_FlagEUA
+  - first:
+      213: 4235019458422009571
+    second: MiniHUD_RoundBrazilActive
+  - first:
+      213: 7617841847706752086
+    second: MiniHUD_RoundEUAActive
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -728,7 +749,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -736,6 +757,153 @@ TextureImporter:
       bones: []
       spriteID: 9f238b26fe157f7a0800000000000000
       internalID: -6343511461532781831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHUD_Trash
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4391a0cf11222680800000000000000
+      internalID: -8781419903159528626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHUD_RoundBrazil
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 16
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0efc7193147657170800000000000000
+      internalID: 8175554228389400544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHUD_RoundEUA
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 2
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cce88bab8703ac3b0800000000000000
+      internalID: -5491523500538032436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHUD_FlagBrazil
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 17
+        width: 32
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c19b1638a44b7890800000000000000
+      internalID: -7459292868556123708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHUD_FlagEUA
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1
+        width: 32
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6118e909dcbe1ca0800000000000000
+      internalID: -6044186009524498065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHUD_RoundBrazilActive
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 15
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ee6c1462cfc5ca30800000000000000
+      internalID: 4235019458422009571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHUD_RoundEUAActive
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 0
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6549aa7acc208b960800000000000000
+      internalID: 7617841847706752086
       vertices: []
       indices: 
       edges: []

@@ -108,6 +108,11 @@ public class MenuManager : MonoSingleton<MenuManager>
         }
     }
 
+    public void ClearHighScore()
+    {
+        GameManager.Instance.UpdateHighScore(0);
+    }
+
     public void menuGame(bool state)
     {
         MenuGamePanel.SetActive(state);

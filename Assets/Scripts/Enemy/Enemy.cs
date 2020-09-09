@@ -55,13 +55,14 @@ public class Enemy : MonoBehaviour
             if(typeEnemy.Equals(TypeEnemy.Ranged) && !isAttackRanged)
             {
                 isAttackRanged = true;
+                GameController.Instance.playFx(5);
                 StartCoroutine("SpawnAttack");
             }
 
             StopCoroutine("CheckDistance");
             StartCoroutine("ResetAnim");
 
-            StartCoroutine("TrasnformColliderToTrigger");
+            StartCoroutine("TransformColliderToTrigger");
         }
         else
         {
@@ -76,20 +77,20 @@ public class Enemy : MonoBehaviour
         enemyAnim.SetBool("canAttack", false);
     }
 
-    IEnumerator TrasnformColliderToTrigger()
+    IEnumerator TransformColliderToTrigger()
     {
         yield return new WaitForEndOfFrame();
         if(Vector2.Distance(this.transform.position, Player.Instance.transform.position) < 2f)
         {
             boxCollider.isTrigger = true;
-            StopCoroutine("TrasnformColliderToTrigger");
+            StopCoroutine("TransformColliderToTrigger");
         }
-        StartCoroutine("TrasnformColliderToTrigger");
+        StartCoroutine("TransformColliderToTrigger");
     }
 
     IEnumerator SpawnAttack()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.2f);
         attackEnemyTemp = Instantiate(GameController.Instance.attackEnemyRanged[(int)nameEnemy], posSpawnShoot.position, posSpawnShoot.rotation);
         attackEnemyTemp.TryGetComponent(out Rigidbody2D attackRb);
         attackRb.velocity = Vector2.left * GameController.Instance.speedEnemyShot;
@@ -110,6 +111,7 @@ public class Enemy : MonoBehaviour
 
         if(other.gameObject.CompareTag("Shot"))
         {
+            GameController.Instance.playFx(4);
             Destroy(this.gameObject);
         }
 
