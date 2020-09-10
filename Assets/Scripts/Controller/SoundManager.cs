@@ -5,6 +5,7 @@ using UnityEngine;
 public class SoundManager : MonoSingleton<SoundManager>
 {
     public AudioSource audioSource;
+    public AudioSource audioSourceSfx;
 
     public AudioClip menuSound;
     public AudioClip cutScene;
@@ -15,6 +16,7 @@ public class SoundManager : MonoSingleton<SoundManager>
     private void Start()
     {
         audioSource.volume = GameManager.Instance.GetMasterVol();
+        audioSourceSfx.volume = GameManager.Instance.GetSfxVol();
     }
 
     public void changeSong(string sceneName)
@@ -39,44 +41,7 @@ public class SoundManager : MonoSingleton<SoundManager>
 
     public void playFx(int idFx)
     {
-        switch(idFx)
-        {
-            // Player jump
-            case 0:
-                audioSource.PlayOneShot(fx[idFx]);
-                break;
-            // Egg collected
-            case 1:
-                audioSource.PlayOneShot(fx[idFx]);
-                break;
-            // Chick collected
-            case 2:
-                audioSource.PlayOneShot(fx[idFx]);
-                break;
-            // Player death
-            case 3:
-                audioSource.PlayOneShot(fx[idFx]);
-                break;
-            // Kunai hit
-            case 4:
-                audioSource.PlayOneShot(fx[idFx]);
-                break;
-            // Bomb explosion
-            case 5:
-                audioSource.PlayOneShot(fx[idFx]);
-                break;
-            // Highscore
-            case 6:
-                audioSource.PlayOneShot(fx[idFx]);
-                break;
-            // Game Over
-            case 7:
-                audioSource.PlayOneShot(fx[idFx]);
-                break;
-            default:
-                audioSource.clip = default;
-                break;
-        }
+        audioSourceSfx.PlayOneShot(fx[idFx]);
     }
 
     public float GetAudioSourceVol()
@@ -84,9 +49,28 @@ public class SoundManager : MonoSingleton<SoundManager>
         return GameManager.Instance.GetMasterVol();
     }
 
+    //To Do: Sfx Vol
     public void SetAudioSourceVol(float newVol)
     {
         audioSource.volume = newVol;
         GameManager.Instance.UpdateMasterVol(newVol);
+        
+        SetAudioSourceSfxVol(newVol/2);
+    }
+
+    public float GetAudioSourceSfxVol()
+    {
+        return GameManager.Instance.GetSfxVol();
+    }
+
+    public void SetAudioSourceSfxVol(float newVol)
+    {
+        audioSourceSfx.volume = newVol;
+        GameManager.Instance.UpdateSfxVol(newVol);
+    }
+
+    public void StopMusic()
+    {
+        audioSource.Stop();
     }
 }

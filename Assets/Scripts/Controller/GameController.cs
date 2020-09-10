@@ -174,7 +174,17 @@ public class GameController : MonoSingleton<GameController>
 
     public void GameOver()
     {
-        //GameController.Instance.playFx(6);
+        SoundManager.Instance.StopMusic();
+        GameController.Instance.playFx(5);
+        speedGame = 0f;
+
+        StartCoroutine("GameOverChangeScene");
+        
+    }
+
+    IEnumerator GameOverChangeScene()
+    {
+        yield return new WaitForSeconds(2f);
         GameManager.Instance.UpdateCurrentScore(score);
 
         MenuManager.Instance.SceneToLoad("GameOver");

@@ -56,7 +56,7 @@ public class Enemy : MonoBehaviour
             if(typeEnemy.Equals(TypeEnemy.Ranged) && !isAttackRanged)
             {
                 isAttackRanged = true;
-                //GameController.Instance.playFx(4);
+                GameController.Instance.playFx(3);
                 StartCoroutine("SpawnAttack");
             }
 
@@ -112,7 +112,7 @@ public class Enemy : MonoBehaviour
 
         if(other.gameObject.CompareTag("Shot"))
         {
-            //GameController.Instance.playFx(5);
+            GameController.Instance.playFx(4);
 
             GameObject deathVfx = Instantiate(GameController.Instance.deathVfxPrefab, posSpawnShoot.position, posSpawnShoot.rotation);
             deathVfx.GetComponent<Rigidbody2D>().velocity = new Vector2(GameController.Instance.getSpeed(), 0);

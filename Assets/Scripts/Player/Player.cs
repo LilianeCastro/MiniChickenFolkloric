@@ -73,7 +73,6 @@ public class Player : MonoSingleton<Player>
     {
         if(isGround)
         {
-            //GameController.Instance.playFx(3);
             playerRb.velocity = Vector2.zero;
             playerRb.AddForce(new Vector2(0, forceJump));
         }
@@ -83,7 +82,7 @@ public class Player : MonoSingleton<Player>
     {
         if(!canShot && GameController.Instance.getProgressAttackValue()>=30)
         {
-            //GameController.Instance.playFx(1);
+            GameController.Instance.playFx(1);
             GameController.Instance.updateProgressAttack(-30);
 
             playerAnim.SetTrigger("attack");
@@ -103,7 +102,7 @@ public class Player : MonoSingleton<Player>
     {
         if(GameController.Instance.getProgressSpecialAttackValue()>=100)
         {
-            //GameController.Instance.playFx(2);
+            GameController.Instance.playFx(2);
             GameController.Instance.updateProgressSpecialAttack(-100);
 
             playerAnim.SetTrigger("bomb");
