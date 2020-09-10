@@ -29,7 +29,16 @@ public class MenuManager : MonoSingleton<MenuManager>
     public void SceneToLoad(string sceneName)
     {
         _Fade.EnableFade();
-        SceneManager.LoadScene(sceneName);
+        if(sceneName.Equals("InGame") && GameManager.Instance.GetIsFirstTime()==0)
+        {
+            SceneManager.LoadScene("CutScene");
+            SoundManager.Instance.changeSong("CutScene");
+        }
+        else
+        {
+            SceneManager.LoadScene(sceneName);
+        }
+        
 
         if (sceneName.Equals("InGame"))
         {
@@ -111,6 +120,7 @@ public class MenuManager : MonoSingleton<MenuManager>
     public void ClearHighScore()
     {
         GameManager.Instance.UpdateHighScore(0);
+        GameManager.Instance.UpdateFirstTime(0);
     }
 
     public void menuGame(bool state)

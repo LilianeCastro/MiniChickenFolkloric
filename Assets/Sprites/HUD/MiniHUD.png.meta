@@ -107,6 +107,12 @@ TextureImporter:
   - first:
       213: 7617841847706752086
     second: MiniHUD_RoundEUAActive
+  - first:
+      213: 9118698512989075247
+    second: MiniHUD_MiniBtnRound
+  - first:
+      213: 3939196470460437797
+    second: MiniHUD_34
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -875,7 +881,7 @@ TextureImporter:
         width: 20
         height: 17
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -896,7 +902,7 @@ TextureImporter:
         width: 20
         height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -904,6 +910,27 @@ TextureImporter:
       bones: []
       spriteID: 6549aa7acc208b960800000000000000
       internalID: 7617841847706752086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniHUD_MiniBtnRound
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 35
+        width: 32
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f27b8901cff1c8e70800000000000000
+      internalID: 9118698512989075247
       vertices: []
       indices: 
       edges: []

@@ -7,6 +7,7 @@ public class SoundManager : MonoSingleton<SoundManager>
     public AudioSource audioSource;
 
     public AudioClip menuSound;
+    public AudioClip cutScene;
 
     public AudioClip[] inGameSound;
     public AudioClip[] fx;
@@ -23,6 +24,10 @@ public class SoundManager : MonoSingleton<SoundManager>
         if(sceneName.Equals("InGame"))
         {
             audioSource.clip = inGameSound[GameController.Instance.getIdSkinPlayer()];
+        }
+        else if(sceneName.Equals("CutScene"))
+        {
+            audioSource.clip = cutScene;
         }
         else
         {
