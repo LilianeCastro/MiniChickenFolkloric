@@ -23,6 +23,7 @@ public class Player : MonoSingleton<Player>
     private bool                isGround;
     private bool                isPlatform;
     private bool                canShot;
+    private bool                isAlive;
     private int                 chosenSkinLayer;
 
     public override void Init()
@@ -35,6 +36,8 @@ public class Player : MonoSingleton<Player>
         playerAnim.SetLayerWeight(0, 0);
 
         layerSkin();
+
+        isAlive = true;
     }
 
     private void Start() 
@@ -112,47 +115,51 @@ public class Player : MonoSingleton<Player>
 
     private void OnTriggerEnter2D(Collider2D other) 
     {
-
-        switch(other.gameObject.tag)
+        if(isAlive)
         {
-            case "Collectable":
+            switch(other.gameObject.tag)
+            {
+                case "Collectable":
 
-                collec = other.GetComponent<Collectable>();
-                if(collec.idCollectable.Equals("egg"))
-                {
-                    GameController.Instance.updateProgressAttack(10);
-                }
-                else
-                {
-                    GameController.Instance.updateProgressSpecialAttack(20);
-                }
+                    collec = other.GetComponent<Collectable>();
+                    if(collec.idCollectable.Equals("egg"))
+                    {
+                        GameController.Instance.updateProgressAttack(10);
+                    }
+                    else
+                    {
+                        GameController.Instance.updateProgressSpecialAttack(20);
+                    }
 
-                GameController.Instance.playFx(0);
-                GameController.Instance.updateScore(1);
-                Destroy(other.gameObject);
-                break;
+                    GameController.Instance.playFx(0);
+                    GameController.Instance.updateScore(1);
+                    Destroy(other.gameObject);
+                    break;
 
-            case "Enemy":
-            
-                playerAnim.SetTrigger("death");
-                GameController.Instance.GameOver();
-                break;
-
-            case "WaterDamage":
-
-                if(!getLayerSkin().Equals(3))
-                {
+                case "Enemy":
+                    isAlive = false;
                     playerAnim.SetTrigger("death");
                     GameController.Instance.GameOver();
-                }
-                else
-                {
-                    GameController.Instance.updateProgressAttack(5);
-                    GameController.Instance.updateProgressSpecialAttack(10);
-                }
-                break;
+                    break;
 
+                case "WaterDamage":
+
+                    if(!getLayerSkin().Equals(3))
+                    {
+                        isAlive = false;
+                        playerAnim.SetTrigger("death");
+                        GameController.Instance.GameOver();
+                    }
+                    else
+                    {
+                        GameController.Instance.updateProgressAttack(5);
+                        GameController.Instance.updateProgressSpecialAttack(10);
+                    }
+                    break;
+
+            }
         }
+        
     }
 
     IEnumerator DelayShot()

@@ -22,7 +22,7 @@ public class SoundManager : MonoSingleton<SoundManager>
     public void changeSong(string sceneName)
     {
         audioSource.Stop();
-        
+
         if(sceneName.Equals("InGame"))
         {
             audioSource.clip = inGameSound[GameController.Instance.getIdSkinPlayer()];
@@ -73,4 +73,5 @@ public class SoundManager : MonoSingleton<SoundManager>
     {
         audioSource.Stop();
     }
+
 }

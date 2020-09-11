@@ -9,9 +9,21 @@ public class GameManager : MonoSingleton<GameManager>
     private float           masterVol;
     private int             highScore;
     private int             currentScore;
+    private bool            isPlayerAlive;
 
     private void Start() {
         currentScore = 0;
+        isPlayerAlive = true;
+    }
+
+    public void SetStatusPlayer(bool status)
+    {
+        isPlayerAlive = status;
+    }
+
+    public bool GetStatusPlayer()
+    {
+        return isPlayerAlive;
     }
 
     public int GetCurrentScore()

@@ -61,16 +61,12 @@ public class GameController : MonoSingleton<GameController>
         progressSpecialAttack.value = progressSpecialAttack.maxValue;
 
         Invoke("StartSound", 0.01f);
+
     }
 
     private void StartSound()
     {
         SoundManager.Instance.changeSong("InGame");
-    }
-
-    public void startGame()
-    {
-	    Ground.ready = true;
     }
 
     private void FixedUpdate() {
@@ -174,12 +170,13 @@ public class GameController : MonoSingleton<GameController>
 
     public void GameOver()
     {
+        currentSpeed = 0f;
+ 
+        GameManager.Instance.SetStatusPlayer(false);
         SoundManager.Instance.StopMusic();
         GameController.Instance.playFx(5);
-        speedGame = 0f;
 
-        StartCoroutine("GameOverChangeScene");
-        
+        StartCoroutine("GameOverChangeScene");  
     }
 
     IEnumerator GameOverChangeScene()

@@ -22,7 +22,10 @@ public class ScrollingBackground : MonoBehaviour
 
     void FixedUpdate()
     {
-        offset += increaseOffset;
-        currentMaterial.SetTextureOffset("_MainTex", new Vector2(offset * speed, 0));
+        if(GameManager.Instance.GetStatusPlayer())
+        {
+            offset += increaseOffset;
+            currentMaterial.SetTextureOffset("_MainTex", new Vector2(offset * speed, 0));
+        }   
     }
 }

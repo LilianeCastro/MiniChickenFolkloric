@@ -6,16 +6,25 @@ public class PlayerInput : MonoBehaviour
 {
     void OnJump()
     {
-        Player.Instance.Jump();
+        if(GameManager.Instance.GetStatusPlayer())
+        {
+            Player.Instance.Jump();
+        }
     }
 
     void OnShot()
     {
-        Player.Instance.Fire();
+        if(GameManager.Instance.GetStatusPlayer())
+        {
+            Player.Instance.Fire();
+        }
     }
 
     void OnBomb()
     {
-        Player.Instance.Bomb();
+        if(GameManager.Instance.GetStatusPlayer())
+        {
+            Player.Instance.Bomb();
+        }
     }
 }

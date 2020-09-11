@@ -14,8 +14,6 @@ public class Ground : MonoBehaviour
     public Transform                posPlatformB;
     public Transform                posSpawnCollectable;
 
-    public static bool              ready;
-
     void Start()
     {
         groundRb = GetComponent<Rigidbody2D>();

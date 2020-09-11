@@ -18,6 +18,8 @@ public class MenuManager : MonoSingleton<MenuManager>
     public GameObject       SettingsPanel;
 
     [Header("GameOver Canvas")]
+    public Image[]          spriteGameOverSkins;
+    public Image            spriteGameOver;
     public Text             TxtScore;
     public Text             TxtHighScore;
 
@@ -28,7 +30,22 @@ public class MenuManager : MonoSingleton<MenuManager>
 
     public void SceneToLoad(string sceneName)
     {
+        GameManager.Instance.SetStatusPlayer(true);
         _Fade.EnableFade();
+
+        if(sceneName.Equals("GameOver"))
+        {
+            if(GameManager.Instance.GetHighScore() > GameManager.Instance.GetCurrentScore())
+            {
+                spriteGameOver.sprite = spriteGameOverSkins[Player.Instance.getLayerSkin()].sprite;
+            }
+            else
+            {
+                spriteGameOver.sprite = spriteGameOverSkins[spriteGameOverSkins.Length-1].sprite;
+            }
+            
+        }
+        
         if(sceneName.Equals("InGame") && GameManager.Instance.GetIsFirstTime()==0)
         {
             SceneManager.LoadScene("CutScene");
