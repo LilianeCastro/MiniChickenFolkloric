@@ -35,7 +35,7 @@ public class MenuManager : MonoSingleton<MenuManager>
 
         if(sceneName.Equals("GameOver"))
         {
-            if(GameManager.Instance.GetHighScore() > GameManager.Instance.GetCurrentScore())
+            if(GameManager.Instance.GetHighScore() >= GameManager.Instance.GetCurrentScore())
             {
                 spriteGameOver.sprite = spriteGameOverSkins[Player.Instance.getLayerSkin()].sprite;
             }
@@ -84,19 +84,23 @@ public class MenuManager : MonoSingleton<MenuManager>
 
     private void UpdateCanvasGameOver()
     {
-        if(GameManager.Instance.GetCurrentScore() > GameManager.Instance.GetHighScore())
+        if(GameManager.Instance.GetCurrentScore() <= GameManager.Instance.GetHighScore())
         {
+//            spriteGameOver.sprite = spriteGameOverSkins[Player.Instance.getLayerSkin()].sprite;
+
+            TxtScore.text = $"PONTUAÇÃO \n{ GameManager.Instance.GetCurrentScore() }";
+
+            TxtHighScore.text = $"MELHOR PONTUAÇÃO: { GameManager.Instance.GetHighScore()}";
+        }
+        else
+        {
+//            spriteGameOver.sprite = spriteGameOverSkins[spriteGameOverSkins.Length-1].sprite;
+
             GameManager.Instance.UpdateHighScore(GameManager.Instance.GetCurrentScore());
 
             TxtScore.text = $"NOVO RECORDE! \n{ GameManager.Instance.GetHighScore() }";
 
             TxtHighScore.text = "";
-        }
-        else
-        {
-            TxtScore.text = $"PONTUAÇÃO \n{ GameManager.Instance.GetCurrentScore() }";
-
-            TxtHighScore.text = $"MELHOR PONTUAÇÃO: { GameManager.Instance.GetHighScore()}";
         }
     }
 

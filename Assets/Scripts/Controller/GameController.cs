@@ -49,7 +49,9 @@ public class GameController : MonoSingleton<GameController>
     public GameObject[]		vFxExplosionPrefab;
     public GameObject[]     attackEnemyRanged;
 
-    private void Start() {
+    private void Start() 
+    {
+
         currentSpeed = speedGame;
         currentSpeedShot = speedShot;
         curretEnemySpeedShot = speedEnemyShot;
@@ -67,6 +69,7 @@ public class GameController : MonoSingleton<GameController>
     private void StartSound()
     {
         SoundManager.Instance.changeSong("InGame");
+        GameManager.Instance.UpdateFirstTime(1);
     }
 
     private void FixedUpdate() {
