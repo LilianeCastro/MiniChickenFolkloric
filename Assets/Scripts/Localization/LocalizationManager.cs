@@ -32,8 +32,6 @@ public class LocalizationManager : MonoSingleton<LocalizationManager>
             dataAsJson = File.ReadAllText(filePath);
             LoadedData();
         }
-
-        isReady = true;
             
     }
 
@@ -73,6 +71,8 @@ public class LocalizationManager : MonoSingleton<LocalizationManager>
 
         Debug.Log("Data loaded, dictionary contains: " + localizedText.Count + " entries");
         Debug.Log("Data loaded, dictionary contains: " + localizedTextCutScene.Count + " entries");
+
+        isReady = true;
     }
 
     public string GetLocalizedValue(string key)
