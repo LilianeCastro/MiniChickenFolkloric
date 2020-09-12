@@ -86,7 +86,6 @@ public class MenuManager : MonoSingleton<MenuManager>
     {
         if(GameManager.Instance.GetCurrentScore() <= GameManager.Instance.GetHighScore())
         {
-//            spriteGameOver.sprite = spriteGameOverSkins[Player.Instance.getLayerSkin()].sprite;
 
             TxtScore.text = $"PONTUAÇÃO \n{ GameManager.Instance.GetCurrentScore() }";
 
@@ -94,7 +93,6 @@ public class MenuManager : MonoSingleton<MenuManager>
         }
         else
         {
-//            spriteGameOver.sprite = spriteGameOverSkins[spriteGameOverSkins.Length-1].sprite;
 
             GameManager.Instance.UpdateHighScore(GameManager.Instance.GetCurrentScore());
 
@@ -168,6 +166,11 @@ public class MenuManager : MonoSingleton<MenuManager>
     public void settingsPanel(bool state)
     {
         SettingsPanel.SetActive(state);
+    }
+
+    public void ExitGame()
+    {
+        Application.Quit();
     }
 
 }
