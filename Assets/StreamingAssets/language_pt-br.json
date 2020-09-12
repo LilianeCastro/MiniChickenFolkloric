@@ -1,0 +1,77 @@
+{
+    "items":
+    [
+        {
+            "key":"btn_play",
+            "value":"JOGAR"
+        },
+        {
+            "key":"btn_gallery",
+            "value":"GALERIA"
+        },
+        {
+            "key":"btn_exit",
+            "value":"SAIR"
+        },
+        {
+            "key":"btn_play_again",
+            "value":"JOGAR NOVAMENTE"
+        },
+        {
+            "key":"btn_return",
+            "value":"VOLTAR"
+        },
+        {
+            "key":"txt_score",
+            "value":"PONTUAÇÃO"
+        },
+        {
+            "key":"txt_highScore",
+            "value":"MELHOR PONTUAÇÃO:"
+        },
+        {
+            "key":"txt_gallery",
+            "value":"GALERIA"
+        },
+        {
+            "key":"txt_settings",
+            "value":"CONFIGURAÇÕES"
+        },
+        {
+            "key":"txt_master_sound",
+            "value":"SOM GERAL"
+        },
+        {
+            "key":"txt_music_sound",
+            "value":"MÚSICA"
+        },
+        {
+            "key":"txt_sfx",
+            "value":"EFEITOS SONOROS"
+        },
+        {
+            "key":"txt_language",
+            "value":"IDIOMA"
+        },
+        {
+            "key":"txt_clear_data",
+            "value":"APAGAR DADOS"
+        },
+        {
+            "key":"txt_clear_data_question",
+            "value":"APAGAR DADOS?"
+        },
+        {
+            "key":"txt_confirm",
+            "value":"SIM"
+        },
+        {
+            "key":"txt_cancel",
+            "value":"NÃO"
+        },
+        {
+            "key":"txt_confirm_clear_data",
+            "value":"DADOS APAGADOS"
+        }
+    ]
+}

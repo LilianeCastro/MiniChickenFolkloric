@@ -10,10 +10,29 @@ public class GameManager : MonoSingleton<GameManager>
     private int             highScore;
     private int             currentScore;
     private bool            isPlayerAlive;
+    private string          language;
 
-    private void Start() {
+    public override void Init()
+    {
+        base.Init();
+        //language = "language_pt-br.json";
+        language = "language_en.json";
         currentScore = 0;
         isPlayerAlive = true;
+    }
+
+    public string GetLanguage()
+    {
+        if(PlayerPrefs.HasKey("language"))
+        {
+            return PlayerPrefs.GetString("language");
+        }
+        return language;
+    }
+
+    public void SetLanguage(string value)
+    {
+        language = value;
     }
 
     public void SetStatusPlayer(bool status)

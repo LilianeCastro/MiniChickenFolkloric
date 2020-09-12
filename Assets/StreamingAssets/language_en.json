@@ -1,0 +1,81 @@
+{
+    "items":
+    [
+        {
+            "key":"btn_play",
+            "value":"PLAY"
+        },
+        {
+            "key":"btn_gallery",
+            "value":"GALLERY"
+        },
+        {
+            "key":"btn_exit",
+            "value":"EXIT"
+        },
+        {
+            "key":"btn_play_again",
+            "value":"PLAY AGAIN"
+        },
+        {
+            "key":"btn_return",
+            "value":"RETURN"
+        },
+        {
+            "key":"btn_skip",
+            "value":"SKIP"
+        },
+        {
+            "key":"txt_score",
+            "value":"SCORE"
+        },
+        {
+            "key":"txt_highScore",
+            "value":"       HI-SCORE:"
+        },
+        {
+            "key":"txt_gallery",
+            "value":"GALLERY"
+        },
+        {
+            "key":"txt_settings",
+            "value":"SETTINGS"
+        },
+        {
+            "key":"txt_master_sound",
+            "value":"MASTER SOUND"
+        },
+        {
+            "key":"txt_music_sound",
+            "value":"MUSIC"
+        },
+        {
+            "key":"txt_sfx",
+            "value":"SOUND EFFECTS"
+        },
+        {
+            "key":"txt_language",
+            "value":"LANGUAGE"
+        },
+        {
+            "key":"txt_clear_data",
+            "value":"CLEAR DATA"
+        },
+        {
+            "key":"txt_clear_data_question",
+            "value":"DELETE DATA?"
+        },
+        {
+            "key":"txt_confirm",
+            "value":"YES"
+        },
+        {
+            "key":"txt_cancel",
+            "value":"NO"
+        },
+        {
+            "key":"txt_confirm_clear_data",
+            "value":"DELETED DATA"
+        }
+    ]
+}
