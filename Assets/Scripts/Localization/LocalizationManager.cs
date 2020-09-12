@@ -9,6 +9,8 @@ using UnityEngine.Networking;
 public class LocalizationManager : MonoSingleton<LocalizationManager>
 {
     private Dictionary<string, string> localizedText;
+    private Dictionary<string, string> localizedTextCutScene;
+
     private bool isReady;
     private string missingTextString = "Localized text not found";
 
@@ -17,6 +19,8 @@ public class LocalizationManager : MonoSingleton<LocalizationManager>
     public void LoadLocalizedText(string fileName)
     {
         localizedText = new Dictionary<string, string>();
+        localizedTextCutScene = new Dictionary<string, string>();
+
         string filePath = Path.Combine(Application.streamingAssetsPath, fileName);
 
         if(filePath.Contains("://") || filePath.Contains(":///"))
@@ -56,25 +60,40 @@ public class LocalizationManager : MonoSingleton<LocalizationManager>
     private void LoadedData()
     {
         LocalizationData loadedData = JsonUtility.FromJson<LocalizationData>(dataAsJson);
-        print("false");
+
         for(int i = 0; i < loadedData.items.Length; i++)
         {
             localizedText.Add(loadedData.items[i].key, loadedData.items[i].value);
-            print("localizedText");
+        }
+
+        for(int i = 0; i < loadedData.cutscene.Length; i++)
+        {
+            localizedTextCutScene.Add(loadedData.cutscene[i].key, loadedData.cutscene[i].value);
         }
 
         Debug.Log("Data loaded, dictionary contains: " + localizedText.Count + " entries");
+        Debug.Log("Data loaded, dictionary contains: " + localizedTextCutScene.Count + " entries");
     }
 
     public string GetLocalizedValue(string key)
     {
         string result = missingTextString;
-        print("++");
-        print("++"+localizedText[key]);
 
         if(localizedText.ContainsKey(key))
         {
             result = localizedText[key];
+        }
+
+        return  result;
+    }
+
+    public string GetLocalizedValueCutScene(string key)
+    {
+        string result = missingTextString;
+
+        if(localizedTextCutScene.ContainsKey(key))
+        {
+            result = localizedTextCutScene[key];
         }
 
         return  result;

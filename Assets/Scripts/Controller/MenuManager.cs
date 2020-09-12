@@ -22,6 +22,10 @@ public class MenuManager : MonoSingleton<MenuManager>
     public Image            spriteGameOver;
     public Text             TxtScore;
     public Text             TxtHighScore;
+    public Text             score; 
+    public Text             highScore;
+    public Text             newHighScore;
+    public Color            colorDefault;
 
     [Header("Settings")]
     public Image[]          spriteVol;
@@ -33,14 +37,23 @@ public class MenuManager : MonoSingleton<MenuManager>
         GameManager.Instance.SetStatusPlayer(true);
         _Fade.EnableFade();
 
+
         if(sceneName.Equals("GameOver"))
         {
             if(GameManager.Instance.GetHighScore() >= GameManager.Instance.GetCurrentScore())
-            {
+            { 
+                highScore.gameObject.SetActive(true);
+                newHighScore.gameObject.SetActive(false);
+                score.color = colorDefault;
+
                 spriteGameOver.sprite = spriteGameOverSkins[Player.Instance.getLayerSkin()].sprite;
             }
             else
             {
+                highScore.gameObject.SetActive(false);
+                newHighScore.gameObject.SetActive(true);
+                score.color = Color.clear;
+
                 spriteGameOver.sprite = spriteGameOverSkins[spriteGameOverSkins.Length-1].sprite;
             }
             
@@ -87,16 +100,16 @@ public class MenuManager : MonoSingleton<MenuManager>
         if(GameManager.Instance.GetCurrentScore() <= GameManager.Instance.GetHighScore())
         {
 
-            TxtScore.text = $"PONTUAÇÃO \n{ GameManager.Instance.GetCurrentScore() }";
+            TxtScore.text = $"{ GameManager.Instance.GetCurrentScore() }";
 
-            TxtHighScore.text = $"MELHOR PONTUAÇÃO: { GameManager.Instance.GetHighScore()}";
+            TxtHighScore.text = $"{ GameManager.Instance.GetHighScore()}";
         }
         else
         {
 
             GameManager.Instance.UpdateHighScore(GameManager.Instance.GetCurrentScore());
 
-            TxtScore.text = $"NOVO RECORDE! \n{ GameManager.Instance.GetHighScore() }";
+            TxtScore.text = $"{ GameManager.Instance.GetHighScore() }";
 
             TxtHighScore.text = "";
         }

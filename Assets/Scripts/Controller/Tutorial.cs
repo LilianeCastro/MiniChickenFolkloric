@@ -13,10 +13,8 @@ public class Tutorial : MonoBehaviour
 
     void Start()
     {
-        print(GameManager.Instance.GetIsFirstTime());
         if(GameManager.Instance.GetIsFirstTime()==0)
         {
-            print("first");
             tutorialAnim.SetTrigger("first");
         }
         else

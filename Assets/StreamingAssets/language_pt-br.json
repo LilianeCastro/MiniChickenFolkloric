@@ -22,12 +22,20 @@
             "value":"VOLTAR"
         },
         {
+            "key":"btn_skip",
+            "value":"PULAR"
+        },
+        {
             "key":"txt_score",
             "value":"PONTUAÇÃO"
         },
         {
             "key":"txt_highScore",
             "value":"MELHOR PONTUAÇÃO:"
+        },
+        {
+            "key":"txt_new_highscore",
+            "value":"NOVO RECORDE"
         },
         {
             "key":"txt_gallery",
@@ -72,6 +80,29 @@
         {
             "key":"txt_confirm_clear_data",
             "value":"DADOS APAGADOS"
+        }
+    ],
+    "cutscene":
+    [
+        {
+            "key":"txt_cute_one",
+            "value":"Em uma floresta no norte do Brasil, a bruxa Cuca estava decidida a fazer um bolo."
+        },
+        {
+            "key":"txt_cute_two",
+            "value":"Mas acabou o ovo!"
+        },
+        {
+            "key":"txt_cute_three",
+            "value":"Cuca saiu pela floresta em busca do ingrediente restante para seu delicioso bolo."
+        },
+        {
+            "key":"txt_cute_four",
+            "value":"Enquanto isso não muito distante dali Chick estava colocando seus irmãos para dormir..."
+        },
+        {
+            "key":"txt_cute_five",
+            "value":"Ao sair para resgatar seus irmãos Chick foi presenteado pelo espírito do Folclore com seus poderes."
         }
     ]
 }

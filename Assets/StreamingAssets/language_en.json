@@ -34,6 +34,10 @@
             "value":"       HI-SCORE:"
         },
         {
+            "key":"txt_new_highscore",
+            "value":"NEW HI-SCORE"
+        },
+        {
             "key":"txt_gallery",
             "value":"GALLERY"
         },
@@ -76,6 +80,29 @@
         {
             "key":"txt_confirm_clear_data",
             "value":"DELETED DATA"
+        }
+    ],
+    "cutscene":
+    [
+        {
+            "key":"txt_cute_one",
+            "value":"In a forest in northern Brazil, the witch Cuca was determined to make a cake."
+        },
+        {
+            "key":"txt_cute_two",
+            "value":"But the egg is over!"
+        },
+        {
+            "key":"txt_cute_three",
+            "value":"Cuca went out into the forest in search of the remaining ingredient for his delicious cake."
+        },
+        {
+            "key":"txt_cute_four",
+            "value":"Meanwhile, not far from there, Chick was putting his brothers to sleep ..."
+        },
+        {
+            "key":"txt_cute_five",
+            "value":"Upon leaving to rescue his brothers Chick was gifted by the spirit of Folklore with his powers."
         }
     ]
 }

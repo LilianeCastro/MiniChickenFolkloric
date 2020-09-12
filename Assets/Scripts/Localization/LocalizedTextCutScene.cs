@@ -3,14 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class LocalizedText : MonoBehaviour
+public class LocalizedTextCutScene : MonoBehaviour
 {
     public string key;
 
     void Start()
     {
         Text text = GetComponent<Text>();
-        text.text = LocalizationManager.Instance.GetLocalizedValue(key);
+        text.text = LocalizationManager.Instance.GetLocalizedValueCutScene(key);
     }
-
 }
