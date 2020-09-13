@@ -10,6 +10,10 @@
             "value":"GALLERY"
         },
         {
+            "key":"btn_credits",
+            "value":"CREDITS"
+        },
+        {
             "key":"btn_exit",
             "value":"EXIT"
         },
@@ -31,7 +35,7 @@
         },
         {
             "key":"txt_highScore",
-            "value":"       HI-SCORE:"
+            "value":"HI-SCORE"
         },
         {
             "key":"txt_new_highscore",
@@ -102,7 +106,7 @@
         },
         {
             "key":"txt_cute_five",
-            "value":"Upon leaving to rescue his brothers Chick was gifted by the spirit of Folklore with his powers."
+            "value":"Compassioned by Chick's situation and determination to save his brothers, the Spirit of Folklore blessed them powers."
         }
     ],
     "gallery":

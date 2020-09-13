@@ -16,6 +16,7 @@ public class MenuManager : MonoSingleton<MenuManager>
     public GameObject       GalleryPanel;
     public GameObject       HelpPanel;
     public GameObject       SettingsPanel;
+    public Text             TxtRecord;
 
     [Header("GameOver Canvas")]
     public Image[]          spriteGameOverSkins;
@@ -45,6 +46,8 @@ public class MenuManager : MonoSingleton<MenuManager>
         {
             UpdateImageLanguage(1);
         }
+
+        TxtRecord.text = GameManager.Instance.GetHighScore().ToString();
     }
 
     public void SceneToLoad(string sceneName)

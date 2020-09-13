@@ -10,6 +10,10 @@
             "value":"GALERIA"
         },
         {
+            "key":"btn_credits",
+            "value":"CREDITOS"
+        },
+        {
             "key":"btn_exit",
             "value":"SAIR"
         },
@@ -31,7 +35,7 @@
         },
         {
             "key":"txt_highScore",
-            "value":"MELHOR PONTUAÇÃO:"
+            "value":"RECORDE"
         },
         {
             "key":"txt_new_highscore",
@@ -98,11 +102,11 @@
         },
         {
             "key":"txt_cute_four",
-            "value":"Enquanto isso não muito distante dali Chick estava colocando seus irmãos para dormir..."
+            "value":"Enquanto isso não muito distante dali, Chick estava colocando seus irmãos para dormir..."
         },
         {
             "key":"txt_cute_five",
-            "value":"Ao sair para resgatar seus irmãos Chick foi presenteado pelo espírito do Folclore com seus poderes."
+            "value":"Compadecido com a situação e determinação de Chick em salvar seus irmãos, o Espírito do Folclore lhe abençoou seus poderes."
         }
     ],
     "gallery":
@@ -113,7 +117,7 @@
         },
         {
             "key":"name_boto",
-            "value":"Dizem que o Boto sai do rio e transforma-se em um belo jovem elegante trajando roupas, chápeu e calçados brancos. \n O Boto utiliza este chapéu para ocultar o orifício em sua cabeça, feito para ele respirar. \n Durante as festividades, quando um rapaz aparece usando um chapéu, as pessoas pedem para ele tirá-lo e por fim confirmar se é o Boto."
+            "value":"Dizem que o Boto sai do rio e se transforma em um belo jovem elegante trajando roupas, chápeu e calçados brancos. \n O Boto utiliza este chapéu para ocultar o orifício em sua cabeça, feito para ele respirar. \n Durante as festividades, quando um rapaz aparece usando um chapéu, as pessoas pedem para ele tirá-lo e por fim confirmar se é o Boto."
         },
         {
             "key":"name_boi",
@@ -121,11 +125,11 @@
         },
         {
             "key":"name_curupira",
-            "value":"O Curupira é um espírito da floresta, com a aparência de uma criança com os pés ao contrário. \n Ele é conhecido como o guardião da fauna e da flora, para mantê-los seguros ele despista os caçadores de seus alvos, fazendo-os perder o rumo ou deixando os animais invisíveis aos olhos humano. \n Ele permite que humanos caçarem apenas quando destina-se a sua sobrevivência e de sua família."
+            "value":"O Curupira é um espírito da floresta, com a aparência de uma criança com os pés ao contrário. \n Ele é conhecido como o guardião da fauna e da flora, para mantê-los seguros ele despista os caçadores de seus alvos, fazendo-os perder o rumo ou deixando os animais invisíveis aos olhos humano. \n Ele permite que humanos caçem apenas quando destina-se a sua sobrevivência e de sua família."
         },
         {
             "key":"name_iara",
-            "value":"Diz a lenda que Iara era uma bela índia trabalhadora e corajosa. Destacava-se de todos na aldeia, o que causava inveja em seus irmãos. Certo dia seus irmãos tentaram matá-la, e ao tentar se defender, Iara lhes tirou a vida, e fugiu por medo. \n A encontraram, e como punição foi jogada no encontro do rio Negro com Solimões. \n Os peixes a salvaram, e sobre a luz da lua ela se transformou em uma linda sereia, desde então ela permanece na água atraindo os homens e os matando."
+            "value":"Diz a lenda que Iara era uma bela índia trabalhadora e corajosa. Destacava-se de todos na aldeia, o que causava inveja em seus irmãos. Certo dia seus irmãos tentaram matá-la, e ao tentar se defender, Iara lhes tirou a vida, e fugiu por medo. \n Encontraram-na, e como punição foi jogada no encontro do rio Negro com Solimões. \n Os peixes a salvaram, e sobre a luz da lua ela se transformou em uma linda sereia, desde então ela permanece na água atraindo os homens e os matando."
         },
         {
             "key":"name_saci",
@@ -141,7 +145,7 @@
         },
         {
             "key":"name_bicho_papao",
-            "value":"O bicho papão é um assustador monstro peludo, grande, e de olhos vermelhos. \n Ele fica a noite, no telhado das casas, observando crianças desobedientes e mal criadas. Ele pode se transformar em outros animais ou coisas assustadoras. \n Se a criança desobedece seus pais, ele a sequestra, e a leva para um local escondido, escuro e assustador."
+            "value":"O bicho papão é um assustador monstro peludo, grande, e de olhos vermelhos. \n Ele fica à noite no telhado das casas, observando crianças desobedientes e mal criadas. Ele pode se transformar em outros animais ou coisas assustadoras. \n Se a criança desobedece seus pais, ele a sequestra, e a leva para um local escondido, escuro e assustador."
         },
         {
             "key":"name_boiuna",
@@ -149,7 +153,7 @@
         },
         {
             "key":"name_lobisomem",
-            "value":"Segundo a lenda, o sétimo filho homem que nasce em uma família torna-se Lobisomem. \n Na primeira terça ou sexta-feira de lua cheia após o seu aniversário e em uma encruzilhada se transforma na fera, e uiva para a lua anunciando assim que a maldição se concretizou. A partir deste dia ele sai toda sexta-feira de lua cheia para se transformar em lobo, ou alguma espécie semelhante a esse animal. \n Depois de transformado, ele sai em caça de sangue matando quem encontra até que a mutação acabe, que acontece com o cantar do galo e ao amanhecer."
+            "value":"Segundo a lenda, o sétimo filho homem que nasce em uma família torna-se lobisomem. \n Na primeira terça ou sexta-feira de lua cheia após o seu aniversário e em uma encruzilhada se transforma na fera, e uiva para a lua anunciando assim que a maldição se concretizou. A partir deste dia ele sai toda sexta-feira de lua cheia para se transformar em lobo, ou alguma espécie semelhante a esse animal. \n Depois de transformado, ele sai em caça de sangue matando quem encontra até que a mutação acabe, que acontece com o cantar do galo e ao amanhecer."
         },
         {
             "key":"font_chick",
