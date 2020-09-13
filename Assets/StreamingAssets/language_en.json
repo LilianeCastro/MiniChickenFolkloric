@@ -104,5 +104,96 @@
             "key":"txt_cute_five",
             "value":"Upon leaving to rescue his brothers Chick was gifted by the spirit of Folklore with his powers."
         }
+    ],
+    "gallery":
+    [
+        {
+            "key":"chick",
+            "value":"This is Mini Chick, he is a little chicken who loves his little brothers and will do anything to protect them."
+        },
+        {
+            "key":"boto",
+            "value":"They say that the Boto comes out of the river and becomes a handsome young man wearing white clothes, hat and shoes. \n The Boto uses this hat to hide the hole in his head, made so that he can breathe. \n During the festivities, when a boy appears wearing a hat, people ask him to take it off and finally confirm that it is the Boto."
+        },
+        {
+            "key":"boi",
+            "value":"In the Northeast of Brazil there was a couple, the wife was pregnant, and to meet a wife's desire to eat beef tongue the husband cut the tongue of one of his boss's cattle. \n When he found the ox almost lifeless, the farmer asked the city healer for help, who managed to cure him. \n To celebrate the healing of the ox, the farmer held a big party."
+        },
+        {
+            "key":"curupira",
+            "value":"Curupira is a spirit of the forest, with the appearance of a child with his feet upside down. \n He is known as the guardian of fauna and flora, to keep them safe he outwits the hunters of his targets, making them lose their way or making animals invisible to the human eye. \n It allows humans to hunt only when it is for their survival and that of their family."
+        },
+        {
+            "key":"iara",
+            "value":"Legend has it that Iara was a beautiful, hardworking and brave Indian. It stood out from everyone in the village, which made his brothers jealous. One day her brothers tried to kill her, and when trying to defend herself, Iara took their lives, and ran away out of fear. \n They found her, and as a punishment was played at the meeting of the Negro River with Solimões. \n The fish saved her, and under the moonlight she became a beautiful mermaid, since then she remains in the water attracting men and killing them."
+        },
+        {
+            "key":"saci",
+            "value":"Saci Pererê is represented by a black boy with one leg, wears a red cap and has a pipe. \n One of several legends says that he has a mischievous personality, and he liked to make pranks to hinder intruders from entering the forest. \n To escape Saci, use ropes along the way, or grab your hat to control it."
+        },
+        {
+            "key":"vitoria",
+            "value":"In an indigenous tribe it was believed that the moon was a goddess and that she chose the most beautiful Indians and took them with her, transforming them into stars. \n Naiá was a beautiful Indian, and dreamed of being taken by the moon. Every night she walked through the forest and asked the moon to meet her, a long time passed and her request had not been granted. \n One night Naiá saw the moon reflected in a river, and believing that the moon came to fetch it, he threw himself at the bottom of the lake and drowned. The moon pitying for the sacrifice transformed it into a “star of the waters”, the Vitória-Régia."
+        },
+        {
+            "key":"cuca",
+            "value":"She is known as a very bad, scary-looking witch with an alligator head and body. \n According to legend, Cuca sleeps one night every seven years and tends to steal children who disobey their parents. \n She lives a thousand years, and as she reaches that age, an egg appears at her home and a new Cuca is born that takes her place."
+        },
+        {
+            "key":"bicho_papao",
+            "value":"The Bicho Papão is a scary, hairy, big, red-eyed monster. \n He stays at night, on the roof of the houses, watching disobedient and poorly raised children. It can turn into other animals or scary things. \n If the child disobeys his parents, he kidnaps him and takes him to a hidden, dark and scary place."
+        },
+        {
+            "key":"boiuna",
+            "value":"Boiúna is a gigantic snake that inhabits the rivers of the Amazon. Your body is so bright that it is able to reflect the moonlight. His eyes radiate a powerful light that attracts fishermen and devours them. \n Your legend is part of an explanation of how the night came about. According to what they say, Boiúna marries her daughter and sends the night in a lump of tucumã for her. But the curious bearers of this pit open the pit and release the night, being punished for it."
+        },
+        {
+            "key":"lobisomem",
+            "value":"According to legend, the seventh male child who is born into a family becomes a Lobisomem. \n On the first Tuesday or Friday of a full moon after his birthday and at a crossroads he becomes the beast, and howls at the moon announcing that the curse has materialized. From this day on, he leaves every Friday with a full moon to transform himself into a wolf, or some species similar to that animal. \n After being transformed, he goes on a blood hunt, killing anyone he meets until the mutation ends, which happens with the rooster crowing and at dawn."
+        },
+        {
+            "key":"font_chick",
+            "value":""
+        },
+        {
+            "key":"font_boto",
+            "value":"Pacievitch, Thais. A Lenda do Boto. \n Available in https://infoescola.com/folclore/a-lenda-do-boto/ Access in 21 de Agosto de 2020."
+        },
+        {
+            "key":"font_boi",
+            "value":"Figueiredo, Karoline. Bumba meu Boi. \n Available in https://infoescola.com/folclore/bumba-meu-boi/ Access in 22 de Agosto de 2020."
+        },
+        {
+            "key":"font_curupira",
+            "value":"Moraes, Rosalina. Curupira. \n Available in https://infoescola.com/folclore/curupira/ Access in 22 de Agosto de 2020."
+        },
+        {
+            "key":"font_iara",
+            "value":"Martinez, Marina. Iara. \n Available in https://infoescola.com/folclore/iara/ Access in 22 de Agosto de 2020."
+        },
+        {
+            "key":"font_saci",
+            "value":"Moraes, Rosalina. A Lenda do Saci Pererê. \n Available in https://infoescola.com/folclore/a-lenda-do-saci-perere/ Access in 21 de Agosto de 2020."
+        },
+        {
+            "key":"font_vitoria",
+            "value":"Figueiredo, Karoline. Lenda da Vitória-régia. \n Available in https://infoescola.com/folclore/lenda-da-vitoria-regia/ Access in 22 de Agosto de 2020."
+        },
+        {
+            "key":"font_cuca",
+            "value":"Figueiredo, Karoline. Cuca. \n Available in https://infoescola.com/folclore/cuca/ Access in 22 de Agosto de 2020."
+        },
+        {
+            "key":"font_bicho_papao",
+            "value":"\n Available in https://suapesquisa.com/folclorebrasileiro/lenda_bicho_papao.htm/ Access in 22 de Agosto de 2020."
+        },
+        {
+            "key":"font_boiuna",
+            "value":"\n Available in https://www.ufmg.br/cienciaparatodos/wp-content/uploads/2012/08/leituraparatodos/e5_30-alendaamazonicadeboiuna.pdf Access in 22 de Agosto de 2020."
+        },
+        {
+            "key":"font_lobisomem",
+            "value":"Moraes, Rosalina. Lobisomem. \n Available in https://infoescola.com/folclore/lobisomem/ Access in 22 de Agosto de 2020."
+        }
     ]
 }

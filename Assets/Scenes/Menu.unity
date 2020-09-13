@@ -3642,6 +3642,15 @@ MonoBehaviour:
   highScore: {fileID: 434583769}
   newHighScore: {fileID: 876565635}
   colorDefault: {r: 1, g: 0.9647059, b: 0, a: 1}
+  btnChosenLanguage:
+  - {fileID: 806078824}
+  - {fileID: 1020840168}
+  imgLanguage:
+  - {fileID: 2256775900102350499, guid: 7d4c4faf882d1e74baccd712542ee9cb, type: 3}
+  - {fileID: 5628996770760226990, guid: cba37ff353f81c74c8ecbf39a3d907b5, type: 3}
+  imgLanguageCheck:
+  - {fileID: 7850137198325262976, guid: 25858850273d8aa4a9f98825e60137ce, type: 3}
+  - {fileID: 6753396476036642042, guid: 9a747205aba97fa4da28a881858ed641, type: 3}
   spriteVol:
   - {fileID: 2752387498224768544, guid: add0a2848b5013c499af979908b4fe77, type: 3}
   - {fileID: 8573936662616628725, guid: ec537c01eaf4c7643820dc0d5337a387, type: 3}
@@ -4061,7 +4070,40 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 806078822}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 749069189}
+        m_MethodName: UpdateImageLanguage
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2101328343}
+        m_MethodName: UpdateLanguage
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: language_pt-br.json
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 345824788}
+        m_MethodName: LoadLocalizedText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: language_pt-br.json
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &838213871
 GameObject:
   m_ObjectHideFlags: 0
@@ -5695,7 +5737,40 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1020840166}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 749069189}
+        m_MethodName: UpdateImageLanguage
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2101328343}
+        m_MethodName: UpdateLanguage
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: language_en.json
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 345824788}
+        m_MethodName: LoadLocalizedText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: language_en.json
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1027684149
 GameObject:
   m_ObjectHideFlags: 0
@@ -9133,7 +9208,7 @@ MonoBehaviour:
   txtDescriptionOnBoard: {fileID: 1827015845}
   txtFontOnBoard: {fileID: 1182274125}
   charName:
-  - Mini Chicken
+  - Mini Chick
   - Boto
   - Bumba Meu Boi
   - Curupira
@@ -10601,7 +10676,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2085364513
 MonoBehaviour:
   m_ObjectHideFlags: 0

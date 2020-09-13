@@ -104,5 +104,96 @@
             "key":"txt_cute_five",
             "value":"Ao sair para resgatar seus irmãos Chick foi presenteado pelo espírito do Folclore com seus poderes."
         }
+    ],
+    "gallery":
+    [
+        {
+            "key":"chick",
+            "value":"Este é o Mini Chick, ele é um franguinho que adora seus irmãozinhos e vai fazer de tudo para protegê-los"
+        },
+        {
+            "key":"boto",
+            "value":"Dizem que o Boto sai do rio e transforma-se em um belo jovem elegante trajando roupas, chápeu e calçados brancos. \n O Boto utiliza este chapéu para ocultar o orifício em sua cabeça, feito para ele respirar. \n Durante as festividades, quando um rapaz aparece usando um chapéu, as pessoas pedem para ele tirá-lo e por fim confirmar se é o Boto."
+        },
+        {
+            "key":"boi",
+            "value":"No Nordeste do Brasil existia um casal, a esposa estava grávida, e para atender a um desejo da esposa de comer lingua de boi o marido cortou a lingua de um dos gados de seu patrão. \n Ao encontrar o boi quase sem vida, o fazendeiro pediu socorro ao curandeiro da cidade, que conseguiu curá-lo. \n Para comemorar a cura do boi o fazendeiro realizou uma grande festa."
+        },
+        {
+            "key":"curupira",
+            "value":"O Curupira é um espírito da floresta, com a aparência de uma criança com os pés ao contrário. \n Ele é conhecido como o guardião da fauna e da flora, para mantê-los seguros ele despista os caçadores de seus alvos, fazendo-os perder o rumo ou deixando os animais invisíveis aos olhos humano. \n Ele permite que humanos caçarem apenas quando destina-se a sua sobrevivência e de sua família."
+        },
+        {
+            "key":"iara",
+            "value":"Diz a lenda que Iara era uma bela índia trabalhadora e corajosa. Destacava-se de todos na aldeia, o que causava inveja em seus irmãos. Certo dia seus irmãos tentaram matá-la, e ao tentar se defender, Iara lhes tirou a vida, e fugiu por medo. \n A encontraram, e como punição foi jogada no encontro do rio Negro com Solimões. \n Os peixes a salvaram, e sobre a luz da lua ela se transformou em uma linda sereia, desde então ela permanece na água atraindo os homens e os matando."
+        },
+        {
+            "key":"saci",
+            "value":"O Saci Pererê é representado por um menino preto de uma só perna, usa um gorro vermelho e tem um cachimbo. \n Uma de várias lendas diz que ele tem uma personalidade travessa, e gostava de fazer traquinagens para atrapalhar a entrada de intrusos na mata. \n Para escapar do Saci use cordas pelo caminho, ou pegue seu gorro para controlá-lo."
+        },
+        {
+            "key":"vitoria",
+            "value":"Em uma tribo indígena acreditava-se que a lua era uma deusa e que escolhia as mais belas índias e as levava consigo transformando-as em estrelas. \n Naiá era uma bela índia, e sonhava em ser levada pela lua. Todas as noites ela caminhava pela floresta e pedia que a lua viesse ao seu encontro, muito tempo passou e seu pedido não havia sido realizado. \n Certa noite Naiá viu a lua refletida em um rio, e acreditando que a lua veio buscá-la se atirou no fundo do lago e se afogou. A lua compadecida pelo sacrifício a transformou em uma “estrela das águas”, a Vitória-Régia."
+        },
+        {
+            "key":"cuca",
+            "value":"Ela é conhecida como uma bruxa muito má, de aparência assustadora, com cabeça e corpo de jacaré. \n Segundo a lenda, a Cuca dorme uma noite a cada sete anos e costuma a roubar crianças que desobedecem a seus pais. \n Ela vive mil anos, e conforme chega a essa idade, um ovo surge em sua morada e nasce uma nova Cuca que toma seu lugar."
+        },
+        {
+            "key":"bicho_papao",
+            "value":"O bicho papão é um assustador monstro peludo, grande, e de olhos vermelhos. \n Ele fica a noite, no telhado das casas, observando crianças desobedientes e mal criadas. Ele pode se transformar em outros animais ou coisas assustadoras. \n Se a criança desobedece seus pais, ele a sequestra, e a leva para um local escondido, escuro e assustador."
+        },
+        {
+            "key":"boiuna",
+            "value":"Boiúna é uma gigantesca cobra que habita os rios da Amazônia. Seu corpo é tão brilhante que é capaz de refletir o luar. Seus olhos irradiam uma luz poderosa que atrai os pescadores e os devora. \n Sua lenda faz parte de uma explicação de como surgiu a noite. Segundo contam, Boiúna casa sua filha e envia a noite em um caroço de tucumã para ela. Mas os portadores desse caroço, curiosos, abrem o caroço e libertam a noite, sendo punidos por isso."
+        },
+        {
+            "key":"lobisomem",
+            "value":"Segundo a lenda, o sétimo filho homem que nasce em uma família torna-se Lobisomem. \n Na primeira terça ou sexta-feira de lua cheia após o seu aniversário e em uma encruzilhada se transforma na fera, e uiva para a lua anunciando assim que a maldição se concretizou. A partir deste dia ele sai toda sexta-feira de lua cheia para se transformar em lobo, ou alguma espécie semelhante a esse animal. \n Depois de transformado, ele sai em caça de sangue matando quem encontra até que a mutação acabe, que acontece com o cantar do galo e ao amanhecer."
+        },
+        {
+            "key":"font_chick",
+            "value":""
+        },
+        {
+            "key":"font_boto",
+            "value":"Pacievitch, Thais. A Lenda do Boto. \n Disponível em https://infoescola.com/folclore/a-lenda-do-boto/ Acesso em 21 de Agosto de 2020."
+        },
+        {
+            "key":"font_boi",
+            "value":"Figueiredo, Karoline. Bumba meu Boi. \n Disponível em https://infoescola.com/folclore/bumba-meu-boi/ Acesso em 22 de Agosto de 2020."
+        },
+        {
+            "key":"font_curupira",
+            "value":"Moraes, Rosalina. Curupira. \n Disponível em https://infoescola.com/folclore/curupira/ Acesso em 22 de Agosto de 2020."
+        },
+        {
+            "key":"font_iara",
+            "value":"Martinez, Marina. Iara. \n Disponível em https://infoescola.com/folclore/iara/ Acesso em 22 de Agosto de 2020."
+        },
+        {
+            "key":"font_saci",
+            "value":"Moraes, Rosalina. A Lenda do Saci Pererê. \n Disponível em https://infoescola.com/folclore/a-lenda-do-saci-perere/ Acesso em 21 de Agosto de 2020."
+        },
+        {
+            "key":"font_vitoria",
+            "value":"Figueiredo, Karoline. Lenda da Vitória-régia. \n Disponível em https://infoescola.com/folclore/lenda-da-vitoria-regia/ Acesso em 22 de Agosto de 2020."
+        },
+        {
+            "key":"font_cuca",
+            "value":"Figueiredo, Karoline. Cuca. \n Disponível em https://infoescola.com/folclore/cuca/ Acesso em 22 de Agosto de 2020."
+        },
+        {
+            "key":"font_bicho_papao",
+            "value":"\n Disponível em https://suapesquisa.com/folclorebrasileiro/lenda_bicho_papao.htm/ Acesso em 22 de Agosto de 2020."
+        },
+        {
+            "key":"font_boiuna",
+            "value":"\n Disponível em https://www.ufmg.br/cienciaparatodos/wp-content/uploads/2012/08/leituraparatodos/e5_30-alendaamazonicadeboiuna.pdf Acesso em 22 de Agosto de 2020."
+        },
+        {
+            "key":"font_lobisomem",
+            "value":"Moraes, Rosalina. Lobisomem. \n Disponível em https://infoescola.com/folclore/lobisomem/ Acesso em 22 de Agosto de 2020."
+        }
     ]
 }

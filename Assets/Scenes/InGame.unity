@@ -1875,6 +1875,13 @@ MonoBehaviour:
   spriteGameOver: {fileID: 0}
   TxtScore: {fileID: 1865928734}
   TxtHighScore: {fileID: 1874812357}
+  score: {fileID: 0}
+  highScore: {fileID: 0}
+  newHighScore: {fileID: 0}
+  colorDefault: {r: 0, g: 0, b: 0, a: 0}
+  btnChosenLanguage: []
+  imgLanguage: []
+  imgLanguageCheck: []
   spriteVol:
   - {fileID: 2752387498224768544, guid: add0a2848b5013c499af979908b4fe77, type: 3}
   - {fileID: 8573936662616628725, guid: ec537c01eaf4c7643820dc0d5337a387, type: 3}
@@ -6763,7 +6770,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1457180318
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8307,7 +8314,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1727157423
 RectTransform:
   m_ObjectHideFlags: 0

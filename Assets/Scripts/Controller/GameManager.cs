@@ -30,9 +30,10 @@ public class GameManager : MonoSingleton<GameManager>
         return language;
     }
 
-    public void SetLanguage(string value)
+    public void UpdateLanguage(string value)
     {
         language = value;
+        PlayerPrefs.SetString("language", value);
     }
 
     public void SetStatusPlayer(bool status)

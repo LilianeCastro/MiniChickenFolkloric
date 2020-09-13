@@ -5,12 +5,21 @@ using UnityEngine.UI;
 
 public class LocalizedText : MonoBehaviour
 {
-    public string key;
+    public string   key;
+    private Text    text;
 
     void Start()
     {
-        Text text = GetComponent<Text>();
-        text.text = LocalizationManager.Instance.GetLocalizedValue(key);
+        text = GetComponent<Text>();
     }
+
+    void OnGUI()
+    {
+
+        text.text = LocalizationManager.Instance.GetLocalizedValue(key);
+        
+    }
+
+    
 
 }

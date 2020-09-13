@@ -28,9 +28,24 @@ public class MenuManager : MonoSingleton<MenuManager>
     public Color            colorDefault;
 
     [Header("Settings")]
+    public Button[]         btnChosenLanguage;
+    public Image[]          imgLanguage;
+    public Image[]          imgLanguageCheck;
     public Image[]          spriteVol;
     public Image            settingsSpriteVol;
     public Slider           soundVolume;
+
+    private void Start()
+    {
+        if(GameManager.Instance.GetLanguage().Equals("language_pt-br.json"))
+        {
+            UpdateImageLanguage(0);
+        }
+        else
+        {
+            UpdateImageLanguage(1);
+        }
+    }
 
     public void SceneToLoad(string sceneName)
     {
@@ -153,6 +168,17 @@ public class MenuManager : MonoSingleton<MenuManager>
     {
         GameManager.Instance.UpdateHighScore(0);
         GameManager.Instance.UpdateFirstTime(0);
+    }
+
+    public void UpdateImageLanguage(int pos)
+    {
+        for(int i = 0; i < imgLanguage.Length; i ++)
+        {
+            btnChosenLanguage[i].image.sprite = imgLanguage[i].sprite;
+        }
+
+        btnChosenLanguage[pos].image.sprite = imgLanguageCheck[pos].sprite;
+        
     }
 
     public void menuGame(bool state)

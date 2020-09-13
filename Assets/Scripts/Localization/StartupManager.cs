@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class StartupManager : MonoBehaviour
+public class StartupManager : MonoSingleton<StartupManager>
 {
     public GameObject canvas;
 
@@ -19,7 +19,6 @@ public class StartupManager : MonoBehaviour
         {
             yield return null;
         }
-
         canvas.SetActive(true);
     }
 }
