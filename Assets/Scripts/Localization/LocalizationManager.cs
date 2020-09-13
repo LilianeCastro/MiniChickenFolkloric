@@ -62,9 +62,7 @@ public class LocalizationManager : MonoSingleton<LocalizationManager>
     private void LoadedData()
     {
         LocalizationData loadedData = JsonUtility.FromJson<LocalizationData>(dataAsJson);
-        /*localizedText.Clear();
-        localizedTextCutScene.Clear();
-        localizedTextGallery.Clear();*/
+
         for(int i = 0; i < loadedData.items.Length; i++)
         {
             localizedText.Add(loadedData.items[i].key, loadedData.items[i].value);
