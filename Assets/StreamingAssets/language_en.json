@@ -84,6 +84,30 @@
         {
             "key":"txt_confirm_clear_data",
             "value":"DELETED DATA"
+        },
+        {
+            "key":"txt_programmer",
+            "value":"GAME DESIGNER / PROGRAMMER / 2D ARTIST"
+        },
+        {
+            "key":"txt_sound_designer",
+            "value":"SOUND DESIGNER"
+        },
+        {
+            "key":"txt_ui_designer",
+            "value":"UI/UX DESIGNER"
+        },
+        {
+            "key":"txt_font",
+            "value":"FONT"
+        },
+        {
+            "key":"txt_jump",
+            "value":"JUMP"
+        },
+        {
+            "key":"txt_attack",
+            "value":"ATTACK"
         }
     ],
     "cutscene":
@@ -94,7 +118,7 @@
         },
         {
             "key":"txt_cute_two",
-            "value":"But the egg is over!"
+            "value":"But the egg is gone!"
         },
         {
             "key":"txt_cute_three",

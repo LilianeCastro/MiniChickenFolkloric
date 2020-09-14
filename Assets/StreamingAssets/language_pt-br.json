@@ -84,6 +84,30 @@
         {
             "key":"txt_confirm_clear_data",
             "value":"DADOS APAGADOS"
+        },
+        {
+            "key":"txt_programmer",
+            "value":"DESIGNER DE JOGOS / PROGRAMADORA / ARTISTA 2D"
+        },
+        {
+            "key":"txt_sound_designer",
+            "value":"DESIGNER DE SOM"
+        },
+        {
+            "key":"txt_ui_designer",
+            "value":"DESIGNER DE INTERFACES E EXPERIÊNCIA DO USUÁRIO"
+        },
+        {
+            "key":"txt_font",
+            "value":"FONTE"
+        },
+        {
+            "key":"txt_jump",
+            "value":"PULO"
+        },
+        {
+            "key":"txt_attack",
+            "value":"ATAQUE"
         }
     ],
     "cutscene":
@@ -106,7 +130,7 @@
         },
         {
             "key":"txt_cute_five",
-            "value":"Compadecido com a situação e determinação de Chick em salvar seus irmãos, o Espírito do Folclore lhe abençoou seus poderes."
+            "value":"Compadecido com a situação e determinação de Chick em salvar seus irmãos, o Espírito do Folclore lhe abençoou com seus poderes."
         }
     ],
     "gallery":
