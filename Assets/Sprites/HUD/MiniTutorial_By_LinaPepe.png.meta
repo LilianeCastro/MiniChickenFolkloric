@@ -1,25 +1,37 @@
 fileFormatVersion: 2
-guid: 4008f6cd0d56de44a8be1a52c8f95864
+guid: c49288e131dde8f468f001b438ba54f3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5390624778054725531
-    second: MiniHeathBar_By_LinaPepe_0
+      213: -7627628846097862039
+    second: MiniTutorial_By_LinaPepe_0
   - first:
-      213: -3065418989914455149
-    second: MiniHeathBar_By_LinaPepe_1
+      213: 2994082683052222212
+    second: MiniTutorial_By_LinaPepe_1
   - first:
-      213: -2113162872239835647
-    second: MiniHeathBar_By_LinaPepe_2
+      213: -5665703822787938741
+    second: MiniTutorial_By_LinaPepe_0
   - first:
-      213: -784115438947453225
-    second: MiniHeathBar_By_LinaPepe_3
+      213: -2262260083670425797
+    second: MiniTutorial_By_LinaPepe_1
   - first:
-      213: -6776630079547840872
-    second: MiniHeathBar_By_LinaPepe_4
+      213: -2071598399462940536
+    second: MiniTutorial_By_LinaPepe_2
   - first:
-      213: 3874746298052814263
-    second: MiniHeathBar_By_LinaPepe_5
+      213: 4491165858237534700
+    second: MiniTutorial_By_LinaPepe_2
+  - first:
+      213: -6566466385751429541
+    second: MiniTutorial_By_LinaPepe_3
+  - first:
+      213: 2608140108077027377
+    second: MiniTutorial_By_LinaPepe_3
+  - first:
+      213: 5414741929733181005
+    second: MiniTutorial_By_LinaPepe_4
+  - first:
+      213: -4391617086867753725
+    second: MiniTutorial_By_LinaPepe_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -63,7 +75,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -141,127 +153,106 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MiniHeathBar_By_LinaPepe_0
+      name: MiniTutorial_By_LinaPepe_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 106
-        width: 166
-        height: 21
+        x: 92
+        y: 312
+        width: 268
+        height: 172
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 56011aa3357a035b0800000000000000
-      internalID: -5390624778054725531
+      spriteID: b46f62034606f51b0800000000000000
+      internalID: -5665703822787938741
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniHeathBar_By_LinaPepe_1
+      name: MiniTutorial_By_LinaPepe_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 85
-        width: 166
-        height: 21
+        x: 403
+        y: 312
+        width: 268
+        height: 172
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 39389628ba17575d0800000000000000
-      internalID: -3065418989914455149
+      spriteID: b3f574b9076da90e0800000000000000
+      internalID: -2262260083670425797
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniHeathBar_By_LinaPepe_2
+      name: MiniTutorial_By_LinaPepe_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 64
-        width: 166
-        height: 21
+        x: 690
+        y: 315
+        width: 268
+        height: 172
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 106b99f40998ca2e0800000000000000
-      internalID: -2113162872239835647
+      spriteID: ce15c978d83d35e30800000000000000
+      internalID: 4491165858237534700
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniHeathBar_By_LinaPepe_3
+      name: MiniTutorial_By_LinaPepe_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 42
-        width: 116
-        height: 21
+        x: 92
+        y: 94
+        width: 266
+        height: 173
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d633a6a9234e15f0800000000000000
-      internalID: -784115438947453225
+      spriteID: 130516a1c99f13420800000000000000
+      internalID: 2608140108077027377
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniHeathBar_By_LinaPepe_4
+      name: MiniTutorial_By_LinaPepe_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 116
-        height: 21
+        x: 394
+        y: 53
+        width: 269
+        height: 222
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 896e256c8d294f1a0800000000000000
-      internalID: -6776630079547840872
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MiniHeathBar_By_LinaPepe_5
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 21
-        width: 116
-        height: 21
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7b5a2329a3dd5c530800000000000000
-      internalID: 3874746298052814263
+      spriteID: 30536bbf687dd03c0800000000000000
+      internalID: -4391617086867753725
       vertices: []
       indices: 
       edges: []

@@ -171,6 +171,11 @@ public class GameController : MonoSingleton<GameController>
         SoundManager.Instance.playFx(idFx);
     }
 
+    public void stopFx()
+    {
+        SoundManager.Instance.StopFx();
+    }
+
     public void GameOver()
     {
         currentSpeed = 0f;

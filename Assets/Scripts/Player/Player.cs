@@ -105,7 +105,15 @@ public class Player : MonoSingleton<Player>
     {
         if(GameController.Instance.getProgressSpecialAttackValue()>=100)
         {
-            GameController.Instance.playFx(2);
+            if(getLayerSkin()==3)
+            {
+                GameController.Instance.playFx(6);
+            }
+            else
+            {
+                GameController.Instance.playFx(2);
+            }
+            
             GameController.Instance.updateProgressSpecialAttack(-100);
 
             playerAnim.SetTrigger("bomb");

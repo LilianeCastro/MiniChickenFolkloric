@@ -108,6 +108,10 @@
         {
             "key":"txt_attack",
             "value":"ATTACK"
+        },
+        {
+            "key":"txt_special",
+            "value":"SPECIAL"
         }
     ],
     "cutscene":

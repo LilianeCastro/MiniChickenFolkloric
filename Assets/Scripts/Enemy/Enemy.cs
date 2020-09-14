@@ -92,6 +92,10 @@ public class Enemy : MonoBehaviour
     IEnumerator SpawnAttack()
     {
         yield return new WaitForEndOfFrame();
+        if(nameEnemy.Equals(NameEnemy.Lobisomem))
+        {
+            GameController.Instance.playFx(7);
+        }
         attackEnemyTemp = Instantiate(GameController.Instance.attackEnemyRanged[(int)nameEnemy], posSpawnShoot.position, posSpawnShoot.rotation);
         attackEnemyTemp.TryGetComponent(out Rigidbody2D attackRb);
         attackRb.velocity = Vector2.left * GameController.Instance.getEnemySpeedShot();
@@ -112,6 +116,10 @@ public class Enemy : MonoBehaviour
 
         if(other.gameObject.CompareTag("Shot"))
         {
+            if(nameEnemy.Equals(NameEnemy.Lobisomem) && typeEnemy.Equals(TypeEnemy.Ranged))
+            {
+                GameController.Instance.stopFx();
+            }
             GameController.Instance.playFx(4);
 
             GameObject deathVfx = Instantiate(GameController.Instance.deathVfxPrefab, posSpawnShoot.position, posSpawnShoot.rotation);
@@ -121,6 +129,14 @@ public class Enemy : MonoBehaviour
             Destroy(deathVfx.gameObject, 0.5f);
         }
 
+    }
+
+    private void OnBecameInvisible()
+    {
+        if(nameEnemy.Equals(NameEnemy.Lobisomem) && typeEnemy.Equals(TypeEnemy.Ranged))
+        {
+            GameController.Instance.stopFx();
+        }
     }
 
 }

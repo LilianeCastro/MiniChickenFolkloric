@@ -44,6 +44,11 @@ public class SoundManager : MonoSingleton<SoundManager>
         audioSourceSfx.PlayOneShot(fx[idFx]);
     }
 
+    public void StopFx()
+    {
+        audioSourceSfx.Stop();
+    }
+
     public float GetAudioSourceVol()
     {
         return GameManager.Instance.GetMasterVol();

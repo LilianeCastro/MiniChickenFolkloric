@@ -97,6 +97,11 @@ public class MenuManager : MonoSingleton<MenuManager>
             MenuCanvas.SetActive(true);
             StartCoroutine("ShowCanvas", sceneName);
         }
+
+        if(sceneName.Equals("Menu"))
+        {
+            TxtRecord.text = GameManager.Instance.GetHighScore().ToString();
+        }
     }
 
     IEnumerator ShowCanvas(string sceneName)
@@ -171,6 +176,7 @@ public class MenuManager : MonoSingleton<MenuManager>
     {
         GameManager.Instance.UpdateHighScore(0);
         GameManager.Instance.UpdateFirstTime(0);
+        TxtRecord.text = GameManager.Instance.GetHighScore().ToString();
     }
 
     public void UpdateImageLanguage(int pos)
