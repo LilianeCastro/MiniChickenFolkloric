@@ -149,7 +149,7 @@ public class Player : MonoSingleton<Player>
                     playerAnim.SetTrigger("death");
                     GameController.Instance.GameOver();
                     break;
-
+                    
                 case "WaterDamage":
 
                     if(!getLayerSkin().Equals(3))
