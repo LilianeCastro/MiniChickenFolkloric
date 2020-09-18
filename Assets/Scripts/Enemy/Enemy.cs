@@ -24,9 +24,21 @@ public class Enemy : MonoBehaviour
         enemyAnim = GetComponent<Animator>();    
     }
 
-    private void OnBecameVisible() {
-
-        typeEnemyIndex = Random.Range(0,3);
+    private void OnBecameVisible() 
+    {
+        if(GameController.Instance.getSpeed() <= -3.6f)
+        {
+            typeEnemyIndex = Random.Range(0,3);
+        }
+        else if(GameController.Instance.getSpeed() <= -3.15f)
+        {
+            typeEnemyIndex = Random.Range(0,2);
+        }
+        else
+        {
+            typeEnemyIndex = 0;
+        }
+        
         typeEnemy = (TypeEnemy)typeEnemyIndex;
 
         switch(typeEnemy)

@@ -33,8 +33,6 @@ public class Ground : MonoBehaviour
 
                 GameObject temp = Instantiate(GameController.Instance.groundPrefab[idChosen]);
                 temp.transform.position = new Vector2(transform.position.x + GameController.Instance.sizeGround, transform.position.y);
-
-                
             }
 
             if(transform.position.x <= GameController.Instance.sizeGround && !isInstantiatePlatform)
@@ -45,16 +43,24 @@ public class Ground : MonoBehaviour
                 {
                     posRangeSpawn = Random.Range(GameController.Instance.sizeGround, 15);
                     posSpawnCollectable.position = new Vector3(posRangeSpawn, posSpawnCollectable.transform.position.y, transform.position.z);
-                    GameController.Instance.instantiateObjects(posSpawnCollectable, GameController.Instance.collectablePrefab, GameController.Instance.collectablePrefab.Length, 2);
+                    if (GameController.Instance.CanSpawnAbovePercent(40))
+                    {
+                        GameController.Instance.instantiateObjects(posSpawnCollectable, GameController.Instance.collectablePrefab, GameController.Instance.collectablePrefab.Length, 2, "");
+                    }
+                    else
+                    {
+                        GameController.Instance.instantiateObjects(posSpawnCollectable, GameController.Instance.collectablePlusPrefab, GameController.Instance.collectablePrefab.Length, 2, "");
+                    }
+                    
                 }
                 
                 //Instantiate PlatformA
-                GameController.Instance.instantiateObjects(posPlatformA, GameController.Instance.platformPrefab, GameController.Instance.platformPrefab.Length, 1);
+                GameController.Instance.instantiateObjects(posPlatformA, GameController.Instance.platformPrefab, GameController.Instance.platformPrefab.Length, 1, "CollectablePlatA");
 
                 //Instantiate PlatformB
                 float rangePosXPlatB = Random.Range(2f, 3.5f);
                 posPlatformB.localPosition = new Vector3(rangePosXPlatB, posPlatformB.localPosition.y, posPlatformB.localPosition.z);
-                GameController.Instance.instantiateObjects(posPlatformB, GameController.Instance.platformPrefab, GameController.Instance.platformPrefab.Length, 0);
+                GameController.Instance.instantiateObjects(posPlatformB, GameController.Instance.platformPrefab, GameController.Instance.platformPrefab.Length, 0, "CollectablePlatB");
             }
         }
 

@@ -53,6 +53,8 @@ public class GameController : MonoSingleton<GameController>
     public GameObject[]		vFxExplosionPrefab;
     public GameObject[]     attackEnemyRanged;
 
+    private GameObject      platTemp;
+
     private void Start() 
     {
         currentSpeed = speedGame;
@@ -133,16 +135,29 @@ public class GameController : MonoSingleton<GameController>
         return progressSpecialAttack.value;
     }
 
-    public void instantiateObjects(Transform posSpawn, GameObject[] prefab, int size, int order)
+    public void instantiateObjects(Transform posSpawn, GameObject[] prefab, int size, int order, string namePrefab)
     {
         int idChosen = Random.Range(0, size);
 
-        GameObject platTemp = Instantiate(prefab[idChosen]);
+        platTemp = Instantiate(prefab[idChosen]);
         platTemp.transform.parent = posSpawn.transform;
         platTemp.TryGetComponent(out Renderer rend);
         rend.sortingOrder = order;
         platTemp.transform.localPosition = new Vector2(0, platTemp.transform.position.y);
+
+        if(namePrefab.Equals("CollectablePlatA"))
+        {
+            platTemp.TryGetComponent(out Platform plat);
+            plat.InstantiateCollectable();
+        }
+        else if(namePrefab.Equals("CollectablePlatB"))
+        {
+            platTemp.TryGetComponent(out Platform plat);
+            plat.InstantiateCollectableWithEnemy();
+        }
+        
     }
+
 
     public bool CanSpawnAbovePercent(int percent)
     {

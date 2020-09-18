@@ -6,18 +6,24 @@ public class Platform : MonoBehaviour
 {
     public Transform            posSpawnCollectable;
 
-    void Start()
+    public void InstantiateCollectable()
     {
-        if(GameController.Instance.CanSpawnAbovePercent(50))
-        {
-            int idChosen = Random.Range(0, GameController.Instance.collectablePrefab.Length);
-            GameController.Instance.instantiateObjects(posSpawnCollectable, GameController.Instance.collectablePrefab, GameController.Instance.collectablePrefab.Length, 2);
-        }
-        else if(GameController.Instance.CanSpawnAbovePercent(25))
+        if(GameController.Instance.CanSpawnAbovePercent(15))
         {
             int idChosen = Random.Range(0, GameController.Instance.collectablePlusPrefab.Length);
-            GameController.Instance.instantiateObjects(posSpawnCollectable, GameController.Instance.collectablePlusPrefab, GameController.Instance.collectablePlusPrefab.Length, 2);
+            GameController.Instance.instantiateObjects(posSpawnCollectable, GameController.Instance.collectablePlusPrefab, GameController.Instance.collectablePlusPrefab.Length, 2, "");
+            
+        }
+        else if(GameController.Instance.CanSpawnAbovePercent(50))
+        {
+            int idChosen = Random.Range(0, GameController.Instance.collectablePrefab.Length);
+            GameController.Instance.instantiateObjects(posSpawnCollectable, GameController.Instance.collectablePrefab, GameController.Instance.collectablePrefab.Length, 2, "");
+        }  
+    }
 
-        }            
+    public void InstantiateCollectableWithEnemy()
+    {
+        int idChosen = Random.Range(0, GameController.Instance.collectablePlusPrefab.Length);
+        GameController.Instance.instantiateObjects(posSpawnCollectable, GameController.Instance.collectablePlusPrefab, GameController.Instance.collectablePlusPrefab.Length, 2, "");
     }
 }

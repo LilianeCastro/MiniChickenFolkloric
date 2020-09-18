@@ -119,7 +119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   charName: 0
-  force: 6
+  force: 7
   lifeTime: 0.35
 --- !u!58 &9035607116693578183
 CircleCollider2D:
