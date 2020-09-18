@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Fade : MonoBehaviour
 {
+    private Animator fadeAnim;
     void Start()
     {
         Invoke("DisableFade", 0.5f);

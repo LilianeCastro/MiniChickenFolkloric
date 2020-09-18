@@ -14,9 +14,11 @@ public class GameController : MonoSingleton<GameController>
     public Image		    imgSpecialAttack;
     public Slider		    progressAttack;
     public Slider		    progressSpecialAttack;
+    public Slider		    volume;
     public Text			    txtScore;
     public Animator         progressAttackAnim;
     public Animator         progressSpecialAttackAnim;
+    public GameObject       pausePanel;
 
     [Header("Game Config")]
     public float		    speedGame;
@@ -31,6 +33,7 @@ public class GameController : MonoSingleton<GameController>
     private float           currentSpeedShot;
     private float           curretEnemySpeedShot;
     private int             score;
+    private bool            isPaused;
 
     [Header("Ground Config")]
     public GameObject[]		groundPrefab;
@@ -40,6 +43,7 @@ public class GameController : MonoSingleton<GameController>
     public GameObject[]		platformPrefab;
     public GameObject[]		collectablePrefab;
     public GameObject[]		collectablePlusPrefab;
+    public GameObject[]		collectableFeedbackPrefab;
     public GameObject		deathVfxPrefab;
 
     [Header("Prefab that depends on the skin")]
@@ -51,7 +55,6 @@ public class GameController : MonoSingleton<GameController>
 
     private void Start() 
     {
-
         currentSpeed = speedGame;
         currentSpeedShot = speedShot;
         curretEnemySpeedShot = speedEnemyShot;
@@ -62,13 +65,15 @@ public class GameController : MonoSingleton<GameController>
         progressAttack.value = progressAttack.maxValue;
         progressSpecialAttack.value = progressSpecialAttack.maxValue;
 
+        volume.value = SoundManager.Instance.GetAudioSourceVol();
+
         Invoke("StartSound", 0.01f);
 
     }
 
     private void StartSound()
     {
-        SoundManager.Instance.changeSong("InGame");
+        SoundManager.Instance.ChangeSong("InGame");
         GameManager.Instance.UpdateFirstTime(1);
     }
 
@@ -193,7 +198,38 @@ public class GameController : MonoSingleton<GameController>
         GameManager.Instance.UpdateCurrentScore(score);
 
         MenuManager.Instance.SceneToLoad("GameOver");
-        SoundManager.Instance.changeSong("GameOver");
+        SoundManager.Instance.ChangeSong("GameOver");
+    }
+
+    public void ChangeScene(string sceneName)
+    {
+        MenuManager.Instance.SceneToLoad(sceneName);
+        SoundManager.Instance.ChangeSong(sceneName);
+        if(isPaused)
+        {
+            Time.timeScale = 1f;
+        }
+    }
+
+    public void PauseGame()
+    {
+        isPaused = !isPaused;
+        GameManager.Instance.SetStatusPlayer(false);
+        pausePanel.SetActive(true);
+        Time.timeScale = 0f;
+    }
+
+    public void ContinueGame()
+    {
+        isPaused = !isPaused;
+        pausePanel.SetActive(false);
+        Time.timeScale = 1f;
+        GameManager.Instance.SetStatusPlayer(true);
+    }
+
+    public void Volume()
+    {
+        SoundManager.Instance.SetAudioSourceVol(volume.value);
     }
 
 }

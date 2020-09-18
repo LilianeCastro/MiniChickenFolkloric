@@ -35,6 +35,7 @@ public class MenuManager : MonoSingleton<MenuManager>
     public Image[]          spriteVol;
     public Image            settingsSpriteVol;
     public Slider           soundVolume;
+    public GameObject       spriteCharMenu;
 
     private void Start()
     {
@@ -80,15 +81,32 @@ public class MenuManager : MonoSingleton<MenuManager>
         if(sceneName.Equals("InGame") && GameManager.Instance.GetIsFirstTime()==0)
         {
             SceneManager.LoadScene("CutScene");
-            SoundManager.Instance.changeSong("CutScene");
+            SoundManager.Instance.ChangeSong("CutScene");
         }
-        else
+        else 
         {
+            if(sceneName.Equals("InGame"))
+            {
+                MenuCanvas.SetActive(false);
+            }
+            else
+            {
+                MenuCanvas.SetActive(true);
+                StartCoroutine("ShowCanvas", sceneName);   
+            }
+
+            if(sceneName.Equals("Menu"))
+            {
+                spriteCharMenu.SetActive(true);
+                TxtRecord.text = GameManager.Instance.GetHighScore().ToString();
+            }
+        
             SceneManager.LoadScene(sceneName);
         }
+
         
 
-        if (sceneName.Equals("InGame"))
+        /*if (sceneName.Equals("InGame"))
         {
             MenuCanvas.SetActive(false);
         }
@@ -101,7 +119,7 @@ public class MenuManager : MonoSingleton<MenuManager>
         if(sceneName.Equals("Menu"))
         {
             TxtRecord.text = GameManager.Instance.GetHighScore().ToString();
-        }
+        }*/
     }
 
     IEnumerator ShowCanvas(string sceneName)
@@ -110,7 +128,7 @@ public class MenuManager : MonoSingleton<MenuManager>
 
         if(sceneName.Equals("Menu"))
         {
-            menuGame(true);
+            MenuGame(true);
         }
         else
         {
@@ -190,7 +208,7 @@ public class MenuManager : MonoSingleton<MenuManager>
         
     }
 
-    public void menuGame(bool state)
+    public void MenuGame(bool state)
     {
         MenuGamePanel.SetActive(state);
     }

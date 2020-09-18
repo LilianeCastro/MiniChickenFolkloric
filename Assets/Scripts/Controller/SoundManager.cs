@@ -19,7 +19,7 @@ public class SoundManager : MonoSingleton<SoundManager>
         audioSourceSfx.volume = GameManager.Instance.GetSfxVol();
     }
 
-    public void changeSong(string sceneName)
+    public void ChangeSong(string sceneName)
     {
         audioSource.Stop();
 

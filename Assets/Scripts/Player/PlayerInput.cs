@@ -27,4 +27,9 @@ public class PlayerInput : MonoBehaviour
             Player.Instance.Bomb();
         }
     }
+
+    void OnPause()
+    {
+        GameController.Instance.PauseGame();
+    }
 }

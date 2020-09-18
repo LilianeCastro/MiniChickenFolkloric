@@ -4388,6 +4388,7 @@ MonoBehaviour:
   - {fileID: 8573936662616628725, guid: ec537c01eaf4c7643820dc0d5337a387, type: 3}
   settingsSpriteVol: {fileID: 2075749988}
   soundVolume: {fileID: 55531884}
+  spriteCharMenu: {fileID: 719990685}
 --- !u!114 &749069190
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5637,6 +5638,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 2057ef4c0d711674491db5d4d01861f5, type: 3}
   - {fileID: 8300000, guid: 81c06574842342443ad5d023dfdf84b2, type: 3}
   - {fileID: 8300000, guid: cb593e7885478064e8d5dc4fbe34987a, type: 3}
+  - {fileID: 8300000, guid: 330955933527e5d408fc126092915914, type: 3}
 --- !u!1 &925900042
 GameObject:
   m_ObjectHideFlags: 0

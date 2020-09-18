@@ -133,13 +133,18 @@ public class Player : MonoSingleton<Player>
                     if(collec.idCollectable.Equals("egg"))
                     {
                         GameController.Instance.updateProgressAttack(10);
+                        GameController.Instance.playFx(0);
+
+                        SpawnCollectableFeedback(other, 0);
                     }
                     else
                     {
                         GameController.Instance.updateProgressSpecialAttack(20);
-                    }
+                        GameController.Instance.playFx(8);
 
-                    GameController.Instance.playFx(0);
+                        SpawnCollectableFeedback(other, 1);
+                    }
+   
                     GameController.Instance.updateScore(1);
                     Destroy(other.gameObject);
                     break;
@@ -168,6 +173,16 @@ public class Player : MonoSingleton<Player>
             }
         }
         
+    }
+
+    private void SpawnCollectableFeedback(Collider2D other, int id)
+    {
+        GameObject collectableFeedback = Instantiate(GameController.Instance.collectableFeedbackPrefab[id]);
+        collectableFeedback.transform.localPosition = new Vector2(other.transform.position.x, other.transform.position.y + 0.5f);
+        collectableFeedback.GetComponent<Rigidbody2D>().velocity = new Vector2(GameController.Instance.getSpeed(), 0);
+
+        Destroy(collectableFeedback.gameObject, 0.3f);
+
     }
 
     IEnumerator DelayShot()
