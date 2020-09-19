@@ -61,13 +61,15 @@ public class GalleryManager : MonoBehaviour
         if(GameManager.Instance.GetSkinID() == -1)
         {
             btnText.color = colorSelected;
+            btnText.text = LocalizationManager.Instance.GetLocalizedValue("txt_selected");
         }
         else
         {
             btnText.color = Color.white;
+            btnText.text = LocalizationManager.Instance.GetLocalizedValue("txt_radom");
         }
         
-        btnText.text = LocalizationManager.Instance.GetLocalizedValue("txt_radom");
+        
     }
 
     public void SelectCharacter()

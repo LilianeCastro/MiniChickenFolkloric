@@ -34,6 +34,7 @@ public class GameController : MonoSingleton<GameController>
     private float           curretEnemySpeedShot;
     private int             score;
     private bool            isPaused;
+    private bool            canPause;
 
     [Header("Ground Config")]
     public GameObject[]		groundPrefab;
@@ -70,6 +71,7 @@ public class GameController : MonoSingleton<GameController>
         volume.value = SoundManager.Instance.GetAudioSourceVol();
 
         Invoke("StartSound", 0.01f);
+        Invoke("CanPause", 1f);
 
     }
 
@@ -77,6 +79,16 @@ public class GameController : MonoSingleton<GameController>
     {
         SoundManager.Instance.ChangeSong("InGame");
         GameManager.Instance.UpdateFirstTime(1);
+    }
+
+    private void CanPause()
+    {
+        canPause = true;
+    }
+
+    public bool CanPauseNow()
+    {
+        return canPause;
     }
 
     private void FixedUpdate() {

@@ -30,6 +30,9 @@ public class PlayerInput : MonoBehaviour
 
     void OnPause()
     {
-        GameController.Instance.PauseGame();
+        if(GameController.Instance.CanPauseNow())
+        {
+            GameController.Instance.PauseGame();
+        }
     }
 }
