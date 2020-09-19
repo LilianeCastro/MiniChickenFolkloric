@@ -103,22 +103,6 @@ public class MenuManager : MonoSingleton<MenuManager>
             _Fade.EnableFade();
         }
 
-        
-
-        /*if (sceneName.Equals("InGame"))
-        {
-            MenuCanvas.SetActive(false);
-        }
-        else
-        {
-            MenuCanvas.SetActive(true);
-            StartCoroutine("ShowCanvas", sceneName);
-        }
-
-        if(sceneName.Equals("Menu"))
-        {
-            TxtRecord.text = GameManager.Instance.GetHighScore().ToString();
-        }*/
     }
 
     IEnumerator ShowCanvas(string sceneName)
