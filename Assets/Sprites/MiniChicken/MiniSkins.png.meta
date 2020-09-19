@@ -368,6 +368,18 @@ TextureImporter:
   - first:
       213: 5704712224545942263
     second: MiniSkins_MiniChickenRun04
+  - first:
+      213: 6265767181356945750
+    second: MiniSmoke_01
+  - first:
+      213: 8786773081350249106
+    second: MiniSmoke_02
+  - first:
+      213: 7195447759664130027
+    second: MiniSmoke_03
+  - first:
+      213: -6761343510178181874
+    second: MiniSmoke_04
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -2866,6 +2878,90 @@ TextureImporter:
       bones: []
       spriteID: 7faa3e91b853b2f40800000000000000
       internalID: 5704712224545942263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSmoke_01
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 45
+        width: 6
+        height: 6
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 651d412dd0a74f650800000000000000
+      internalID: 6265767181356945750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSmoke_02
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 40
+        width: 15
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29a98db2093e0f970800000000000000
+      internalID: 8786773081350249106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSmoke_03
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 36
+        width: 28
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be729a24d9d5bd360800000000000000
+      internalID: 7195447759664130027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniSmoke_04
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 32
+        width: 31
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0dcf6f86e1ea22a0800000000000000
+      internalID: -6761343510178181874
       vertices: []
       indices: 
       edges: []

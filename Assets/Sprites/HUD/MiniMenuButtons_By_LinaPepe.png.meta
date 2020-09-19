@@ -17,6 +17,30 @@ TextureImporter:
   - first:
       213: -6765495734641468622
     second: MiniButton05ThksLina
+  - first:
+      213: 346751565053312922
+    second: MiniButton06ThksLina
+  - first:
+      213: 9106469776018650729
+    second: MiniMenuButtons_By_LinaPepe_0
+  - first:
+      213: 4879459932703473214
+    second: MiniMenuButtons_By_LinaPepe_1
+  - first:
+      213: -2590274021841695366
+    second: MiniMenuButtons_By_LinaPepe_2
+  - first:
+      213: -2476084601286657262
+    second: MiniMenuButtons_By_LinaPepe_3
+  - first:
+      213: 4750669603271341393
+    second: MiniMenuButtons_By_LinaPepe_4
+  - first:
+      213: 2445195155560657368
+    second: MiniMenuButtons_By_LinaPepe_5
+  - first:
+      213: 5187545878852678303
+    second: MiniMenuButtons_By_LinaPepe_6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -138,12 +162,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MiniButton01ThksLina
+      name: MiniMenuButtons_By_LinaPepe_0
       rect:
         serializedVersion: 2
         x: 19
-        y: 448
-        width: 220
+        y: 449
+        width: 209
         height: 60
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -152,20 +176,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e38750c6aa69fefd0800000000000000
-      internalID: -2310462425116870594
+      spriteID: 9663c6d530ea06e70800000000000000
+      internalID: 9106469776018650729
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniButton02ThksLina
+      name: MiniMenuButtons_By_LinaPepe_1
       rect:
         serializedVersion: 2
         x: 19
         y: 384
         width: 220
-        height: 60
+        height: 53
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,20 +197,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c1c72865755606c60800000000000000
-      internalID: 7809353179648392220
+      spriteID: e3eba80d4f257b340800000000000000
+      internalID: 4879459932703473214
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniButton03ThksLina
+      name: MiniMenuButtons_By_LinaPepe_2
       rect:
         serializedVersion: 2
-        x: 19
-        y: 320
+        x: 21
+        y: 319
         width: 220
-        height: 60
+        height: 53
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,14 +218,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc3b96bc50b63a740800000000000000
-      internalID: 5162087270528431052
+      spriteID: a7d0431408f7d0cd0800000000000000
+      internalID: -2590274021841695366
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniButton04ThksLina
+      name: MiniMenuButtons_By_LinaPepe_3
       rect:
         serializedVersion: 2
         x: 33
@@ -215,14 +239,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2845a516ba54c5d0800000000000000
-      internalID: -3043207710101911510
+      spriteID: 21b7e7a8c2e23add0800000000000000
+      internalID: -2476084601286657262
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MiniButton05ThksLina
+      name: MiniMenuButtons_By_LinaPepe_4
       rect:
         serializedVersion: 2
         x: 157
@@ -236,8 +260,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 23b564779712c12a0800000000000000
-      internalID: -6765495734641468622
+      spriteID: 155fb3485d4cde140800000000000000
+      internalID: 4750669603271341393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniMenuButtons_By_LinaPepe_5
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 159
+        width: 124
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d1f2bde9041fe120800000000000000
+      internalID: 2445195155560657368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniMenuButtons_By_LinaPepe_6
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 159
+        width: 124
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f923e05fd7dddf740800000000000000
+      internalID: 5187545878852678303
       vertices: []
       indices: 
       edges: []

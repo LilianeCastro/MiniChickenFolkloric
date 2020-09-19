@@ -7,13 +7,16 @@ public class Fade : MonoBehaviour
     private Animator fadeAnim;
     void Start()
     {
-        Invoke("DisableFade", 0.5f);
+        fadeAnim = GetComponent<Animator>();
+        //fadeAnim.SetTrigger("fadeIn");
+        Invoke("DisableFade", 0.7f);
     }
 
     public void EnableFade()
     {
         gameObject.SetActive(true);
-        Invoke("DisableFade", 0.5f);
+        //fadeAnim.SetTrigger("fadeIn");
+        Invoke("DisableFade", 0.7f);
     }
 
     public void DisableFade()

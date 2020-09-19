@@ -54,8 +54,6 @@ public class MenuManager : MonoSingleton<MenuManager>
     public void SceneToLoad(string sceneName)
     {
         GameManager.Instance.SetStatusPlayer(true);
-        _Fade.EnableFade();
-
 
         if(sceneName.Equals("GameOver"))
         {
@@ -102,6 +100,7 @@ public class MenuManager : MonoSingleton<MenuManager>
             }
         
             SceneManager.LoadScene(sceneName);
+            _Fade.EnableFade();
         }
 
         

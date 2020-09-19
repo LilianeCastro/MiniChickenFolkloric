@@ -50,8 +50,8 @@
             "value":"NEW HI-SCORE"
         },
         {
-            "key":"txt_gallery",
-            "value":"GALLERY"
+            "key":"txt_character",
+            "value":"CHARACTERS"
         },
         {
             "key":"txt_settings",
@@ -120,6 +120,18 @@
         {
             "key":"txt_special",
             "value":"SPECIAL"
+        },
+        {
+            "key":"txt_radom",
+            "value":"RADOM"
+        },
+        {
+            "key":"txt_select",
+            "value":"SELECT"
+        },
+        {
+            "key":"txt_selected",
+            "value":"SELECTED"
         }
     ],
     "cutscene":
@@ -229,7 +241,7 @@
         },
         {
             "key":"font_boiuna",
-            "value":"\n Available in https://www.ufmg.br/cienciaparatodos/wp-content/uploads/2012/08/leituraparatodos/e5_30-alendaamazonicadeboiuna.pdf Access in 22 de Agosto de 2020."
+            "value":"Available in https://www.ufmg.br/cienciaparatodos/wp-content/uploads/2012/08/leituraparatodos/e5_30-alendaamazonicadeboiuna.pdf \nAccess in 22 de Agosto de 2020."
         },
         {
             "key":"font_lobisomem",

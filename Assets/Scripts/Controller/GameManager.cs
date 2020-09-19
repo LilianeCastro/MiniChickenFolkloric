@@ -21,6 +21,20 @@ public class GameManager : MonoSingleton<GameManager>
         isPlayerAlive = true;
     }
 
+    public int GetSkinID()
+    {
+        if(PlayerPrefs.HasKey("skinId"))
+        {
+            return PlayerPrefs.GetInt("skinId");
+        }
+        return -1;                              //personagem aleatorio
+    }
+
+    public void UpdateSkinID(int value)
+    {
+        PlayerPrefs.SetInt("skinId", value);
+    }
+
     public string GetLanguage()
     {
         if(PlayerPrefs.HasKey("language"))

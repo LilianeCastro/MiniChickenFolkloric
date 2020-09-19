@@ -13,7 +13,7 @@ public class LocalizationManager : MonoSingleton<LocalizationManager>
     private Dictionary<string, string> localizedTextGallery;
 
     private bool isReady;
-    private string missingTextString = "Localized text not found";
+    //private string missingTextString = "Localized text not found";
 
     private string dataAsJson;
 
@@ -78,9 +78,9 @@ public class LocalizationManager : MonoSingleton<LocalizationManager>
             localizedTextGallery.Add(loadedData.gallery[i].key, loadedData.gallery[i].value);
         }
 
-        Debug.Log("Data loaded, dictionary contains: " + localizedText.Count + " entries");
-        Debug.Log("Data loaded, dictionary contains: " + localizedTextCutScene.Count + " entries");
-        Debug.Log("Data loaded, dictionary contains: " + localizedTextGallery.Count + " entries");
+        //Debug.Log("Data loaded, dictionary contains: " + localizedText.Count + " entries");
+        //Debug.Log("Data loaded, dictionary contains: " + localizedTextCutScene.Count + " entries");
+        //Debug.Log("Data loaded, dictionary contains: " + localizedTextGallery.Count + " entries");
 
 
         isReady = true;
@@ -95,7 +95,7 @@ public class LocalizationManager : MonoSingleton<LocalizationManager>
             result = localizedText[key];
         }
 
-        Debug.Log(missingTextString);
+        //Debug.Log(missingTextString);
         return  result;
     }
 
@@ -107,7 +107,7 @@ public class LocalizationManager : MonoSingleton<LocalizationManager>
         {
             result = localizedTextCutScene[key];
         }
-        Debug.Log(missingTextString);
+        //Debug.Log(missingTextString);
         return  result;
     }
 
@@ -119,7 +119,7 @@ public class LocalizationManager : MonoSingleton<LocalizationManager>
         {
             result = localizedTextGallery[key];
         }
-        Debug.Log(missingTextString);
+        //Debug.Log(missingTextString);
         return  result;
     }
 

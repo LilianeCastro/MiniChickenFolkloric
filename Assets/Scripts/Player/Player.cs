@@ -63,8 +63,17 @@ public class Player : MonoSingleton<Player>
 
     private void layerSkin()
     {
-        chosenSkinLayer = Random.Range(0,playerAnim.layerCount);
+        if(GameManager.Instance.GetSkinID()==-1)
+        {
+            chosenSkinLayer = Random.Range(0,playerAnim.layerCount);  
+        }
+        else
+        {
+            chosenSkinLayer = GameManager.Instance.GetSkinID();
+        }
+
         playerAnim.SetLayerWeight(chosenSkinLayer, 1);
+        
     }
 
     public int getLayerSkin()

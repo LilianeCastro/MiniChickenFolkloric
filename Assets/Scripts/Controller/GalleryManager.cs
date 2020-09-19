@@ -33,8 +33,12 @@ public enum NameFont{
 
 public class GalleryManager : MonoBehaviour
 {
+    [Header("Buttons")]
+    public Color               colorSelected;
+    public Text                btnText;
+    public Button              btnSelectCharacter;
     public Button[]            btnChosenProfile;
-
+    
     [Header("Tab")]
     public Image[]             imgProfile;
     public Image[]             imgProfileCheck;
@@ -47,11 +51,73 @@ public class GalleryManager : MonoBehaviour
     [Header("Description")]
     public string[]            charName;
 
-    public void updateSkin(int pos)
+    private int                currentPos;
+
+    public void StartGallery()
     {
+        currentPos = 0;
+        UpdateSkin(currentPos);
+
+        if(GameManager.Instance.GetSkinID() == -1)
+        {
+            btnText.color = colorSelected;
+        }
+        else
+        {
+            btnText.color = Color.white;
+        }
+        
+        btnText.text = LocalizationManager.Instance.GetLocalizedValue("txt_radom");
+    }
+
+    public void SelectCharacter()
+    {
+        if(currentPos >= 0 && currentPos < 7)
+        {
+            btnText.text = LocalizationManager.Instance.GetLocalizedValue("txt_selected");
+
+            if(currentPos == 0)
+            {
+                GameManager.Instance.UpdateSkinID(-1);
+            }
+            else
+            {
+                GameManager.Instance.UpdateSkinID(currentPos-1); //os personagens são selecionados de acordo com a posição do layer no animator
+            }
+            btnText.color = colorSelected;
+            
+        }
+    }
+
+    public void UpdateSkin(int pos)
+    {
+        currentPos = pos;
+        btnSelectCharacter.gameObject.SetActive(true);
+
+        if(pos > 6)
+        {
+            btnSelectCharacter.gameObject.SetActive(false);
+        }
+        else if(pos==0)
+        {
+            btnText.text = LocalizationManager.Instance.GetLocalizedValue("txt_radom");
+            btnText.color = Color.white;
+        }
+        else
+        {
+            btnText.text = LocalizationManager.Instance.GetLocalizedValue("txt_select");
+            btnText.color = Color.white;
+        }
+
         for(int i = 0; i < imgProfile.Length; i ++)
         {
             btnChosenProfile[i].image.sprite = imgProfile[i].sprite;
+        }
+
+        if(pos < 7 && GameManager.Instance.GetSkinID() + 1 == pos)
+        {
+            btnText.text = LocalizationManager.Instance.GetLocalizedValue("txt_selected");
+            btnText.color = colorSelected;
         }
 
         changeSkinToActiveInGallery(pos);
@@ -65,4 +131,5 @@ public class GalleryManager : MonoBehaviour
         txtDescriptionOnBoard.text = LocalizationManager.Instance.GetLocalizedValueGallery(((NameChar)pos).ToString());
         txtFontOnBoard.text = LocalizationManager.Instance.GetLocalizedValueGallery(((NameFont)pos).ToString());;
     }
+
 }

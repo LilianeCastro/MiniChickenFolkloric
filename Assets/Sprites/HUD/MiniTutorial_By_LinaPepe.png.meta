@@ -32,6 +32,12 @@ TextureImporter:
   - first:
       213: -4391617086867753725
     second: MiniTutorial_By_LinaPepe_4
+  - first:
+      213: 6830968578285535082
+    second: MiniTutorial_By_LinaPepe_5
+  - first:
+      213: -3136408711629757487
+    second: MiniTutorial_By_LinaPepe_6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -161,7 +167,7 @@ TextureImporter:
         width: 268
         height: 172
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -182,7 +188,7 @@ TextureImporter:
         width: 268
         height: 172
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -203,7 +209,7 @@ TextureImporter:
         width: 268
         height: 172
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -224,7 +230,7 @@ TextureImporter:
         width: 266
         height: 173
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -245,7 +251,7 @@ TextureImporter:
         width: 269
         height: 222
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -253,6 +259,48 @@ TextureImporter:
       bones: []
       spriteID: 30536bbf687dd03c0800000000000000
       internalID: -4391617086867753725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniTutorial_By_LinaPepe_5
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 230
+        width: 146
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6f709cdab97cce50800000000000000
+      internalID: 6830968578285535082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MiniTutorial_By_LinaPepe_6
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 82
+        width: 266
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d32ed8e4ec3974d0800000000000000
+      internalID: -3136408711629757487
       vertices: []
       indices: 
       edges: []
