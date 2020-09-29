@@ -63,7 +63,7 @@ public class MenuManager : MonoSingleton<MenuManager>
                 newHighScore.gameObject.SetActive(false);
                 score.color = colorDefault;
 
-                spriteGameOver.sprite = spriteGameOverSkins[Player.Instance.getLayerSkin()].sprite;
+                spriteGameOver.sprite = spriteGameOverSkins[Player.Instance.GetLayerSkin()].sprite;
             }
             else
             {

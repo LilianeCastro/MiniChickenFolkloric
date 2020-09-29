@@ -43,7 +43,7 @@ public class Bomb : MonoBehaviour
 
     private void Explosion()
     {
-        Instantiate(GameController.Instance.vFxExplosionPrefab[Player.Instance.getLayerSkin()], transform.position, transform.rotation);
+        Instantiate(GameController.Instance.vFxExplosionPrefab[Player.Instance.GetLayerSkin()], transform.position, transform.rotation);
         Destroy(this.gameObject);
     }
 

@@ -10,7 +10,7 @@ public class ParticlevFx : MonoBehaviour
 
     private void Start() {
 
-        if(Player.Instance.getLayerSkin()==2 || Player.Instance.getLayerSkin()==4)
+        if(Player.Instance.GetLayerSkin()==2 || Player.Instance.GetLayerSkin()==4)
         {
             fxRb = GetComponent<Rigidbody2D>();
             fxRb.velocity = new Vector2(speed, 0);

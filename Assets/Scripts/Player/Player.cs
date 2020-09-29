@@ -26,6 +26,11 @@ public class Player : MonoSingleton<Player>
     private bool                isAlive;
     private int                 chosenSkinLayer;
 
+    private int                 animIdGround;
+    private int                 animIdAttack;
+    private int                 animIdBomb;
+    private int                 animIdDeath;
+
     public override void Init()
     {
         base.Init();
@@ -34,6 +39,11 @@ public class Player : MonoSingleton<Player>
         playerAnim = GetComponent<Animator>();
 
         playerAnim.SetLayerWeight(0, 0);
+
+        animIdGround = Animator.StringToHash("isGround");
+        animIdAttack = Animator.StringToHash("attack");
+        animIdBomb = Animator.StringToHash("bomb");
+        animIdDeath = Animator.StringToHash("death");
 
         layerSkin();
 
@@ -44,7 +54,7 @@ public class Player : MonoSingleton<Player>
     {
         initialPosX = transform.localPosition.x;
 
-        if(getLayerSkin()==3)
+        if(GetLayerSkin()==3)
         {
             vfxPlayer.SetActive(true);
         }
@@ -58,14 +68,14 @@ public class Player : MonoSingleton<Player>
     {
         transform.localPosition = new Vector3(initialPosX, transform.localPosition.y, transform.localPosition.z);
         
-        playerAnim.SetBool("isGround", isGround);
+        playerAnim.SetBool(animIdGround, isGround);
     }
 
     private void layerSkin()
     {
         if(GameManager.Instance.GetSkinID()==-1)
         {
-            chosenSkinLayer = Random.Range(0,playerAnim.layerCount);  
+            chosenSkinLayer = Random.Range(0, playerAnim.layerCount);  
         }
         else
         {
@@ -76,7 +86,7 @@ public class Player : MonoSingleton<Player>
         
     }
 
-    public int getLayerSkin()
+    public int GetLayerSkin()
     {
         return chosenSkinLayer;
     }
@@ -97,11 +107,11 @@ public class Player : MonoSingleton<Player>
             GameController.Instance.playFx(1);
             GameController.Instance.updateProgressAttack(-30);
 
-            playerAnim.SetTrigger("attack");
-            objPolled = ObjectPooling.Instance.GetPooledObject();
+            playerAnim.SetTrigger(animIdAttack);
+            objPolled = ObjectPooling.Instance.GetPooledShoot();
 
-            objPolled.transform.position = posSpawn.position;
-            objPolled.transform.rotation = posSpawn.rotation;
+            objPolled.transform.SetPositionAndRotation(posSpawn.position, posSpawn.rotation);
+
             objPolled.SetActive(true);
             canShot = true;
 
@@ -114,7 +124,7 @@ public class Player : MonoSingleton<Player>
     {
         if(GameController.Instance.getProgressSpecialAttackValue()>=100)
         {
-            if(getLayerSkin()==3)
+            if(GetLayerSkin()==3)
             {
                 GameController.Instance.playFx(6);
             }
@@ -125,7 +135,7 @@ public class Player : MonoSingleton<Player>
             
             GameController.Instance.updateProgressSpecialAttack(-100);
 
-            playerAnim.SetTrigger("bomb");
+            playerAnim.SetTrigger(animIdBomb);
             Instantiate(GameController.Instance.specialAttackPrefab[chosenSkinLayer], posSpawn.position, posSpawn.rotation);
         }
     }
@@ -160,16 +170,16 @@ public class Player : MonoSingleton<Player>
 
                 case "Enemy":
                     isAlive = false;
-                    playerAnim.SetTrigger("death");
-                    GameController.Instance.GameOver();
+                    //playerAnim.SetTrigger(animIdDeath);
+                    //GameController.Instance.GameOver();
                     break;
                     
                 case "WaterDamage":
 
-                    if(!getLayerSkin().Equals(3))
+                    if(!GetLayerSkin().Equals(3))
                     {
                         isAlive = false;
-                        playerAnim.SetTrigger("death");
+                        playerAnim.SetTrigger(animIdDeath);
                         GameController.Instance.GameOver();
                     }
                     else
@@ -187,11 +197,12 @@ public class Player : MonoSingleton<Player>
     private void SpawnCollectableFeedback(Collider2D other, int id)
     {
         GameObject collectableFeedback = Instantiate(GameController.Instance.collectableFeedbackPrefab[id]);
+        
         collectableFeedback.transform.localPosition = new Vector2(other.transform.position.x, other.transform.position.y + 0.5f);
-        collectableFeedback.GetComponent<Rigidbody2D>().velocity = new Vector2(GameController.Instance.getSpeed(), 0);
-
+        collectableFeedback.TryGetComponent(out Rigidbody2D collectableRb);
+        collectableRb.velocity = new Vector2(GameController.Instance.getSpeed(), 0);
+        
         Destroy(collectableFeedback.gameObject, 0.3f);
-
     }
 
     IEnumerator DelayShot()

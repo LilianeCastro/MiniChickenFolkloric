@@ -145,6 +145,7 @@ GameObject:
   - component: {fileID: 7584736833379727345}
   - component: {fileID: 7584736833379727346}
   - component: {fileID: 3818715062286877394}
+  - component: {fileID: 198740150335914765}
   m_Layer: 11
   m_Name: PlatformC
   m_TagString: Untagged
@@ -276,3 +277,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   posSpawnCollectable: {fileID: 3510900121554068910}
+--- !u!50 &198740150335914765
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7584736833379727348}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

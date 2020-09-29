@@ -62,8 +62,8 @@ public class GameController : MonoSingleton<GameController>
         currentSpeedShot = speedShot;
         curretEnemySpeedShot = speedEnemyShot;
 
-        imgAttack.sprite = imgHUDAttackPrefab[Player.Instance.getLayerSkin()].sprite;
-        imgSpecialAttack.sprite = imgHUDSpecialAttackPrefab[Player.Instance.getLayerSkin()].sprite;
+        imgAttack.sprite = imgHUDAttackPrefab[Player.Instance.GetLayerSkin()].sprite;
+        imgSpecialAttack.sprite = imgHUDSpecialAttackPrefab[Player.Instance.GetLayerSkin()].sprite;
 
         progressAttack.value = progressAttack.maxValue;
         progressSpecialAttack.value = progressSpecialAttack.maxValue;
@@ -104,7 +104,7 @@ public class GameController : MonoSingleton<GameController>
 
     public int getIdSkinPlayer()
     {
-        return Player.Instance.getLayerSkin();
+        return Player.Instance.GetLayerSkin();
     }
 
     public void updateScore(int value)
