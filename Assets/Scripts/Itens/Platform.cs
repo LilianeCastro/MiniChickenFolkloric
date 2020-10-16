@@ -5,20 +5,8 @@ using UnityEngine;
 public class Platform : MonoBehaviour
 {
     public Transform            posSpawnCollectable;
-    private PoolObjectType      poolObjectType;
-    private Rigidbody2D         platRb;
+    private int                 idPool;
 
-    private void Start()
-    {
-        platRb = GetComponent<Rigidbody2D>();
-        
-        print(platRb.velocity.x);
-    }
-
-    private void Update()
-    {
-        platRb.velocity = new Vector2(GameController.Instance.getSpeed(), 0);
-    }
     public void InstantiateCollectable()
     {
         if(GameController.Instance.CanSpawnAbovePercent(15))
@@ -40,13 +28,14 @@ public class Platform : MonoBehaviour
         GameController.Instance.instantiateObjects(posSpawnCollectable, GameController.Instance.collectablePlusPrefab, GameController.Instance.collectablePlusPrefab.Length, 2, "");
     }
 
-    public void Destroy(PoolObjectType type)
+    public void SetInfo(int idPoolInfo)
     {
-        poolObjectType = type;
+        this.idPool = idPoolInfo;
         
     }
 
     private void OnBecameInvisible() {
-        ObjectPoolingManager.Instance.CoolObject(this.gameObject, poolObjectType);
+        //transform.parent = null;
+        //ObjectPoolingManager.Instance.CoolObject(this.gameObject, idPool);
     }
 }

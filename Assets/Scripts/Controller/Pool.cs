@@ -1,10 +1,9 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 [Serializable]
-public class PoolInfo
+public class ObjectPoolInfo
 {
     public int                  idPool;
     public int                  amount = 0;
@@ -14,7 +13,7 @@ public class PoolInfo
     public List<GameObject> pool = new List<GameObject>();
 }
 
-public class ObjectPoolingManager : MonoSingleton<ObjectPoolingManager>
+public class Pool : MonoBehaviour
 {
     [SerializeField]
     private List<PoolInfo> listOfPool = null;
@@ -23,10 +22,8 @@ public class ObjectPoolingManager : MonoSingleton<ObjectPoolingManager>
     private PoolInfo selected;
     private GameObject obj;
 
-    public override void Init()
+    void Awake()
     {
-        base.Init();
-
         for(int i = 0; i < listOfPool.Count; i++)
         {
             FillPool(listOfPool[i]);

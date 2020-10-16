@@ -7,9 +7,9 @@ public class ObjectPooling : MonoSingleton<ObjectPooling>
     public  GameObject[]         pooledShoot;
     private List<GameObject>     listPooledShoots;
     
-    public  GameObject           pooledGround;
+    //public  GameObject           pooledGround;
     //private List<GameObject>[]   listPooledGrounds;
-    private List<GameObject>     listPooledGrounds;
+    //private List<GameObject>     listPooledGrounds;
 
 
     public  int                  pooledAmountShoot = 3;
@@ -28,14 +28,14 @@ public class ObjectPooling : MonoSingleton<ObjectPooling>
             listPooledShoots.Add(obj);
         }
 
-        listPooledGrounds = new List<GameObject>();
+        /*listPooledGrounds = new List<GameObject>();
 
         for(int i = 0; i < pooledAmountGround; i++)
         {
             GameObject obj = Instantiate(pooledGround) as GameObject;
             obj.SetActive(false);
             listPooledGrounds.Add(obj);
-        }
+        }*/
 
         /*listPooledGrounds = new List<GameObject>[pooledGround.Length];
 
@@ -64,7 +64,7 @@ public class ObjectPooling : MonoSingleton<ObjectPooling>
         return null;
     }
 
-    public GameObject GetPooledGround()
+    /*public GameObject GetPooledGround()
     {
         print(listPooledGrounds.Count);
         for(int i = 0; i < listPooledGrounds.Count; i++)
@@ -84,7 +84,7 @@ public class ObjectPooling : MonoSingleton<ObjectPooling>
         }
 
         return null;
-    }
+    }*/
 
     /*public GameObject GetPooledGround()
     {
