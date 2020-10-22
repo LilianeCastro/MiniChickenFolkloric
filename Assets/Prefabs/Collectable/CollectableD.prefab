@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4221387512132032860}
   - component: {fileID: 4977505025713619994}
-  - component: {fileID: 3752750149698238337}
+  - component: {fileID: 578618988419272948}
   m_Layer: 0
   m_Name: CollectableD
   m_TagString: Untagged
@@ -84,7 +84,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &3752750149698238337
+--- !u!114 &578618988419272948
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -93,10 +93,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 229726742497226747}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2483d14191e6f3944b72b80f89f83c3d, type: 3}
+  m_Script: {fileID: 11500000, guid: eb06b29db9434134b831801ef4514a8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  idCollectable: chick
 --- !u!1001 &2333391803225596938
 PrefabInstance:
   m_ObjectHideFlags: 0

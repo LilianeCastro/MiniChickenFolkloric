@@ -6,11 +6,11 @@ public class PlatformGenerator : MonoBehaviour
 {
     private int idPlatform;
 
-    public float minTimeSpawn;
-    public float maxTimeSpawn;
-
     private float posPlatBX;
     private float posPlatBY = 1f;
+
+    public float minTimeSpawn;
+    public float maxTimeSpawn;
 
     void Start()
     {
@@ -22,13 +22,13 @@ public class PlatformGenerator : MonoBehaviour
         
         yield return new WaitForSeconds(Random.Range(minTimeSpawn, maxTimeSpawn));
 
-        SpawnPlatform(transform.position, 0, 70);
+        SpawnPlatform(transform.position, 0, 75);
 
-        if(GameController.Instance.CanSpawnAbovePercent(45))
+        if(GameController.Instance.CanSpawnAbovePercent(50))
         {
             posPlatBX = Random.Range(2f, 2.5f);
 
-            SpawnPlatform(new Vector2(transform.position.x + posPlatBX, transform.position.y + posPlatBY), -1, 95);
+            SpawnPlatform(new Vector2(transform.position.x + posPlatBX, transform.position.y + posPlatBY), -1, 100);
         }
 
         StartCoroutine("GenPlatform");

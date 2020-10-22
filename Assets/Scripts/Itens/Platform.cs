@@ -20,29 +20,42 @@ public class Platform : MonoBehaviour
 
     public void InstantiateCollectable()
     {
-        if(GameController.Instance.CanSpawnAbovePercent(15))
+        // 3 - 7 no enemies 8 - 16 enemies
+        if(GameController.Instance.CanSpawnAbovePercent(85))
         {
-            int idChosen = Random.Range(0, GameController.Instance.collectablePlusPrefab.Length);
-            GameController.Instance.instantiateObjects(posSpawnCollectable, GameController.Instance.collectablePlusPrefab, GameController.Instance.collectablePlusPrefab.Length, 2, "");
-            
+            int idChosen = Random.Range(3, 8);
+            SpawnCollectable(idChosen);
         }
         else
         {
-            int idChosen = Random.Range(0, GameController.Instance.collectablePrefab.Length);
-            GameController.Instance.instantiateObjects(posSpawnCollectable, GameController.Instance.collectablePrefab, GameController.Instance.collectablePrefab.Length, 2, "");
+            int idChosen = Random.Range(8, 17);
+            SpawnCollectable(idChosen);
         }  
     }
 
     public void InstantiateCollectableWithEnemy()
     {
-        int idChosen = Random.Range(0, GameController.Instance.collectablePlusPrefab.Length);
-        GameController.Instance.instantiateObjects(posSpawnCollectable, GameController.Instance.collectablePlusPrefab, GameController.Instance.collectablePlusPrefab.Length, 2, "");
+        int idChosen = Random.Range(8, 17);
+        SpawnCollectable(idChosen);
+    }
+
+    private void SpawnCollectable(int idCollectable)
+    {
+        print(idCollectable);
+        GameObject tempCollectable = ObjectPoolingManager.Instance.GetPoolObject(idCollectable);
+
+        tempCollectable.transform.SetPositionAndRotation(posSpawnCollectable.position, posSpawnCollectable.rotation);
+        tempCollectable.transform.parent = posSpawnCollectable.transform;
+
+        tempCollectable.gameObject.SetActive(true);
+
+        tempCollectable.TryGetComponent(out CollectableContainer collectableContainerScript);
+        collectableContainerScript.SetInfo(idCollectable);
     }
 
     public void SetInfo(int idPoolInfo)
     {
-        this.idPool = idPoolInfo;
-        
+        this.idPool = idPoolInfo;   
     }
 
     private void OnBecameInvisible() 
