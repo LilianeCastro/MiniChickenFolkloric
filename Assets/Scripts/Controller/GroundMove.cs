@@ -19,7 +19,7 @@ public class GroundMove : MonoBehaviour
 
         if(transform.position.x <= minX)
         {
-            transform.position = new Vector3(transform.position.x + difX *2,
+            transform.position = new Vector3(transform.position.x + difX * 2,
             transform.position.y,
             transform.position.z);
         }

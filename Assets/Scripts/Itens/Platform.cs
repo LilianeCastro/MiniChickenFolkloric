@@ -5,7 +5,18 @@ using UnityEngine;
 public class Platform : MonoBehaviour
 {
     public Transform            posSpawnCollectable;
+    private Rigidbody2D         platformRb;
     private int                 idPool;
+
+    private void Start()
+    {
+        platformRb = GetComponent<Rigidbody2D>();
+    }
+
+    private void Update()
+    {
+        platformRb.velocity = new Vector2(GameController.Instance.getSpeed(), 0);
+    }
 
     public void InstantiateCollectable()
     {
@@ -15,7 +26,7 @@ public class Platform : MonoBehaviour
             GameController.Instance.instantiateObjects(posSpawnCollectable, GameController.Instance.collectablePlusPrefab, GameController.Instance.collectablePlusPrefab.Length, 2, "");
             
         }
-        else if(GameController.Instance.CanSpawnAbovePercent(50))
+        else
         {
             int idChosen = Random.Range(0, GameController.Instance.collectablePrefab.Length);
             GameController.Instance.instantiateObjects(posSpawnCollectable, GameController.Instance.collectablePrefab, GameController.Instance.collectablePrefab.Length, 2, "");
@@ -34,8 +45,8 @@ public class Platform : MonoBehaviour
         
     }
 
-    private void OnBecameInvisible() {
-        //transform.parent = null;
-        //ObjectPoolingManager.Instance.CoolObject(this.gameObject, idPool);
+    private void OnBecameInvisible() 
+    {
+        ObjectPoolingManager.Instance.CoolObject(this.gameObject, idPool);
     }
 }
