@@ -165,11 +165,12 @@ public class Player : MonoSingleton<Player>
                     }
    
                     GameController.Instance.updateScore(1);
-                    Destroy(other.gameObject);
+                    other.gameObject.SetActive(false);
+                    //Destroy(other.gameObject);
                     break;
 
                 case "Enemy":
-                    isAlive = false;
+                    //isAlive = false;
                     //playerAnim.SetTrigger(animIdDeath);
                     //GameController.Instance.GameOver();
                     break;
@@ -188,7 +189,6 @@ public class Player : MonoSingleton<Player>
                         GameController.Instance.updateProgressSpecialAttack(10);
                     }
                     break;
-
             }
         }
         

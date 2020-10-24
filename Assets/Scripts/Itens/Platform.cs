@@ -41,7 +41,6 @@ public class Platform : MonoBehaviour
 
     private void SpawnCollectable(int idCollectable)
     {
-        print(idCollectable);
         GameObject tempCollectable = ObjectPoolingManager.Instance.GetPoolObject(idCollectable);
 
         tempCollectable.transform.SetPositionAndRotation(posSpawnCollectable.position, posSpawnCollectable.rotation);

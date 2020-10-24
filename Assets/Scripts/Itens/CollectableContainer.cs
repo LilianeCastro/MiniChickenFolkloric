@@ -8,7 +8,15 @@ public class CollectableContainer : MonoBehaviour
     
     public void SetInfo(int idPoolInfo)
     {
-        this.idPool = idPoolInfo;   
+        this.idPool = idPoolInfo;
+
+        foreach (Transform child in transform)
+        {
+            if(!child.gameObject.activeInHierarchy)
+            {
+                child.gameObject.SetActive(true);
+            }   
+        }
     }
 
     private void OnBecameInvisible() 

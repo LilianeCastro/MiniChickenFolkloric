@@ -26,6 +26,8 @@ public class Enemy : MonoBehaviour
 
     private void OnBecameVisible() 
     {
+        boxCollider.isTrigger = false;
+
         if(GameController.Instance.getSpeed() <= -3.6f)
         {
             typeEnemyIndex = Random.Range(0,3);
@@ -43,15 +45,15 @@ public class Enemy : MonoBehaviour
 
         switch(typeEnemy)
         {
+            case TypeEnemy.Melee:
+                StartCoroutine("CheckDistance", new Vector2(10f, 10f));
+                break;  
             case TypeEnemy.Attack:
                 StartCoroutine("CheckDistance", new Vector2(2.5f, 0.5f));
                 break;
             case TypeEnemy.Ranged:
                 StartCoroutine("CheckDistance", new Vector2(8f, 5f));
-                break;
-            case TypeEnemy.Melee:
-                StartCoroutine("CheckDistance", new Vector2(10f, 10f));
-                break;      
+                break;   
         }
         
     }
@@ -83,11 +85,12 @@ public class Enemy : MonoBehaviour
         }
     }
 
-
     IEnumerator ResetAnim()
     {
         yield return new WaitForEndOfFrame();
         enemyAnim.SetBool("canAttack", false);
+        yield return new WaitForSeconds(2f);
+        isAttackRanged = false;
     }
 
     IEnumerator TransformColliderToTrigger()
@@ -104,13 +107,16 @@ public class Enemy : MonoBehaviour
     IEnumerator SpawnAttack()
     {
         yield return new WaitForEndOfFrame();
+
         if(nameEnemy.Equals(NameEnemy.Lobisomem))
         {
             GameController.Instance.playFx(7);
         }
+        print("ATAQUE");
         attackEnemyTemp = Instantiate(GameController.Instance.attackEnemyRanged[(int)nameEnemy], posSpawnShoot.position, posSpawnShoot.rotation);
         attackEnemyTemp.TryGetComponent(out Rigidbody2D attackRb);
         attackRb.velocity = Vector2.left * GameController.Instance.getEnemySpeedShot();
+
         StartCoroutine("ResetAnim");
     }
 
@@ -132,12 +138,14 @@ public class Enemy : MonoBehaviour
             {
                 GameController.Instance.stopFx();
             }
+
             GameController.Instance.playFx(4);
 
             GameObject deathVfx = Instantiate(GameController.Instance.deathVfxPrefab, posSpawnShoot.position, posSpawnShoot.rotation);
             deathVfx.GetComponent<Rigidbody2D>().velocity = new Vector2(GameController.Instance.getSpeed(), 0);
 
-            Destroy(this.gameObject);
+            gameObject.SetActive(false);
+
             Destroy(deathVfx.gameObject, 0.5f);
         }
 
