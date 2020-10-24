@@ -4392,32 +4392,6 @@ MonoBehaviour:
   speedEnemyShot: 5
   increaseEnemySpeedShot: 0.2
   scoreToChangeSpeedGame: 25
-  groundPrefab:
-  - {fileID: 80957948302640997, guid: 41d0254d084b97348993a2929c846638, type: 3}
-  - {fileID: 3957567042569793272, guid: 3901b8312a023f94fae6319a9653c940, type: 3}
-  sizeGround: 10
-  platformPrefab:
-  - {fileID: 3977688457492234305, guid: e52bf774250967245aeca6ba277a6ac4, type: 3}
-  - {fileID: 312695284842793087, guid: 0f37d0f8f84295445a4eb99f578e50a0, type: 3}
-  collectablePrefab:
-  - {fileID: 2063113739408824404, guid: 48fe1d1c2424736439c37bb96f2d7080, type: 3}
-  - {fileID: 5387127072915173829, guid: b532fb071c1ee7b4abc775f423c20290, type: 3}
-  - {fileID: 5407876687667277517, guid: 963af52d48c9d574a93880a3a7412b40, type: 3}
-  - {fileID: 8097492406995263070, guid: 5a901cc9bf8dffb45829f170a6fb5eee, type: 3}
-  - {fileID: 6450110185073781264, guid: e348c68d2696c364d815c0f511ae8a0a, type: 3}
-  - {fileID: 6230801931258685802, guid: fd5269d81026e2149b2ed806f9aef191, type: 3}
-  - {fileID: 318917869867812803, guid: c7b2b32a1ec0e5849a9abb841922e38d, type: 3}
-  - {fileID: 5387127072915173829, guid: b532fb071c1ee7b4abc775f423c20290, type: 3}
-  collectablePlusPrefab:
-  - {fileID: 1831619317573204078, guid: eb80d95e8adad754293ef3a4555fbb76, type: 3}
-  - {fileID: 229726742497226747, guid: 5c334e85ffabab048a25ee924c1d220b, type: 3}
-  - {fileID: 4374992397137883775, guid: 56960dfc6b9645243bf2b22900eda58c, type: 3}
-  - {fileID: 3780260999138382096, guid: 6f7fe450a2a6c5646a60a7abf5838cfb, type: 3}
-  - {fileID: 5700637992722069222, guid: 3b17bab10bd244c4c8112b95edd3ead6, type: 3}
-  - {fileID: 455371881468308029, guid: e513f40058762d44884f5231d3f0bb72, type: 3}
-  - {fileID: 7149165385039188447, guid: 5f75c9c7bd6f77941b354db9c44443c4, type: 3}
-  - {fileID: 4240471538872105678, guid: f4f9c1fec47c74e408cc8a07b978e3e1, type: 3}
-  - {fileID: 5903591430450118590, guid: a270434b73a543a43b530a1d4c168f27, type: 3}
   collectableFeedbackPrefab:
   - {fileID: 1403102051097276968, guid: a4a04ce69cc483e4d9ca7e2ffb24e22a, type: 3}
   - {fileID: 6533047583061799468, guid: fba0d4abeb2c8fd489b3311c600e91f6, type: 3}
@@ -5999,7 +5973,7 @@ MonoBehaviour:
       type: 3}
     pool: []
   - idPool: 7
-    amount: 5
+    amount: 2
     prefab: {fileID: 318917869867812803, guid: c7b2b32a1ec0e5849a9abb841922e38d, type: 3}
     pool: []
   - idPool: 8
@@ -9149,7 +9123,6 @@ MonoBehaviour:
   - {fileID: 2831128579387731036, guid: 40a27d8b0112dac43b67f29490718efb, type: 3}
   - {fileID: 5764177396832918222, guid: 51fb28e607dd77e429a647a9449bd3b9, type: 3}
   pooledAmountShoot: 3
-  pooledAmountGround: 6
   willGrow: 1
 --- !u!4 &1016835625
 Transform:
@@ -17004,7 +16977,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2039352724
 MonoBehaviour:
   m_ObjectHideFlags: 0

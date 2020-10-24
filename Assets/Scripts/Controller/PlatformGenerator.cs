@@ -22,7 +22,6 @@ public class PlatformGenerator : MonoBehaviour
         
         yield return new WaitForSeconds(Random.Range(minTimeSpawn, maxTimeSpawn));
 
-        // se não spawnar uma segunda plataforma, a primeira plataforma tem 100% de chance de conter um coletavel
         if(GameController.Instance.CanSpawnAbovePercent(50))
         {
             SpawnPlatform(transform.position, 0, 25);
@@ -56,18 +55,16 @@ public class PlatformGenerator : MonoBehaviour
 
         if(GameController.Instance.CanSpawnAbovePercent(collectableSpawnChange))
         {
-            // se for na segunda plataforma nunca vai aparecer item com inimigo.
             if(order == 0)
             {
-                if(GameController.Instance.CanSpawnAbovePercent(75))
+                if(GameController.Instance.CanSpawnAbovePercent(70))
                 {
                     platformScript.InstantiateCollectableWithEnemy();
                 }
                 else
                 {
                     platformScript.InstantiateCollectable();
-                }
-                
+                }  
             }
             else
             {

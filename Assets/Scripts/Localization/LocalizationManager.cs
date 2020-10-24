@@ -78,11 +78,6 @@ public class LocalizationManager : MonoSingleton<LocalizationManager>
             localizedTextGallery.Add(loadedData.gallery[i].key, loadedData.gallery[i].value);
         }
 
-        //Debug.Log("Data loaded, dictionary contains: " + localizedText.Count + " entries");
-        //Debug.Log("Data loaded, dictionary contains: " + localizedTextCutScene.Count + " entries");
-        //Debug.Log("Data loaded, dictionary contains: " + localizedTextGallery.Count + " entries");
-
-
         isReady = true;
     }
 

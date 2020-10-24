@@ -166,13 +166,13 @@ public class Player : MonoSingleton<Player>
    
                     GameController.Instance.updateScore(1);
                     other.gameObject.SetActive(false);
-                    //Destroy(other.gameObject);
+                    
                     break;
 
                 case "Enemy":
-                    //isAlive = false;
-                    //playerAnim.SetTrigger(animIdDeath);
-                    //GameController.Instance.GameOver();
+                    isAlive = false;
+                    playerAnim.SetTrigger(animIdDeath);
+                    GameController.Instance.GameOver();
                     break;
                     
                 case "WaterDamage":

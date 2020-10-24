@@ -84,7 +84,7 @@ public class GalleryManager : MonoBehaviour
             }
             else
             {
-                GameManager.Instance.UpdateSkinID(currentPos-1); //os personagens são selecionados de acordo com a posição do layer no animator
+                GameManager.Instance.UpdateSkinID(currentPos-1);
             }
             btnText.color = colorSelected;
             

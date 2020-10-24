@@ -58,7 +58,7 @@ public class Platform : MonoBehaviour
     }
 
     private void OnBecameInvisible() 
-    {
-        ObjectPoolingManager.Instance.CoolObject(this.gameObject, idPool);
+    {  
+        ObjectPoolingManager.Instance.CoolObject(this.gameObject, idPool);   
     }
 }

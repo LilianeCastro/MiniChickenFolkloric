@@ -15,7 +15,6 @@ public class GameManager : MonoSingleton<GameManager>
     public override void Init()
     {
         base.Init();
-        //language = "language_pt-br.json";
         language = "language_en.json";
         currentScore = 0;
         isPlayerAlive = true;
@@ -27,7 +26,7 @@ public class GameManager : MonoSingleton<GameManager>
         {
             return PlayerPrefs.GetInt("skinId");
         }
-        return -1;                              //personagem aleatorio
+        return -1;
     }
 
     public void UpdateSkinID(int value)

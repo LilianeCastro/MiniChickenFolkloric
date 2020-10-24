@@ -5,6 +5,7 @@ using UnityEngine;
 public class Fade : MonoBehaviour
 {
     private Animator fadeAnim;
+    
     void Start()
     {
         fadeAnim = GetComponent<Animator>();

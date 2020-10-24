@@ -36,14 +36,7 @@ public class GameController : MonoSingleton<GameController>
     private bool            isPaused;
     private bool            canPause;
 
-    [Header("Ground Config")]
-    public GameObject[]		groundPrefab;
-    public float		    sizeGround;
-
     [Header("Prefabs")]
-    public GameObject[]		platformPrefab;
-    public GameObject[]		collectablePrefab;
-    public GameObject[]		collectablePlusPrefab;
     public GameObject[]		collectableFeedbackPrefab;
     public GameObject		deathVfxPrefab;
 
@@ -146,30 +139,6 @@ public class GameController : MonoSingleton<GameController>
     {
         return progressSpecialAttack.value;
     }
-
-    public void instantiateObjects(Transform posSpawn, GameObject[] prefab, int size, int order, string namePrefab)
-    {
-        int idChosen = Random.Range(0, size);
-
-        platTemp = Instantiate(prefab[idChosen]);
-        platTemp.transform.parent = posSpawn.transform;
-        platTemp.TryGetComponent(out Renderer rend);
-        rend.sortingOrder = order;
-        platTemp.transform.localPosition = new Vector2(0, platTemp.transform.position.y);
-
-        if(namePrefab.Equals("CollectablePlatA"))
-        {
-            platTemp.TryGetComponent(out Platform plat);
-            plat.InstantiateCollectable();
-        }
-        else if(namePrefab.Equals("CollectablePlatB"))
-        {
-            platTemp.TryGetComponent(out Platform plat);
-            plat.InstantiateCollectableWithEnemy();
-        }
-        
-    }
-
 
     public bool CanSpawnAbovePercent(int percent)
     {

@@ -88,8 +88,8 @@ public class Enemy : MonoBehaviour
     IEnumerator ResetAnim()
     {
         yield return new WaitForEndOfFrame();
+
         enemyAnim.SetBool("canAttack", false);
-        yield return new WaitForSeconds(2f);
         isAttackRanged = false;
     }
 
@@ -112,7 +112,7 @@ public class Enemy : MonoBehaviour
         {
             GameController.Instance.playFx(7);
         }
-        print("ATAQUE");
+        
         attackEnemyTemp = Instantiate(GameController.Instance.attackEnemyRanged[(int)nameEnemy], posSpawnShoot.position, posSpawnShoot.rotation);
         attackEnemyTemp.TryGetComponent(out Rigidbody2D attackRb);
         attackRb.velocity = Vector2.left * GameController.Instance.getEnemySpeedShot();
