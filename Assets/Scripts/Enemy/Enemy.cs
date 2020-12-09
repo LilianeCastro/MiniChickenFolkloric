@@ -28,7 +28,7 @@ public class Enemy : MonoBehaviour
     {
         boxCollider.isTrigger = false;
 
-        if(GameController.Instance.getSpeed() <= -3.6f)
+        if(GameController.Instance.getSpeed() <= -3.3f)
         {
             typeEnemyIndex = Random.Range(0,3);
         }
